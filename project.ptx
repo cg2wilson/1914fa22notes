@@ -8,7 +8,7 @@
   <targets>
     <target name="html">
       <format>html</format>
-      <source>source/main.ptx</source>
+      <source>source/main.xml</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/html</output-dir>
     </target>
