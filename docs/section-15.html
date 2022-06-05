@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-05T16:18:24-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I The Limit of a Function</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Differential &amp; Integral Calculus I">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Differential &amp; Integral Calculus I</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-14.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-16.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-14.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-16.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="active">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-15"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.5</span> <span class="title">The Limit of a Function</span>
+</h2>
+<article class="objectives goal-like" id="objectives-5"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-157"><p id="p-derived-li-157">Describe what it means for a function to have a finite or infinite limit and what it means for a limit to not exist</p></li>
+<li id="li-158"><p id="p-derived-li-158">Use and interpret limit notation</p></li>
+<li id="li-159"><p id="p-derived-li-159">Compute limits graphically and numerically</p></li>
+<li id="li-160"><p id="p-derived-li-160">Define one-sided limits and approximate them graphically and numerically</p></li>
+<li id="li-161"><p id="p-derived-li-161">Define and identify vertical asymptotes of a function</p></li>
+</ul></article><section class="subsection" id="section-15-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.5.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-12"><a class="external" href="https://mymedia.ou.edu/media/1.5-1/0_h4r9796t" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/1.5-1/0_h4r9796t</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">12<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><figure class="figure figure-like" id="figure-13"><a class="external" href="https://mymedia.ou.edu/media/1.5-2.mp4/0_f6b500zg" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/1.5-2.mp4/0_f6b500zg</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">13<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 2</figcaption></figure><section class="subsubsection" id="section-15-motivation"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.5.1.1</span> <span class="title">Motivating Example</span>
+</h4>
+<article class="example example-like" id="example-63"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
+</h5>Consider the function <span class="process-math">\(f(x) = x^3 -2x+1\text{.}\)</span>  A table of its values (to 6 decimal places) are given below: <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.0\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(0.000000\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(3.0\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(22.000000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.5\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(1.375000\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.5\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(11.625000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.8\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(3.232000\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.2\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(7.248000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.9\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(4.059000\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(6.061000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.95\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(4.514875\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.05\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(5.515125\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.99\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(4.900599\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(5.100601\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(4.990006\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(5.010006\)</span></td>
+</tr>
+</table></div>
+<p id="p-27">Describe what is happening to the output values as <span class="process-math">\(x\)</span> approaches 2.</p></article></section><section class="subsubsection" id="section-15-limit"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.5.1.2</span> <span class="title">The Limit</span>
+</h4>
+<article class="definition definition-like" id="definition-12"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Intuitive Definition of a Limit.</span>
+</h5> Suppose <span class="process-math">\(f(x)\)</span> is defined when <span class="process-math">\(x\)</span> is near the input <span class="process-math">\(a\text{.}\)</span>  We write<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x\to a} f(x) = L \qquad f(x)\to L\text{ as }x\to a
+\end{equation*}
+</div>and say <p id="p-28">“the limit of <span class="process-math">\(f(x)\text{,}\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\text{,}\)</span> equals <span class="process-math">\(L\)</span>” or “<span class="process-math">\(f(x)\)</span> approaches <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span>”</p>
+<p id="p-29">if we can make the values of <span class="process-math">\(f(x)\)</span> arbitrarily close to <span class="process-math">\(L\)</span> by restricting <span class="process-math">\(x\)</span> to be sufficiently close to <span class="process-math">\(a\)</span> (on either side of <span class="process-math">\(a\)</span>) but not equal to <span class="process-math">\(a\)</span> itself.</p></article><p id="p-30">There is a more rigorous definition given in Section 1.7.  One important aspect of the definition of a limit is that we do not require the function to <em class="emphasis">exist</em> at the input <span class="process-math">\(a\text{.}\)</span></p>
+<article class="assemblage assemblage-like" id="assemblage-6"><h5 class="heading"><span class="title">A Word About Notation.</span></h5>
+<p id="p-31">In mathematics, notation is the way you succinctly communicate your ideas.  Notation is part of the  “language” of math; proper notation ensures proper communication.  Please pay very careful attention to how I am writing the notation in class.</p>
+<p id="p-32">Notation can be a confusing aspect of mathematics; that's ok.  It happens for Calculus I students and even for tenured professors.  If you have any questions, please refer to your notes and/or ask me!  I am happy to help you navigate things that are confusing or don't make sense to you.</p></article><article class="example example-like" id="example-64"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
+</h5>Draw three graphs so that the limit <span class="process-math">\(L\)</span> is defined at the input <span class="process-math">\(a\text{,}\)</span> but <span class="process-math">\(f(a)\)</span> is distinct at all three points.  This illustrates three possibilities when dealing with limits.</article><article class="example example-like" id="example-65"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
+</h5>Consider <span class="process-math">\(f(x) = \dfrac{x-1}{x^2-1}\text{.}\)</span>  What is <span class="process-math">\(\ds \lim_{x\to 1} f(x)\text{?}\)</span> <ol class="lower-alpha">
+<li id="li-162">Fill out the table below (using a calculator).  What do you think the limit will be?  Why? <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0.5</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines">1.5</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0.75</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines">1.25</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0.99</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines">1.01</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+</table></div>
+</li>
+<li id="li-163"><p id="p-derived-li-163">Simplify the function.  Can you determine the limit from your simplified version?</p></li>
+</ol></article></section></section><section class="subsection" id="section-15-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.5.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-66"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="period">.</span>
+</h4>What if instead we tweaked the function in the previous example to be<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(x) = \begin{cases}\dfrac{x-1}{x^2-1} \amp x\neq 1 \\ 2 \amp x = 1 \end{cases}
+\end{equation*}
+</div>What will happen to the limit?  Explain your answer.</article><article class="example example-like" id="example-67"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.6</span><span class="period">.</span>
+</h4>
+<ol class="lower-alpha">
+<li id="li-164"><p id="p-derived-li-164">Translate the expression <span class="process-math">\(\ds \lim_{x\to 3} f(x) = 7\)</span> from math into English.  Explain the sentence you wrote.</p></li>
+<li id="li-165"><p id="p-derived-li-165">Is it possible for <span class="process-math">\(f(3)\)</span> to be <span class="process-math">\(-10\)</span> instead of 7?  Why or why not?</p></li>
+</ol></article></section><section class="subsection" id="section-15-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.5.3</span> <span class="title">In Class</span>
+</h3>
+<section class="subsubsection" id="section-15-onesided"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.5.3.1</span> <span class="title">One-Sided Limits</span>
+</h4>
+<p id="p-33">When we developed the intuition of a limit, we looked at input values which were smaller and larger than our desired input.  These values are to the <em class="emphasis">left</em> and <em class="emphasis">right</em> of our input; secretly, we were taking <em class="emphasis">one-sided limits</em>.</p>
+<article class="definition definition-like" id="definition-13"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.7</span><span class="period">.</span><span class="space"> </span><span class="title">One-Sided Limits.</span>
+</h5> Suppose <span class="process-math">\(f(x)\)</span> is defined when <span class="process-math">\(x\)</span> is near the input <span class="process-math">\(a\text{.}\)</span>  We write<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x\to a^+} f(x) = L
+\end{equation*}
+</div>and say <p id="p-34">“the limit of <span class="process-math">\(f(x)\text{,}\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the right, equals <span class="process-math">\(L\)</span>” or “<span class="process-math">\(f(x)\)</span> approaches <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the right”</p>
+<p id="p-35">if we can make the values of <span class="process-math">\(f(x)\)</span> arbitrarily close to <span class="process-math">\(L\)</span> by restricting <span class="process-math">\(x\)</span> to be sufficiently close to <span class="process-math">\(a\)</span> (using <span class="process-math">\(x \lt a\)</span>).  We write</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x\to a^-} f(x) = L
+\end{equation*}
+</div> and say <p id="p-36">“the limit of <span class="process-math">\(f(x)\text{,}\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the left, equals <span class="process-math">\(L\)</span>” or “<span class="process-math">\(f(x)\)</span> approaches <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the left”</p>
+<p id="p-37">if we can make the values of <span class="process-math">\(f(x)\)</span> arbitrarily close to <span class="process-math">\(L\)</span> by restricting <span class="process-math">\(x\)</span> to be sufficiently close to <span class="process-math">\(a\)</span> (using <span class="process-math">\(x \gt a\)</span>)</p></article><article class="assemblage assemblage-like" id="assemblage-7"><h5 class="heading"><span class="title">Existence of a Limit.</span></h5>
+<p id="p-38">A function <span class="process-math">\(f(x)\)</span> has a limit at <span class="process-math">\(x = c\)</span> if and only if its one-sided limits exist and agree.</p></article><article class="example example-like" id="example-68"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.8</span><span class="period">.</span>
+</h5>Use the graph of <span class="process-math">\(g\)</span> to answer the following: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-28.svg" role="img" class="contained" alt="This graph is not filled in at \((3,7)\text{,}\) is filled in at \((3,5)\text{,}\) and continues."></div>
+<ol class="lower-alpha">
+<li id="li-166"><p id="p-derived-li-166"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4^-} g(x)=\)</span></p></li>
+<li id="li-167"><p id="p-derived-li-167"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4^+} g(x)=\)</span></p></li>
+<li id="li-168"><p id="p-derived-li-168"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4} g(x)=\)</span></p></li>
+<li id="li-169"><p id="p-derived-li-169"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^-} g(x)=\)</span></p></li>
+<li id="li-170"><p id="p-derived-li-170"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^+} g(x)=\)</span></p></li>
+<li id="li-171"><p id="p-derived-li-171"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} g(x)=\)</span></p></li>
+</ol></article><article class="example example-like" id="example-69"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.9</span><span class="period">.</span>
+</h5>Use a calculator to examine the limit behavior of the function <span class="process-math">\(r(p) = \dfrac{p^2-64}{p+8}\)</span> at <span class="process-math">\(p = -8\text{.}\)</span>  Record your answers will full decimal accuracy, and round your final answer to the thousandths place, if necessary. <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(p\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(r(p)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.0001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.00001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{p\to -8^-}r(p)  =\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(p\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(r(p)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.9\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.99\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.9999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.99999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{p\to -8^+}r(p)  =\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+</table></div>
+</div></div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-39">
+\begin{equation*}
+\ds \lim_{p\to -8}r(p)=
+\end{equation*}
+</div></article></section><section class="subsubsection" id="section-15-infinite"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.5.3.2</span> <span class="title">Infinite Limits</span>
+</h4>
+<article class="example example-like" id="example-70"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.10</span><span class="period">.</span>
+</h5>Estimate <span class="process-math">\(\ds \lim_{x\to 0} -\dfrac{1}{x^2}\text{.}\)</span> <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(-\dfrac{1}{x^2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.0001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.00001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{x\to 0^-}\lrpar{-\dfrac{1}{x^2}} =\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(-\dfrac{1}{x^2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.0001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.00001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{x\to 0^+}\lrpar{-\dfrac{1}{x^2}} =\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+</table></div>
+</div></div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x\to 0}\lrpar{-\dfrac{1}{x^2}}=
+\end{equation*}
+</div></article><article class="question example-like" id="question-5"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.5.11</span><span class="period">.</span>
+</h5>What is different about this limit than in our previous examples?</article><article class="assemblage assemblage-like" id="assemblage-8"><h5 class="heading"><span class="title">Notation.</span></h5>
+<p id="p-40">We use the notation <span class="process-math">\(\infty\)</span> or <span class="process-math">\(-\infty\)</span> to indicate a value which gets arbitrarily large.  IT IS NOT A NUMBER!</p></article><article class="definition definition-like" id="definition-14"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.12</span><span class="period">.</span><span class="space"> </span><span class="title">Intuitive Definition of an Infinite Limit.</span>
+</h5>
+<p id="p-41">Let <span class="process-math">\(f\)</span> be a function defined on both sides of <span class="process-math">\(a\text{,}\)</span> except possibly at <span class="process-math">\(a\)</span> itself.  If the values of <span class="process-math">\(f(x)\)</span> can be made arbitrarily large, by taking <span class="process-math">\(x\)</span> sufficiently close to <span class="process-math">\(a\)</span> (but not equal to <span class="process-math">\(a\)</span>).  We denote this as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x\to a} f(x) = \infty
+\end{equation*}
+</div>
+<p id="p-42">If the values can be made arbitrarily negative, we denote this as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x\to a} f(x) = -\infty
+\end{equation*}
+</div>
+<p id="p-43">One-sided limits are defined similarly.</p></article><article class="example example-like" id="example-71"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.13</span><span class="period">.</span>
+</h5>Sketch an example of each of the following: <ol class="lower-alpha">
+<li id="li-172"><p id="p-derived-li-172"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a^-} f(x) = \infty\)</span></p></li>
+<li id="li-173"><p id="p-derived-li-173"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a^+} f(x) = \infty\)</span></p></li>
+<li id="li-174"><p id="p-derived-li-174"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a} f(x) = \infty\)</span></p></li>
+<li id="li-175"><p id="p-derived-li-175"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a^-} f(x) = -\infty\)</span></p></li>
+<li id="li-176"><p id="p-derived-li-176"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a^+} f(x) = -\infty\)</span></p></li>
+<li id="li-177"><p id="p-derived-li-177"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a} f(x) = -\infty\)</span></p></li>
+</ol></article><article class="definition definition-like" id="definition-15"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.14</span><span class="period">.</span><span class="space"> </span><span class="title">Vertical Asymptote.</span>
+</h5> The vertical line <span class="process-math">\(x = a\)</span> is called a <dfn class="terminology">vertical asymptote</dfn> of the curve <span class="process-math">\(y = f(x)\)</span> if at least one of the following statements is true:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x\to a} f(x) = \infty \qquad \lim_{x\to a^-} f(x) = \infty \qquad \lim_{x\to a^+}f(x) = \infty
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x\to a} f(x) = -\infty \qquad \lim_{x\to a^-} f(x) = -\infty \qquad \lim_{x\to a^+} f(x) = -\infty
+\end{equation*}
+</div></article><article class="example example-like" id="example-72"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.15</span><span class="period">.</span>
+</h5>Find the left- and right-hand limits for the function <span class="process-math">\(f(x) = \dfrac{4x}{x-6}\)</span> at <span class="process-math">\(x = 6\text{.}\)</span></article><article class="example example-like" id="example-73"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.16</span><span class="period">.</span>
+</h5>Write the vertical asymptotes for the function <span class="process-math">\(r(\theta) = \sec \theta\)</span></article></section></section><section class="subsection" id="section-15-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.5.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-74"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.17</span><span class="period">.</span>
+</h4>For the function <span class="process-math">\(g\)</span> whose graph is given below, state the value of each quantity (if it exist).  If it does not exist, explain why. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/15fig1.svg" class="contained"></div>
+<ol class="lower-alpha">
+<li id="li-178"><p id="p-derived-li-178"><span class="process-math">\(\displaystyle \ds \lim_{t\to 0^-} g(t)\)</span></p></li>
+<li id="li-179"><p id="p-derived-li-179"><span class="process-math">\(\displaystyle \ds \lim_{t\to 0^+} g(t)\)</span></p></li>
+<li id="li-180"><p id="p-derived-li-180"><span class="process-math">\(\displaystyle \ds \lim_{t\to 0} g(t)\)</span></p></li>
+<li id="li-181"><p id="p-derived-li-181"><span class="process-math">\(\displaystyle \ds \lim_{t\to 2^-} g(t)\)</span></p></li>
+<li id="li-182"><p id="p-derived-li-182"><span class="process-math">\(\displaystyle \ds \lim_{t\to 2^+} g(t)\)</span></p></li>
+<li id="li-183"><p id="p-derived-li-183"><span class="process-math">\(\displaystyle \ds \lim_{t\to 2} g(t)\)</span></p></li>
+<li id="li-184"><p id="p-derived-li-184"><span class="process-math">\(\displaystyle g(2)\)</span></p></li>
+<li id="li-185"><p id="p-derived-li-185"><span class="process-math">\(\displaystyle \ds \lim_{t\to 4} g(t)\)</span></p></li>
+</ol></article><article class="example example-like" id="example-75"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.18</span><span class="period">.</span>
+</h4>Sketch a graph of an example of a function <span class="process-math">\(f\)</span> that satisfies the given conditions: <span class="process-math">\(\ds \lim_{x\to 0} f(x) = 1\text{,}\)</span> <span class="process-math">\(\ds \lim_{x\to 3^-} f(x) = -2\text{,}\)</span> <span class="process-math">\(\ds \lim_{x\to 3^+} f(x) = 2\text{,}\)</span> <span class="process-math">\(f(0) = -1\text{,}\)</span> <span class="process-math">\(f(3) = 1\text{.}\)</span></article><article class="example example-like" id="example-76"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.19</span><span class="period">.</span>
+</h4>Determine the limits for the following functions: <ol class="lower-alpha">
+<li id="li-186"><p id="p-derived-li-186"><span class="process-math">\(\displaystyle \ds \lim_{x\to 5^+} \dfrac{x+1}{x-5}\)</span></p></li>
+<li id="li-187"><p id="p-derived-li-187"><span class="process-math">\(\displaystyle \ds \lim_{x\to 5^-} \dfrac{x+1}{x-5}\)</span></p></li>
+<li id="li-188"><p id="p-derived-li-188"><span class="process-math">\(\displaystyle \ds \lim_{x\to 2\pi^+} x\csc x\)</span></p></li>
+</ol></article></section></section></div></main>
+</div>
+</body>
+</html>
