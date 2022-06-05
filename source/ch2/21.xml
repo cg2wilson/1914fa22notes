@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-21">
+			<title>Derivatives and Rates of Change</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Translate between interpretations of the slope of the tangent line and derivative (there are three statements)
+						</li>
+						<li>
+							Use the two limit definitions of a derivative a point to compute derivatives
+						</li>
+						<li>
+							Find the equation of the tangent line to a curve at a point
+						</li>
+						<li>
+							Interpret derivatives in a real-world context
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-21-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/2.1-1/0_aabj5llu"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/2.1-2/0_pmql645i"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 3</caption>
+					<url href = "https://mymedia.ou.edu/media/2.1-3/0_0swswyz4"/>
+				</figure>
+				
+				<subsubsection xml:id="section-21-tangents">
+					<question><statement>
+						How did we define the slope of the secant line between two points <m>(a,f(a))</m> and <m>(x,f(x))</m>?
+					</statement></question>
+					
+					<definition>
+						<title>Slope of the Tangent Line 1</title>
+						<p>
+							The <term>tangent line</term> to a curve <m>y=f(x)</m> at the point <m>P(a(f(a))</m> is the line through the point <m>P</m> with slope <m> \ds m=\lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}</m>, provided that this limit exists.
+						</p>
+					</definition>
+					
+					<example><statement>
+						Find the slope of the tangent line through the points <m>(a,f(a)))</m> and <m>(a+h,(f(a+h))</m>
+					</statement></example>
+					
+					<definition>
+						<title>Slope of the Tangent Line 2</title>
+						<p>
+							The <term>tangent line</term> to a curve <m>y=f(x)</m> at the point <m>P(a,f(a))</m> is the line through the point <m>P</m> with slope <m>\ds m = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}</m>, provided that this limit exists, where <m>h</m> is considered to be a small change in <m>x</m>.
+						</p>
+					</definition>
+				</subsubsection>
+				<subsubsection xml:id="section-21-tangents-velocities">
+					<title>Tangents &amp; Velocities</title>
+					
+					<question><statement>
+						Rewrite what it means for a line to be <em>tangent</em> to a curve, and what it means for a line to be <em>secant</em> to a curve.
+					</statement></question>
+					
+					<question><statement>
+						In Section 1.4, we discussed how to compute average velocity; what was the formula?  How could we find instantaneous velocity from average velocity?
+					</statement></question>
+					
+					<assemblage>
+						<title>Instantaneous Velocity</title>
+						<p>
+							The <term>instantaneous velocity</term> of an object, given its position function <m>f(x)</m>, is <m>\ds v(a) = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}</m>
+						</p>
+					</assemblage>
+					
+					<example><statement>
+						Suppose that a ball is dropped from the upper observation deck of a building which is 980 m above the ground.
+						<ol label="a">
+							<li>
+								What is the velocity of the ball after 10 seconds?  Use that the equation of motion is <m>s(t) = 4.9t^2</m>.
+							</li>
+							<li>	
+								How fast is the ball traveling when it hits the ground?
+							</li>
+						</ol>
+					</statement></example>
+				</subsubsection>
+				<subsubsection xml:id="section-21-derivatives">
+					<title>Derivatives</title>
+					
+					<definition>
+						<title>The Derivative (at <m>x=a</m>)</title>
+						<idx>Derivative (at a Point)</idx>
+						<p>
+							The <term>derivative of a function</term> <m>f</m> at input <m>x=a</m> is given by
+							<me>
+								f'(a) = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}
+							</me>
+							or
+							<me>
+								f'(a) = \lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}
+							</me>
+							if this limit exists.
+						</p>
+					</definition>
+					
+					<p>
+						We have two ways of interpreting what the derivative actually means:
+						<ul>
+							<li>
+								The derivative <m>f'(a)</m> is the instantaneous rate of change of <m>y=f(x)</m> wish respect to <m>x</m> when <m>x=a</m>.
+							</li>
+							<li>
+								The derivative <m>f'(a)</m> is equal to the slope of the tangent line to the function <m>y=f(x)</m> at the point <m>(a,f(a))</m>.
+							</li>
+						</ul>
+					</p>
+					
+					<example><statement>
+						Let <m>f(x) = x^2</m>.  Show that <m>f'(1) = 2</m> using <em>both</em> formulas for the derivative at a point.
+					</statement></example>
+					
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-21-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					We have two definitions of the derivative at a point, <m>x = a</m>.  Rewrite them here.
+				</statement></example>
+					
+				<example><statement>
+					Let <m>f(x) = x^2 + 1</m> and <m>a = 3</m>.
+					<ol label="a">
+						<li>
+							Using either definition you wrote down above, complete the <em>setup</em> for the derivative.  Do not use algebra; that is what part (b) will do.  You only need to write the setup.
+							<me>
+								f'(x) = \lim
+							</me>
+						</li>
+						<li>
+							Simplify your answer from part (a) to show that <m>f'(2) = 6</m>.
+						</li>
+					</ol>
+				</statement></example>
+				
+				<example><statement>
+					A function <m>f(x)</m> is graphed, along with several tangent lines.  Identify the derivative at the points <m>x = -3</m> and <m>x = 2</m>
+					<image>
+						<description>
+							The graph of <m>f(x) = \dfrac{1}{3}x^3-4x</m>, with tangent lines at <m>x=-3</m> and <m>x=2</m> drawn.
+						</description>
+						<latex-image>
+						<![CDATA[
+							\begin{tikzpicture}
+								\begin{axis}[
+										grid style = {line width = .1pt, draw = gray!60},
+										grid = both,
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}, yshift = -3pt},
+											y label style={at={(axis description cs: 0.5, 1)},above},
+										ytick = {-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10},
+											ylabel = {$y$},
+											ymin = -6, ymax = 6,
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											xtick = {-4,-3,-2,-1,1,2,3,4},
+												x label style={at={(axis description cs: 1, 0.5)},right},
+											xlabel = {$x$},
+											xmin = -4.5, xmax = 4.5			
+									]
+									\addplot[smooth,domain = -4:4] {(1/3)*x^3 - 4*x};
+									\addplot[smooth, ultra thick, domain = 0:4] {-16/3};
+									\addplot[smooth, ultra thick, domain = -6:0] {5*x + 18};
+								\end{axis}
+							\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</statement></example>
+						
+				<example><statement>
+					Imagine that a classmate couldn't watch the videos and didn't have the workbook for this section, and has asked you to explain the relationship between average rate of change, instantaneous rate of change, tangent lines, and secant lines.  What would you tell them?
+				</statement></example>
+			</subsection>
+			<subsection xml:id="section-21-inclass">
+				<title>In Class</title>
+				
+				<question><statement>
+					There are a few ways to write a line; what are they?
+				</statement></question>
+				
+				<example><statement>
+					<ol label="a">
+						<li>
+							Use both definitions of the derivative at a point to show that for <m>f(x) = x^3</m>, <m>f'(1) = 3</m>.
+						</li>
+							
+						<li>
+							Find the equation of the tangent line to <m>f(x)</m> at the point <m>x = 1</m>.
+						</li>
+					</ol>
+				</statement></example>
+
+				<example><statement>
+					<ol label="a">
+						<li>
+							Use the first definition of the derivative to find <m>g'(2)</m> for <m>g(x) = \dfrac{2}{x}</m>.
+						</li>
+							
+						<li>
+							Use the second definition of the derivative to find <m>g'\lrpar{\dfrac{1}{2}}</m> for <m>g(x) = \dfrac{2}{x}</m>.
+						</li>
+							
+						<li>
+							Use either definition of the derivative to find <m>g'(10)</m> for <m>g(x) = \dfrac{2}{x}</m>.
+						</li>
+						
+						<li>
+							Do these slopes make sense given the graph of <m>g(x)</m>?  Make a conjecture about the slopes as <m>x</m> gets arbitrarily large (as <m>x\to \infty</m>), and as <m>x\to 0</m>.
+						</li>
+							
+						<li>
+							Find the equation of the tangent line to <m>g(x)</m> at <m>x = \dfrac{1}{2}</m> and at <m>x = 10</m>.
+						</li>
+					</ol>
+				</statement></example>
+					
+				<example><statement>
+					Find the derivative of the function <m>f(x) = x^2-6x+1</m> at the input <m>x = a</m>.
+				</statement></example>
+					
+				<example><statement>
+					Find the equation of the tangent line to the parabola <m>y = x^2 + 4x</m> at the point <m>(-1,-3)</m>.
+				</statement></example>
+					
+				<example><statement>
+					Find an equation of the tangent line to the graph of <m>y = h(x)</m> at <m>x = 5</m> if <m>h(5) = -3</m> and <m>h'(5) = 4</m>.
+				</statement></example>
+					
+				<example><statement>
+					If <m>\ds f'(a) = \lim_{h\to 0} \dfrac{\sqrt{16 + h} - 4}{h}</m> represents the derivative of the function <m>f(x)</m> at <m>x = a</m>, what is <m>f(x)</m> and what is <m>a</m>?
+				</statement></example>
+				
+				<subsubsection xml:id="section-21-rates">
+					<title>Rates of Change</title>
+					<p>
+						If we use the function <m>y = f(x)</m>, then the derivative tells us the rate of change of the <em>output</em> <m>y</m> with respect to the <em>input</em> <m>x</m>.  Another way of writing this is
+						<me>
+							\text{instantaneous ROC } = \lim_{\Delta x\to 0} \dfrac{\Delta y}{\Delta x} = \lim_{x_2\to x_1}\dfrac{f(x_2)-f(x_1)}{x_2-x_1}
+						</me>
+					</p>
+					
+					<example><statement>
+						The function <m>C</m> gives the number of bushels of corn produced on a tract of farmland that is treated with <m>f</m> pounds of nitrogen per acre.
+						<ol label="a">
+							<li>
+								Is it possible for <m>C(90)</m> to be negative?  Why or why not?
+							</li>
+								
+							<li>
+								What are the units on <m>C'(90)</m>?
+							</li>
+
+							<li>
+								Is it possible for <m>C'(90)</m> to be negative?  Why or why not?
+							</li>
+						</ol>
+					</statement></example>
+						
+					<example><statement>
+						The function <m>p</m> gives the number of miles from an airport that a plane has flown after <m>t</m> hours.
+						<ol label="a">
+							<li>
+								What are the units of <m>p'(1.5)</m>?
+							</li>
+
+							<li>
+								What is the common word used for <m>p'(1.5)</m>?
+							</li>
+						</ol>
+					</statement></example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-21-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					The tangent line to <m>y = f(x)</m> at <m>(3,4)</m> passes through the point <m>(0,2)</m>.  Find <m>f(3)</m> and <m>f'(3)</m>.
+				</statement></example>
+					
+				<example><statement>
+					Sketch the graph of a function <m>f</m> for which <m>g(0) = g(2) = g(4) = 0</m>, <m>g'(1) = g'(3) = 0</m>, <m>g'(0) = g'(4) = 1</m>, <m>g'(2) = -1</m>, <m>\ds \lim_{x\to 5^-} g(x) = \infty</m>, and <m>\ds \lim_{x\to -1^+} g(x) = -\infty</m>.
+				</statement></example>
+					
+				<example><statement>
+					<m>\ds \lim_{\theta\to \pi/6} \dfrac{\sin\theta - \frac{1}{2}}{\theta - \pi/6}</m> represents the derivative of a function <m>f(\theta)</m> at some value of <m>\theta = a </m>.  What is <m>f(\theta)</m> and what is <m>a</m>?
+				</statement></example>
+			</subsection>
+		</section>
+		

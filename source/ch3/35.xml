@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-35">
+			<title>Summary of Curve Sketching</title>
+				
+				<objectives>
+					<ul>
+						<li>
+							Sketch curves using calculus and other qualitative characteristics of a function (domain, intercepts, asymptotes, symmetry)
+						</li>
+						
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-35-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/3.5-1/0_ozs2lzfr"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/3.5-2/0_55sdgjr6"/>
+				</figure>
+				
+				<subsubsection xml:id="section-35-slant">
+					<title>Slant Asymptotes</title>
+					
+					<definition>
+						<title>Slant Asymptote</title>
+						<idx>Slant Asymptote</idx>
+						<p>
+							If <m>\ds \lim_{x\to \infty} \left[f(x)-(mx+b)\right] = 0</m>, where <m>m\neq 0</m>, then the line <m>y=mx+b</m> is called a <term>slant asymptote</term>.
+						</p>
+						<p>
+							For rational functions, slant asymptotes occur when the degree of the numerator is one more than the degree of the denominator.
+						</p>
+					</definition>
+					
+					<example><statement>
+						Find the slant asymptote(s) for the function <m>f(x) = \dfrac{3x^2}{x-1}</m>.
+					</statement></example>
+					
+					<example><statement>
+						Show that the hyperbola <m>x^2-y^2 =1 </m> has asymptotes at <m>y = \pm x</m>.
+					</statement></example>	
+				</subsubsection>
+				<subsubsection xml:id="section-35-summary">
+					<title>Summary of Graphing</title>
+					We now have a guide for how to sketch the graph of most functions.
+					<assemblage>
+						<title>Guidelines for Curve Sketching</title>
+						<p>
+							<ol>
+								<li>
+									Find the domain of the function.
+								</li>
+								<li>
+									Identify <m>x-</m> and <m>y-</m>intercepts.
+								</li>
+								<li>
+									Locate symmetry in the graph, i.e. determine if the function is even, odd, periodic, etc.
+								</li>
+								<li>
+									Locate any asymptotes: vertical, horizontal, or slant.
+								</li>
+								<li>
+									Determine the intervals where the function is increasing or decreasing.
+								</li>
+								<li>
+									Find local maxima/minima.
+								</li>
+								<li>
+									Determine the intervals where the function is concave up/concave down.
+								</li>
+							</ol>
+							With this information, you can confidently sketch the graph.
+						</p>
+					</assemblage>
+					
+					<example><statement>
+						Sketch the graph of <m>f(x) = x^3 + 3x^2</m>
+					</statement></example>
+				</subsubsection>
+				
+			</subsection>
+			<subsection xml:id="section-35-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Find an equation for each asymptote of the function <m>y = \dfrac{-3 + 7x - 3x^2}{x-1}</m>
+				</statement></example>
+					
+				<example><statement>
+					Find an equation for each asymptote of the function <m>y  = \dfrac{x^3 + 4}{x^2}</m>
+				</statement></example>
+					
+				<example><statement>
+					Sketch the graph of the function <m>y = \dfrac{x^2 + 5x}{25-x^2}</m>
+				</statement></example>
+			</subsection>
+			<subsection xml:id="section-35-inclass">
+				<title>In Class</title>
+				
+				<example><statement>
+					Sketch the graph of <m>y = \dfrac{x}{x-1}</m>
+				</statement></example>
+					
+				<example><statement>
+					Sketch the graph of <m>f(x) = \dfrac{x^3}{x^2-4}</m>
+				</statement></example>
+					
+				<example><statement>
+					Sketch the graph of <m>y = \dfrac{x^3}{x^3+1}</m>
+				</statement></example>
+					
+				<example><statement>
+					Sketch the graph of <m>g(x) = \dfrac{x}{\sqrt{x^2-1}}</m>
+				</statement></example>
+
+				<example><statement>
+					How does the graph of <m>f(x) = \dfrac{1}{x^2+2x+c}</m> vary as <m>c</m> varies?
+				</statement></example>	
+					
+				<example><statement>
+					Sketch the graph of <m>y=\dfrac{x}{x^2-4}</m>
+				</statement></example>
+						
+				<example><statement>
+					Sketch the graph of <m>y=\dfrac{x^3}{x-2}</m>
+				</statement></example>
+						
+				<example><statement>
+					Describe how the graph of the function <m>y = x^3 + cx</m> varies as <m>c</m> varies.  Graph several members of the family to illustrate the trends you discover.  In particular, you should investigate how max/min points and inflection points move when <m>c</m> changes.  Identify any transitional values of <m>c</m> at which the basic shape of the curve changes.
+				</statement></example>
+						
+				<example><statement>
+					Sketch the graph of <m>y = \dfrac{\sin x}{1+\cos x}</m>
+				</statement></example>
+				
+				<example><statement>
+					Describe how the graph of the function <m>y =x\sqrt{c^2-x^2}</m> varies as <m>c</m> varies.  Graph several members of the family to illustrate the trends you discover.  In particular, you should investigate how max/min points and inflection points move when <m>c</m> changes.  Identify any transitional values of <m>c</m> at which the basic shape of the curve changes.
+				</statement></example>
+			</subsection>
+			<subsection xml:id="section-35-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Sketch the graph of <m>y = \dfrac{1+5x-2x^2}{x-2}</m>
+				</statement></example>
+						
+				<example><statement>
+					Sketch the graph of <m>y = \dfrac{(x+1)^3}{(x-1)^2}</m>
+				</statement></example>
+					
+				<example><statement>
+					Investigate the family of curves given by the equation <m>f(x) = x^4 + cx^2 + x</m>.  Start by determining the transitional values of <m>c</m> at which the number of inflection points changes.  Then, graph several members of the family to see what shapes are possible.  There is another transitional value of <m>c</m> at which the number of critical numbers changes.  Try to discover it graphically, then prove what you have discovered.
+				</statement></example>
+			</subsection>
+		</section>
+		

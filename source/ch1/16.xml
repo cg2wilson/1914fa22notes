@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-16">
+			<title>Calculating Limits Using Limit Laws</title>
+				<objectives>
+					<ul>
+						<li>
+							State limit laws and use the laws (if appropriate) to determine the limit of a function using multiple representations
+						</li>
+						<li>
+							Use the Direct Substitution Property to evaluate limits algebraically
+						</li>
+						<li>
+							Develop strategies to compute <m>\dfrac{0}{0}</m> indeterminate forms
+						</li>
+						<li>
+							Apply the Limit Inequality Theorem and Squeeze Theorem to determine limits
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-16-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/1.6-1/0_7sxziv1y"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/1.6-2.mp4/0_jvj3k9xd"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 3</caption>
+					<url href = "https://mymedia.ou.edu/media/1.6-3/0_effa88sh"/>
+				</figure>
+				
+				<subsubsection xml:id="section-16-laws">
+					<title>Limit Laws</title>
+					<theorem xml:id="limit-laws">
+						<title> Limit Laws</title>
+						<statement>
+							Suppose that <m>c</m> is a constant, and that the limits <m>\ds \lim_{x\to a} f(x)</m> and <m>\ds \lim_{x\to a}</m> exist.  Then,
+							<ol>
+								<li>
+									<m>\ds \lim_{x\to a} [f(x) \pm g(x)] = \ds \lim_{x\to a} f(x) \pm \lim_{x\to a} g(x)</m>
+								</li>
+								<li>
+									<m>\ds \lim_{x\to a} [cf(x)] = c\cdot \lim_{x\to a} f(x)</m>
+								</li>
+								<li>
+									<m>\ds \lim_{x\to a} [f(x)\cdot g(x)] = \lim_{x\to a} f(x)\cdot \lim_{x\to a} g(x)</m>
+								</li>
+								<li>
+									<m>\ds \lim_{x\to a} \dfrac{f(x)}{g(x)} = \dfrac{\ds \lim_{x\to a} f(x)}{\ds \lim_{x\to a} g(x)}</m>, provided that <m>\ds \lim_{x\to a} g(x)\neq 0</m>
+								</li>
+								<li>
+									<m>\ds \lim_{x\to a} [f(x)]^n = \left[\lim_{x\to a} f(x)\right]^n</m>
+								</li>
+								<li>
+									<m>\ds \lim_{x\to a} c = c</m>
+								</li>
+								<li>
+									<m>\ds \lim_{x\to a} [f(x)]^{1/n} = \left[\lim_{x\to a} f(x)\right]^{1/n}</m>, where <m>n</m>  is a positive integer (we assume the limit is positive if <m>n</m> is even)
+								</li>
+							</ol>
+						</statement>
+					</theorem>
+					
+					Each of these can be restated in words:
+					<ol>
+						<li>
+							Sum/Difference Rule: The limit of a sum/difference of functions is the sum/difference of the limit of the functions.
+						</li>
+						<li>
+							Constant Multiplier Rule: The limit of a constant times a function is the constant times the limit of the function.
+						</li>
+						<li>
+							Product Rule: The limit of a product of functions is the product of the limits.
+						</li>
+						<li>
+							Quotient Rule: The limit of a quotient of functions is the quotient of the limits (provided the denominator is nonzero).
+						</li>
+						<li>
+							Power Rule: The limit of a function raised to a power is the power of the limit of the function.
+						</li>
+						<li>
+							Constant Rule: The limit of a constant is a constant.
+						</li>
+						<li>
+							Root Rule: The limit of the <m>n</m>th-root of a function is the <m>n</m>th-root of the limit of a function.
+						</li>
+					</ol>
+					
+					<example><statement>
+						Use the limit laws to determine the following limits, if they exist.  The function <m>f(x)</m> is graphed as the solid line, and <m>g(x)</m> is graphed as the dashed line.
+						<image>
+							<description>
+								The function <m>f(x)</m> is graphed as the solid line, and <m>g(x)</m> is graphed as the dashed line.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											grid style = {line width = .1pt, draw = gray!60},
+											grid = both,
+											every tick label/.append style={font=\small},
+											axis x line = middle,
+											axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.15)}, yshift = -3pt},
+												y label style={at={(axis description cs: 0.5, 1)},above},
+											ytick = {-4,-3,-2,-1,1,2,3,4},
+												ylabel = {$y$},
+												ymin = -4.5, ymax = 4.5,
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												xtick = {-4,-3,-2,-1,1,2,3,4},
+													x label style={at={(axis description cs: 1, 0.5)},right},
+												xlabel = {$x$},
+												xmin = -4.5, xmax = 4.5			
+										]	
+											\addplot[thick, domain = -4:-2] {-(x+2)^2+2};
+												\coordinate (circle1) at (-2,2);
+												\coordinate (circle4) at (-2,0);
+											\addplot[thick, domain = -2:1] {x^2-2};
+											\addplot[thick, densely dashed, domain = -2.5:-1] {4*x+5};
+												\coordinate (circle2) at (-1,1);
+											\addplot[thick, densely dashed, domain = -1:4] {-.2*x+.8};
+											\addplot[thick, domain = 1:3] {-3*x+6};
+												\coordinate (circle3) at (1,3);
+												\coordinate (circle5) at (1,-1);
+										\end{axis}
+											\fill[white] (circle1) circle (.1);
+											\draw (circle1) circle (0.1);
+											\fill (circle4) circle (0.1);
+											\fill[white] (circle2) circle (0.1);
+											\draw (circle2) circle (0.1);
+											\fill[white] (circle5) circle (0.1);
+											\draw (circle5) circle (0.1);
+											\fill (circle3) circle (0.1);
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+						<ol label="a">
+							<li> 
+								<m>\ds \lim_{x\to 1} [f(x)]</m>
+							</li>
+							<li> 
+								<m>\ds \lim_{x\to -1} [g(x)]</m>
+							</li>
+							<li> 
+								<m>\ds \lim_{x\to -2}\left[\dfrac{f(x)}{g(x)}\right]</m>
+							</li>
+							
+							<li> 
+								<m>\ds \lim_{x\to -1}\left[f(x)g(x)\right]</m>
+							</li>
+							<li>
+								<m>\ds \lim_{x\to -1}\left[-2f(x)+3g(x)\right]</m>
+							</li>
+							<li> 
+								<m>\ds \lim_{x\to 2} [3f(x)]</m>	
+							</li>
+						</ol>
+					</statement></example>
+					
+					<assemblage>
+						<title>Direct Substitution Property</title>
+						<idx>Direct Substitution Property</idx>
+						<p>
+							If <m>f</m> is a polynomial, rational, or algebraic function with <m>a</m> in the domain of <m>f</m>, then <m>\ds \lim_{x\to a} f(x) = f(a)</m>
+						</p>
+					</assemblage>
+					
+					<example><statement>
+						Calculate the following limits.  Justify each answer with one (or more) of the limit laws.
+						<ol label="a">
+							<li>
+								<m>\ds \lim_{x\to -1} 3x^3+5x^2-7</m>
+							</li>
+								
+							<li>
+								<m>\ds \lim_{x\to 2} \dfrac{x^3+2x^2-1}{5-3x}</m>
+							</li>
+								
+							<li>
+								<m>\ds \lim_{x\to 1} \dfrac{x-1}{x^2+1}</m>
+							</li>
+								
+						</ol>
+					</statement></example>
+					
+					<question><statement>
+						Let <m>k(x)=\dfrac{x+1}{x^2-1}</m>.
+						<ol label="a">
+							<li>
+								The Direct Substitution Property <em>cannot</em> be applied to the function at <m>x = -1</m>.  Why not?
+							</li>
+							<li>
+								Modify the function so that you <em>can</em> use the Direct Substitution Property.
+							</li>
+						</ol>
+					</statement></question>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-16-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+						Assume that <m>\ds \lim_{x\to 3} f(x) = -1</m>, <m>\ds \lim_{x\to 3} g(x) = 2</m>, and <m>\ds \lim_{x\to 3} h(x) = 0</m>.  Find the following limits, if they exist.  If they don't, explain why.  Justify each answer with the appropriate limit law(s).
+						<ol label="a">
+							<li> 
+								<m>\ds \lim_{x\to 3} [f(x) + 5g(x)]</m>
+							</li>
+							<li> 
+								<m>\ds \lim_{x\to 3} [f(x)]^5</m>
+							</li>							
+							<li> 
+								<m>\ds \lim_{x\to 3} \sqrt{g(x)}</m>
+							</li>
+							<li> 
+								<m>\ds \lim_{x\to 3} \dfrac{3f(x)}{g(x)}</m>
+							</li>								
+							<li> 
+								<m>\ds \lim_{x\to 3} \dfrac{g(x)}{h(x)}</m>
+							</li>								
+							<li> 
+								<m>\ds \lim_{x\to 3} \dfrac{f(x)h(x)}{g(x)}</m>
+							</li>			
+						</ol>
+					</statement></example>
+			</subsection>
+			<subsection xml:id="section-16-inclass">
+				<title>In Class</title>
+				
+				<example><statement>
+					Compute the following limits:
+					<ol label="a">
+						<li>
+							<m>\ds \lim_{t\to -5} g(t)</m>, where <m>g(t) = \begin{cases}t^2 -1 \amp t\neq -5\\ \pi+1 \amp t = -5 \end{cases}</m>
+						</li>
+							
+						<li>
+							<m>\ds \lim_{h\to 0} \dfrac{f(x+h)-f(x)}{h}</m>, where <m>f(x) = x^2+2x-1</m>
+						</li>
+							
+						<li>
+							<m>\ds \lim_{h\to 0} \dfrac{f(1+h)-f(1)}{h}</m>, where <m>f(x) = \sqrt{x}</m>
+						</li>
+					</ol>
+				</statement></example>
+				
+				<example><statement>
+					Show that <m>\ds \lim_{x\to a} |x-a| = 0</m>
+				</statement></example>
+				
+				
+				<definition>
+					<title>Greatest Integer Function</title>
+					<idx>Greatest Integer Function</idx>
+						<p>
+							The <term>greatest integer function</term>, <m>[\![x]\!]</m>, is the largest integer that is less than or equal to <m>x</m>.
+						</p>
+				</definition>
+				
+				<example><statement>
+					Find <m>[\![x]\!]</m> for the following values of <m>x</m>.
+					<ol label="a">
+						<li>
+							<m>x = 2</m>
+						</li>
+							
+						<li>
+							<m>x = -1</m>
+						</li>
+							
+						<li>
+							<m>x = 5.1</m>
+						</li>
+							
+						<li>
+							<m>x = \pi</m>
+						</li>
+							
+						<li>
+							<m>x = -6.7</m>
+						</li>
+							
+					</ol>
+				</statement></example>
+				
+				<example><statement>
+					Find the limits.
+					<ol labe="a">
+						<li>
+							<m>\ds\lim_{x\to 0.5} [\![x]\!]</m>
+						</li>
+							
+						<li>
+							<m>\ds\lim_{x\to 2} [\![x]\!]</m>
+						</li>
+							
+						<li>
+							<m>\ds \lim_{x\to 3} \dfrac{\frac{1}{x}-\frac{1}{3}}{x-3}</m>
+						</li>
+							
+						<li>
+							<m>\ds\lim_{h\to 1} \dfrac{h^4-1}{h^3-1}</m>
+						</li>
+					</ol>
+				</statement></example>
+				
+				<subsubsection xml:id="section-16-theorems">
+					<title>Two Theorems</title>
+					
+					<theorem>
+						<title>Limit Inequality</title>
+						<statement>
+							If <m>f(x)\leq g(x)</m> when <m>x</m> is near <m>a</m> (except possibly at <m>a</m>) and the limits of <m>f</m> and <m>g</m> both exist as <m>x</m> approaches <m>a</m>, then <m>\ds\lim_{x\to a} f(x)\leq \lim_{x\to a} g(x)</m>
+						</statement>
+					</theorem>
+					
+					<theorem>
+						<title>Squeeze Theorem</title>
+						<statement>
+							If <m>f(x)\leq g(x)\leq h(x)</m> when <m>x</m> is near <m>a</m> (except possibly at <m>a</m>) and <m>\ds\lim_{x\to a} f(x) = \ds\lim_{x\to a} h(x) = L</m>, then <m>\ds \lim_{x\to a} g(x) = L</m>
+						</statement>
+					</theorem>
+					
+					<example><statement>
+						Use the Squeeze Theorem to show that <m>\ds \lim_{x\to 0} x^2 \sin \lrpar{\dfrac{1}{x}}= 0</m>
+					</statement></example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-16-afterclass">
+				<title>After Class Activities</title>
+					
+					<example><statement>
+						If <m>2x\leq g(x) \leq x^6 - x^4 + 2</m> for all <m>x</m>, find <m>\ds \lim_{x\to 1} g(x)</m>.
+					</statement></example>
+						
+					<example><statement>
+						The <em>signum function</em> (or the <em>sign function</em>), <m>\text{sgn}(x)</m>, is given by 
+						<me>
+							\text{sgn}(x) = \begin{cases}-1 \amp x \lt 0\\ 0 \amp x = 0\\ 1 \amp x > 0 \end{cases}
+						</me>
+						<ol label="a">
+							<li>
+								Sketch the graph of <m>\text{sgn}(x)</m>.
+							</li>
+								
+							<li><p>
+								Find the limits, or explain why they don't exist:
+								<ol label="i">
+									<li>
+										<m>\ds \lim_{x\to 0} \text{sgn}(x)</m>
+									</li>
+									<li>
+										<m>\ds \lim_{x\to 0} |\text{sgn}(x)|</m>
+									</li>
+								</ol></p>
+							</li>
+						</ol>
+					</statement></example>
+						
+					<example><statement>
+						Find the limit: 
+						<ol label="a">
+							<li>
+								<m>\ds \lim_{x\to -4} \dfrac{3x + 12}{|x + 4|}</m>
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 2} \dfrac{\sqrt{4x+1} - 3}{x-2}</m>
+							</li>
+							<li>
+								<m>\ds \lim_{x\to -1} \dfrac{2x^2 + 3x + 1}{x^2 - 2x -3}</m>
+							</li>
+							<li>
+								<m>\ds \lim_{h\to 0} \dfrac{(x+h)^3 - x^3}{h}</m>
+							</li>
+						</ol>
+					</statement></example>
+			</subsection>
+		</section>
+		

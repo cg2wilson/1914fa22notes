@@ -1,0 +1,799 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-12">
+			<title>Mathematical Models: A Catalog of Essential Functions</title>
+				<objectives>
+					<ul>
+						<li>
+							<p>Recognize and graph essential functions:</p>
+							<ul>
+								<li>
+									Constant functions
+								</li>
+								<li>
+									Linear functions
+								</li>
+								<li>
+									Power functions
+								</li>
+								<li>
+									Reciprocal functions
+								</li>
+								<li>
+									Root functions
+								</li>
+								<li>
+									Polynomial functions
+								</li>
+								<li>
+									Rational functions
+								</li>
+								<li>
+									Trigonometric functions
+								</li>	
+								<li>
+									Exponential functions
+								</li>
+								<li>
+									Logarithmic functions
+								</li>
+								
+							</ul>
+						</li>
+						<li>
+							Identify the basic characteristics of essential functions, including: domain, range, end behavior, roots, asymptotes, <m>x-</m> and <m>y-</m>intercepts, slope, symmetry.
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-12-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/1.2-1/0_21ahyo73"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/1.2-2/0_6v1pxd6w"/>
+				</figure>
+				
+				<subsubsection xml:id="section-12-linear">
+					<title>Linear Functions</title>
+						<p>
+							Remember that a linear function requires two pieces of information- a starting value (<m>b</m>, the <m>y</m>-intercept), and an amount of incremental change in the independent variable (<m>m</m>, the slope of the function).  This gives us three ways to describe a linear function:
+							<ul>
+								<li>
+									Verbally: A function with a constant rate of change 
+								</li>
+								<li>
+									Graphically: They are straight lines
+								</li>
+								<li>
+									Algebraically: <m>f(x) = mx+b</m>
+								</li>
+							</ul>
+						</p>
+						
+						<question>
+							<statement>
+								Given two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m>, how can we find the slope of the line between them?
+							</statement>
+						</question>
+						
+						<example><statement>
+							The following table gives the percentage of new companies which remained open <m>t</m> years after beginning business.
+							
+							<tabular top="medium" left="medium">
+								<row bottom="medium">
+									<cell halign="center" left="medium" right="medium">
+									 Years After Opening
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 5
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 6
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 7
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 8
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 9
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 10
+									</cell>
+								</row>
+								<row bottom="medium">
+									<cell halign="center" left="medium" right="medium">
+									 Companies Still Open (in %)
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 50
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 47
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 44
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 41
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 38
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 35
+									</cell>
+								</row>
+							</tabular>
+							
+							<ol label="a">
+								<li>
+									Plot the points on the graph below
+									<image>
+										<description>
+											A blank graph to plot the points
+										</description>
+										<latex-image>
+										<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												width = .8\textwidth,
+												height = 4in,
+												grid = both,
+												axis x line = bottom,
+													axis y line = left,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+													y label style={at={(axis description cs:.0,1.1)},anchor=north},
+													ylabel = {$C(t)$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$t$},
+												xmin=3, xmax = 13,
+													xtick = {3,4,...,12},
+													ymin=30, ymax = 55,
+														minor y tick num = 4,
+											]
+												
+											\end{axis}
+										\end{tikzpicture}]]>
+										</latex-image>
+									</image>
+								</li>
+									
+								<li>	
+									Use the data to find an equation for the line between these points.
+								</li>
+									
+								<li>
+									Use the equation in (b) to write a linear model for the percentage of new companies remaining open, <m>t</m> years after beginning business.
+								</li>
+									
+							</ol>
+						</statement></example>
+				</subsubsection>
+				<subsubsection xml:id="section-12-polynomial">
+					<title>Polynomials</title>
+					
+					<definition>
+						<title>Polynomial</title>
+						<idx>Polynomial</idx>
+						
+						A function <m>P</m> is called a <term>polynomial</term> if 
+							<me>
+								P(x) = a_nx^n + a_{n-1}x^{n-1}+\cdots + a_2x^2 + a_1x + a_0
+							</me>
+					</definition>
+					
+					<tabular top="medium" left="medium" right="medium">
+						<row bottom="medium">
+							<cell colspan="4" halign="center" left="medium" right="medium">
+							 Common Polynomials
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Polynomial
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Equation
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Graph (<m>a_n \gt 0</m>)
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Graph (<m>a_n \lt 0</m>)
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Linear
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>a_1x + a_0</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a linear function with positive leading coefficient.  The line goes up left to right.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[domain = -1:1] {x}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a linear function with negative leading coefficient.  The line goes down left to right.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[domain = -1:1] {-1*x}; \end{axis} \end{tikzpicture} 
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Quadratic
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>a_2x^2+a_1x + a_0</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a quadratic function with positive leading coefficient.  The curve goes down until it reaches a vertex, then turns back upward.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[domain = -1:1] {x^2}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a quadratic function with negative leading coefficient.  The curve goes up until it reaches a vertex, then turns back downward.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = center, axis y line = middle, ticks = none] \addplot[domain = -1:1] {-1*x^2}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Cubic
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>a_3x^3+a_2x^2+a_1x +a_0</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a cubic function with positive leading coefficient.  The curve begins going upward, slows down to be flat for a moment, then turns back upward.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[domain = -1:1] {x^3}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a cubic function with negative leading coefficient.  The curve begins going downward, slows down to be flat for a moment, then turns back downward.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[domain = -1:1] {-1*x^3}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Even Degree
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>a_nx^n +\cdots a_1x+a_0 </m>  (<m>n</m> even)
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of an even function with positive leading coefficient.  The curve goes begins moving upward and ends moving downward; the behavior in the middle depends on the function.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[<-,domain = -1:-.75] {x^2}; \addplot[domain = -.75:.75, dotted] {x^2}; \addplot[domain = .75:1,->] {x^2}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of an even function with negative leading coefficient.  The curve goes begins moving downward and ends moving upward; the behavior in the middle depends on the function.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[<-,domain = -1:-.75] {-1*x^2}; \addplot[domain = -.75:.75, dotted] {-1*x^2}; \addplot[domain = .75:1,->] {-1*x^2}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Odd Degree
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>a_nx^n +\cdots a_1x+a_0 </m>  (<m>n</m> odd)
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of an odd function with positive leading coefficient.  The curve goes begins moving upward and ends moving upward; the behavior in the middle depends on the function.
+									</description>
+									<latex-image>
+										<![CDATA[
+											 \begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[<-,domain = -1:-.75] {x^3}; \addplot[domain = -.75:.75, dotted] {x^3}; \addplot[domain = .75:1,->] {x^3}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of an odd function with negative leading coefficient.  The curve goes begins moving downward and ends moving downward; the behavior in the middle depends on the function.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[<-,domain = -1:-.75] {-1*x^3}; \addplot[domain = -.75:.75, dotted] {-1*x^3}; \addplot[domain = .75:1,->] {-1*x^3}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+						</row>
+					</tabular>
+				</subsubsection>
+				<subsubsection xml:id="section-12-other">
+					<title>Other Functions</title>
+					
+					<definition>
+						<title>Exponential/Logarithmic Function</title>
+						<idx>Exponential Function</idx>
+						<idx>Logarithmic Function</idx>
+						
+						<p>
+							An <term>exponential function</term> is a function of the form <m>f(x)=b^x</m>, where the base <m>b</m> is a positive constant.
+						</p>
+						<p>
+							A <term>logarithmic function</term> is a function of the form <m>f(x)=log_b x</m>, where the base <m>b</m> is a positive constant.
+						</p>	
+					</definition>
+					
+					<p>
+						Exponential and logarithmic functions have these properties:
+					</p>
+					
+					<tabular top="medium" left="medium" right="medium">
+						<row bottom="medium">
+							<cell>
+							
+							</cell>
+							<cell halign="center" top="medium" left="medium" right="medium">
+								Domain
+							</cell>
+							<cell halign="center"  top="medium" left="medium" right="medium">
+								Range
+							</cell>
+							<cell halign="center" top="medium" left="medium" right="medium">
+								Asymptotes?
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+								<m>f(x)=b^x</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>(0,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>y = 0</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+								<m>f(x)=\log_b (x)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>(0,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>x = 0</m>
+							</cell>
+						</row>
+					</tabular>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-12-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					<ol label="a">
+						<li>
+							Find an equation for the family of linear functions with slope <m>-1</m>, and sketch a few members of the family.
+						</li>
+							
+						<li>
+							Find an equation for the family of linear functions such that <m>f(2) = 1</m>, and sketch a few members of the family.
+						</li>
+							
+						<li>
+							Which function belongs to both families?
+						</li>
+					</ol>
+				</statement></example>
+				
+				<example><statement>
+					Find an expression for a cubic function <m>f</m> if <m>f(1) = 6</m>, and <m>f(-1) = f(0) = f(2) = 0</m>.
+				</statement></example>
+			
+				<example><statement>
+					The monthly cost of driving a car depends on the number of miles driven.  Casey found that in April, it cost her $350 to drive 450 miles, and in June, it cost her $460 to drive 800 miles.
+					<ol label="a">
+						<li>
+							Express the monthly cost <m>C</m> as a function of the distance driven (<m>d</m>), assuming that a linear relationship gives a suitable model.
+						</li>
+						<li>
+							Use (a) to predict the cost of driving 1500 miles per month.
+						</li>
+						<li>
+							Sketch the graph of the linear function.  What does the slope represent?  Include units.
+						</li>
+						<li>
+							What does the <m>C-</m>intercept represent?
+						</li>
+						<li>
+							Why does a linear function give a suitable model in this situation?
+						</li>
+					</ol>
+				</statement></example>
+			</subsection>
+			<subsection xml:id="section-12-inclass">
+				<title>In Class</title>
+				<subsubsection xml:id="section-12-power">
+					<title>Power Functions</title>
+					
+					<definition>
+						<title>Power Function</title>
+						<idx>Power Function</idx>
+						
+						A <term>power function</term> is any function of the form <m>x^a</m>, where <m>a</m> is a constant.
+					</definition>
+					
+					<example><statement>
+						Describe the difference between a <em>power function</em> and a <em>polynomial</em>.
+					</statement></example>
+					
+					<example><statement>
+						Give an example function for each class of power function below, and give a real-world situation which might use that function.
+						<ol label="a">
+							<li>
+								A power function with <m>a \gt 0</m>.
+							</li>
+							<li>
+								A power function where <m>a</m> is not an integer.
+							</li>
+							<li>
+								A power function where <m>a \lt 0</m>.
+							</li>
+						</ol>
+					</statement></example>
+				</subsubsection>
+				<subsubsection xml:id="section-12-rational">
+					<title>Rational Functions</title>
+					
+					<definition>
+						<title>Rational Function</title>
+						<idx>Rational Function</idx>
+						
+						<p>
+							A <term>rational function</term> is a ratio of two polynomials, written as <m>f(x) = \dfrac{P(x)}{Q(x)}</m>, where <m>P(x)</m> and <m>Q(x)</m> are polynomials.
+						</p>
+						<p>
+							The domain of a rational function consists of all values <m>x</m> such that <m>Q(x)\neq 0</m>.
+						</p>
+					</definition>
+					
+					<example><statement>
+						Write the domain of the following functions, in interval notation.
+						<ol label="a">
+							<li>
+								<m>f(x) = \dfrac{1}{x}</m>
+							</li>
+							
+							<li>
+								<m>g(x) = \dfrac{2x^3 - 1}{x^5 + 1}</m>
+							</li>
+								
+							<li>
+								<m>h(x) = \dfrac{6x^4 + x^3 - 7x^2 + 6.5029}{x^2 - 9}</m>
+							</li>
+						</ol>
+					</statement></example>
+				</subsubsection>
+				<subsubsection xml:id="section-12-algebraic">
+					<title>Algebraic Functions</title>
+					
+					<definition>
+						<title>Algebraic Function</title>
+						<idx>Algebraic Function</idx>
+						
+						A function <m>f</m> is called an <term>algebraic function</term> if it can be constructed using algebraic operations, such as addition, subtraction, multiplication, division, and taking roots.
+					</definition>
+					
+					<question>
+						<statement>
+							Of the types of functions we have seen so far, which are algebraic?  Which are not?
+						</statement>
+					</question>
+					
+					<example><statement>
+						Write an example of an algebraic function using at least one of each type of function we have covered so far.
+					</statement></example>
+				</subsubsection>
+				<subsubsection xml:id="section-12-trig">
+					<title>Trigonometric Functions</title>
+					
+					<sidebyside widths="40% 40%">
+					<tabular top="medium" left="medium" right="medium">
+						<row bottom="medium">
+						  <cell halign="center" colspan="3" left="medium" right="medium">
+							Basic Trigonometric Functions
+						  </cell>
+						</row>
+						<row>
+						  <cell left="medium">
+							<m>\sin x = \dfrac{opp}{hyp}</m>
+						  </cell>
+						  <cell>
+							<m>\cos x = \dfrac{adj}{hyp}</m>
+						  </cell>
+						  <cell right="medium">
+							<m>\tan x = \dfrac{opp}{adj}</m>
+						  </cell>
+						  
+						</row>
+						<row bottom="medium">
+						  <cell left="medium">
+							<m>\csc x = \dfrac{hyp}{opp}</m>
+						  </cell>
+						  <cell>
+							<m>\sec x = \dfrac{hyp}{adj}</m>
+						  </cell>
+						  <cell right="medium">
+							<m>\cot x = \dfrac{adj}{opp}</m>
+						  </cell>
+						  
+						</row>
+					 </tabular>
+					 
+					 <image>
+						<description>
+							A right triangle with angle <m>x</m>, with hypotenuse labeled <q>hyp</q>, opposite side labeled <q>opp</q>, and adjacent labeled <q>adj</q>.
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}[scale = .8]
+									\coordinate (one) at (0,0);
+									\coordinate (two) at (4,3); 
+									\coordinate (three) at (4,0);
+									\draw (one)--(two) node[midway, yshift = 9pt, sloped] {hyp};
+									\draw (two)--(three) node[midway, xshift = 14pt, yshift = -6pt] {opp};
+									\draw (three)--(one) node[midway, yshift = -9pt] {adj};
+									\draw (.75,0) node[yshift = 5pt] {$x$};
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					 </image>
+					 </sidebyside>
+					 
+					 <p>
+						Here are some useful properties of trigonometric functions
+					 </p>
+					 <tabular top="medium" left="medium" right="medium">
+						<row bottom="medium">
+							<cell halign="center">
+								
+							</cell>
+							<cell halign="center">
+								<m>\sin x</m>
+							</cell>
+							<cell halign="center">
+								<m>\cos x</m>
+							</cell>
+							<cell halign="center">
+								<m>\tan x</m>
+							</cell>
+							<cell halign="center">
+								<m>\cot x</m>
+							</cell>
+							<cell halign="center">
+								<m>\sec x</m>
+							</cell>
+							<cell halign="center">
+								<m>\csc x</m>
+							</cell>
+							
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								Domain
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center">
+								<m>x \neq \dfrac{\pi}{2} + \pi k</m>, <m>k\in \Z</m>
+							</cell>
+							<cell halign="center">
+								<m>x\neq \pi k</m>, <m>k\in \Z</m>
+							</cell>
+							<cell halign="center">
+								<m>x \neq \dfrac{\pi}{2} + \pi k</m>, <m>k\in \Z</m>
+							</cell>
+							<cell halign="center">
+								<m>x\neq \pi k</m>, <m>k\in \Z</m>
+							</cell>
+							
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								Range
+							</cell>
+							<cell halign="center">
+								<m>[-1,1]</m>
+							</cell>
+							<cell halign="center">
+								<m>[-1,1]</m>
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,1]\cup [1,\infty)</m>
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,1]\cup [1,\infty)</m>
+							</cell>
+							
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								Period
+							</cell>
+							<cell halign="center">
+								<m>2\pi</m>
+							</cell>
+							<cell halign="center">
+								<m>2\pi</m>
+							</cell>
+							<cell halign="center">
+								<m>\pi</m>
+							</cell>
+							<cell halign="center">
+								<m>\pi</m>
+							</cell>
+							<cell halign="center">
+								<m>2\pi</m>
+							</cell>
+							<cell halign="center">
+								<m>2\pi</m>
+							</cell>
+							
+						</row>
+					 </tabular>
+					 
+					 <example><statement>
+						Give an example of a real-world situation which might be modeled with a sine or cosine function.  Justify your response.
+					</statement></example>
+					
+					<example><statement>
+						Sketch the graph of each trig function over one period.  If necessary, sketch any asymptotes the graph has.
+					</statement></example>
+					
+					<example><statement>
+						Find the domain of the function <m>f(x) = \dfrac{3}{2\sin x + 1}</m>, first on the interval <m>[0,2\pi)</m>, then in general.
+					</statement></example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-12-afterclass">
+				<title>After Class Activities</title>
+					<example><statement>
+						Classify each function as one of the types of functions discussed in this section.
+						<ol label="a">
+							<li>
+								<m>k(t) = t-5+t^2</m>
+							</li>
+								
+							<li>
+								<m>\ell(x) = (0.25)^x</m>
+							</li>
+								
+							<li>
+								<m>m(y) = \dfrac{1-x}{\sqrt{1-x^2}}</m>
+							</li>
+								
+							<li>
+								<m>n(\theta) = \theta^{0.25}</m>
+							</li>
+								
+							<li>
+								<m>o(r) = \dfrac{r^3-5r^2 + r^4-1}{r^2 + r+10}</m>
+							</li>
+								
+						</ol>
+					</statement></example>
+					
+					<example><statement>
+						Ecologists have modeled the relationship between the area of a region and the number of species inhabiting the region.  In particular, the number of species <m>S</m> of bats living in and around Austin has been related to the surface area <m>A</m> of the structure by the equation <m>S = 0.3A^{0.5}</m>.
+						<ol label="a">
+							<li>
+								A structure near I-35 has a surface area <m>A = 10000</m> m<m>^2</m>; how many species of bat do you expect to find on the structure?
+							</li>
+								
+							<li>
+								If an overpass has nine species of bats, estimate the area of overpass.
+							</li>
+						</ol>
+					</statement></example>
+					
+					<example><statement>
+						Find the domain of the following functions.
+						<ol label="a">
+							<li>
+								<m>t(k) = \sqrt{k^2-6}</m>
+							</li>
+								
+							<li>
+								<m>y(b) = \sec\lrpar{\dfrac{\pi}{2}b}</m>
+							</li>
+								
+							<li>
+								<m>h(x) = \dfrac{x+3}{2\sqrt{5-x}}</m>
+							</li>
+						</ol>
+					</statement></example>
+			</subsection>
+		</section>
+		

@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-33">
+			<title>How Derivatives Affect the Shape of a Graph</title>
+			
+			<objectives>
+				<ul>
+					<li>
+						Use the Increasing/Decreasing Test to determine the intervals over which a function is increasing or decreasing
+					</li>
+					
+					<li>
+						Use the First Derivative Test and the Second Derivative Test to identify local extrema
+					</li>
+					
+					<li>
+						Describe concavity of a function, estimate the intervals of concavity and location of inflection points
+					</li>
+					
+					<li>
+						Use the Concavity Test to determine intervals over which a function is concave up or concave down and locate inflection points
+					</li>
+					<li>
+						Use derivatives to identify qualitative information about a function and use the information along with other given properties to sketch the graph of the function
+					</li>
+					
+				</ul>
+			</objectives>
+			<subsection xml:id="section-33-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/3.3-1/0_rxpvikkq"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/3.3-2/0_3f14hdhu"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 3</caption>
+					<url href = "https://mymedia.ou.edu/media/3.3-3/0_rxixywd2"/>
+				</figure>
+				
+				<subsubsection xml:id="section-33-id-test">
+					<title>Increasing/Decereasing Test</title>
+					
+					<theorem>
+						<title>Increasing/Decreasing</title>
+						<statement>
+							Let <m>f</m> be a differentiable function on the interval <m>(a,b)</m>.  If <m>f'(x) \gt 0</m> on <m>(a,b)</m>, then <m>f</m> is <term>increasing</term> on <m>(a,b)</m>.  If <m>f'(x) \lt 0</m> on <m>(a,b)</m>, then <m>f</m> is <term>decreasing</term> on <m>(a,b)</m>.
+						</statement>
+					</theorem>
+					
+					<example><statement>
+						Let <m>f(x) = (x-5)^2 + 1</m>.
+						<ol label="a">
+							<li>
+								Sketch the graph of <m>f</m>, and visually determine where the function is increasing and decreasing.
+							</li>
+								
+							<li>
+								Now, use the Increasing/Decreasing Test to determine the intervals where <m>f</m> is increasing and decreasing.
+							</li>
+						</ol>
+					</statement></example>
+					
+					<example><statement>
+						Let <m>f(x) = 3x^4-4x^3-12x^2+5</m>.  Find the intervals where <m>f</m> is increasing and decreasing.
+					</statement></example>
+				</subsubsection>
+				<subsubsection xml:id="section-33-local-extrema">
+					<title>Local Extrema</title>
+					<p>
+						Fermat's Theorem tells us that if we have a local max or min at input <m>x = c</m>, then <m>c</m> is a critical number of <m>f</m>.  We need some more machinery in order to classify extrema.
+					</p>
+					<theorem>
+						<title>First Derivative Test</title>
+						<statement>
+							Suppose that <m>c</m> is a critical number of a continuous function <m>f</m>.  If <m>f'</m> changes from positive to negative at <m>c</m>, then <m>f</m> has a local maximum at <m>c</m>.  If <m>f'</m> changes from negative to positive at <m>c</m>, then <m>f</m> has a local minimum at <m>c</m>.  If <m>f'</m> does not change sign around <m>c</m>, then <m>f</m> has no local maximum or minimum at <m>c</m>.
+						</statement>
+					</theorem>
+					
+					<example><statement>
+						Find the local maximum and minimum values of the function <m>g(x) = x + 2\sin x</m> on <m>0\leq x\leq 2\pi</m>.
+					</statement></example>
+					
+					<example><statement>
+						Let <m>f(x) = 200 + 8x^3 + x^4</m>.  Find the intervals where <m>f</m> is increasing, decreasing, and identify local extrema of <m>f</m>.  
+					</statement></example>
+				</subsubsection>
+				
+				<subsubsection xml:id="section-33-concavity">
+					<title>Concavity</title>
+					
+					<p>
+						The first derivative tells us information about where a function is increasing or decreasing, and where it has horizontal tangent lines.  The second derivative tells us information about how a function <em>bends</em>.
+					</p>
+					<definition>
+						<title>Concave Up/Concave Down</title>
+						<idx>Concave Up</idx>
+						<idx>Concave Down</idx>
+						<p>
+							If the graph of <m>f</m> lies above all of its tangents on an interval <m>I</m>, then it is said to be <term>concave up</term> on <m>I</m>; if <m>f</m> lies below all of its tangents on <m>I</m>, then it is said to be <term>concave down</term> on <m>I</m>.  
+						</p>
+					</definition>
+					
+					<definition>
+						<title>Inflection Point</title>
+						<idx>Inflection Point</idx>
+						<p>
+							A point <m>P</m> on a curve <m>y = f(x)</m> is called an <term>inflection point</term> if <m>f</m> is continuous there and the curve changes concavity.
+						</p>
+					</definition>
+					
+					<example><statement>
+						Sketch an example of a function that is <em>concave up</em> on the interval <m>[0,1]</m> and <em>concave down</em> on <m>[2,4]</m>.
+					</statement></example>
+				</subsubsection>
+				
+			</subsection>
+			<subsection xml:id="section-33-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Use the mean value theorem to prove the second part of the increasing/decreasing test.
+				</statement></example>
+					
+				<example><statement>
+					Let <m>f(x) = x^3-3x^2-9x+4</m>.  Find the intervals where <m>f</m> is increasing and decreasing.
+				</statement></example>
+
+				<example><statement>
+					Given the picture below, find the open intervals where <m>f</m> is increasing, decreasing, concave up, concave down.  Identify the coordinates of any inflection points.
+					<image source="images/33fig1.svg"/>
+				</statement></example>
+					
+				<example><statement>
+					The graph of the <em>derivative</em>, <m>f'</m>, is given below.  On what interval(s) is <m>f</m> increasing or decreasing? At what inputs does <m>f</m> have a local maximum or minimum?
+					<image source="images/33fig2.svg"/>
+				</statement></example>
+			</subsection>
+			<subsection xml:id="section-33-inclass">
+				<title>In Class</title>
+					
+				<theorem>
+					<title>Concavity Test</title>
+					<statement>
+						If <m>f''(x) \gt 0</m> for all <m>x</m> in <m>I</m>, then the graph of <m>f</m> is concave up on <m>I</m>.  If <m>f''(x) \lt 0</m> for all <m>x</m> in <m>I</m>, then the graph of <m>f</m> is concave down on <m>I</m>
+					</statement>
+				</theorem>
+				
+				<example><statement>
+					Let <m>f(x) = x^3 - 3x</m>.  
+					<ol label="a">
+						<li>
+							Find the intervals where <m>f(x)</m> is increasing and decreasing.
+						</li>
+							
+						<li>
+							Identify the local maxima and minima of <m>f(x)</m>.
+						</li>
+							
+						<li>
+							Where is <m>f</m> concave up?  Where is it concave down?
+						</li>
+							
+						<li>
+							Identify any inflection points of <m>f</m>.
+						</li>
+					</ol>
+				</statement></example>
+					
+				<example><statement>
+					Sketch a possible graph for a function <m>f</m> that satisfies the conditions:
+						<ol label="i">
+							<li>
+								<m>f(0) = 0</m>, <m>f(2) = 3</m>, <m>f(4) = 6</m>, <m>f'(0) = f'(4) = 0</m>
+							</li>
+							<li>
+								<m>f'(x) \gt 0</m> for <m>0 \lt x \lt 4</m>, <m>f'(x) \lt 0</m> for <m>x \lt 0</m> and for <m>x \gt 4</m>
+							</li>
+							<li>
+								<m>f''(x) \gt 0</m> for <m>x \lt 2</m>, <m>f''(x) \lt 0</m> for <m>x \gt 2</m>
+							</li>
+						</ol>
+				</statement></example>
+				
+				<theorem>
+					<title>Second Derivative Test</title>
+					<p>
+						Suppose <m>f''</m> is continuous near <m>c</m>, and <m>f'(c) = 0</m>.  If <m>f''(c) \gt 0</m>, then <m>f</m> has a local minimum at <m>c</m>.  If <m>f''(c) \lt 0</m>, then <m>f</m> has a local maximum at <m>c</m>.
+					</p>
+				</theorem>
+				
+				<example><statement>
+					Sketch the curve <m>y = x^4-4x^3</m> by finding the intervals of increasing/decreasing, local maxima/minima, intervals of concavity, and inflection point(s).
+				</statement></example>
+					
+				<example><statement>
+					Sketch the curve <m>y=\dfrac{1}{2}x^4 -4x^2 + 3</m>
+				</statement></example>
+					
+				<example><statement>
+					Sketch the curve <m>f(x)=x^3 - 12x + 2</m>
+				</statement></example>
+	
+				<example><statement>
+					Sketch the curve <m>h(x) = 5x^3-3x^5</m>
+				</statement></example>
+					
+				<example><statement>
+					Sketch the graph of a function that satisfies the criteria outlined below:
+						<ol label="i">
+							<li>
+								Vertical asymptote at <m>x = 0</m>.
+							</li>
+							<li>
+								<m>f'(x) \gt 0</m> if <m>x \lt -2</m>, <m>f'(x) \lt 0</m> if <m>x \gt -2</m> (for <m>x\neq 0</m>).  
+							</li>
+							<li>
+								<m>f''(x) \lt 0</m> if <m>x \lt 0</m>, <m>f''(x) \gt 0</m> if <m>x \gt 0</m>.
+							</li>
+						</ol>
+				</statement></example>
+
+				<example><statement>
+					Sketch the graph of a function that satisfies the criteria outlined below:
+						<ol label="i">
+							<li>
+								<m>f'(5) = 0</m>, <m>f'(x) \lt 0</m> when <m>x \lt 5</m>, <m>f'(x) \gt 0</m> when <m>x \gt 5</m>
+							</li>
+							<li>
+								<m>f''(2) = 0</m>, <m>f''(8) = 0</m>, <m>f''(x) \lt 0 </m> when <m>x \lt 2</m> or <m>x \gt 8</m>, <m>f''(x) \gt 0</m> for <m>2\lt x\lt 8</m>.
+							</li>
+						</ol>
+				</statement></example>
+			</subsection>
+			<subsection xml:id="section-33-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Find the intervals on which <m>\sin x + \cos x</m> is increasing/decreasing on <m>[0,2\pi]</m>, the local maximum and minimum values of the function on the interval, and the intervals of concavity/inflection points.
+				</statement></example>
+					
+				<example><statement>
+					Find the local maximum and minimum values of <m>f(x) = \dfrac{x^2}{x-1}</m> using the First and Second Derivative Tests.
+				</statement></example>
+
+				<example><statement>
+					A graph is given below. 
+					<image source="images/33fig3.svg" />
+					State and justify the <m>x-</m>coordinates of the inflection points of <m>f</m>, if
+					<ol label="a">
+						<li>
+							The curve is the graph of <m>f</m>
+						</li>
+							
+						<li>
+							The curve is the graph of <m>f'</m>.
+						</li>
+							
+						<li>
+							The curve is the graph of <m>f''</m>.
+						</li>
+					</ol>					
+				</statement></example>
+				
+				<example><statement>
+					Consider the phrase <q>SAT scores are declining at a slower rate</q>  Interpret this statement in terms of a function and its first and second derivatives.
+				</statement></example>
+			</subsection>
+		</section>
+		

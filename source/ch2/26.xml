@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-26">
+			<title>Implicit Differentiation</title>
+			
+			<objectives>
+				<ul>
+					<li>
+						Identify situations for which implicit differentiation is preferable to explicit differentiation
+					</li>
+					<li>
+						Use implicit differentiation to compute and use first and second derivatives
+					</li>
+					
+					
+				</ul>
+			</objectives>
+			<subsection xml:id="section-26-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/2.6-1/0_vfb2xbf3"/>
+				</figure>
+				
+				<subsubsection xml:id="section-26-idea">
+					<title>The Idea</title>
+					
+					<example><statement>
+						Consider the equation <m>x^2 + y^2 = 1</m>.
+						<ol label="a">
+							<li> 
+								<m>x^2 + y^2 = 1</m> is called an <em>implicit equation</em>.  Why is this considered implicit and not <em>explicit</em>?
+							</li>
+								
+							<li> 
+								Write <m>x^2 + y^2 = 1</m> in an explicit form.
+							</li>								
+						</ol>
+					</statement></example>
+					<example><statement>
+						Consider the circle of radius 4, centered at the origin, given by the implicit equation <m>x^2 + y^2 = 16</m>.
+						<ol label="a">
+							<li> 
+								Rewrite the equation using that <m>y = y(x)</m> (that is, <m>y</m> is a function of <m>x</m>)
+							</li>
+								
+							<li> 
+								Why would we need to use the chain rule in order to take this derivative?  
+							</li>
+								
+							<li> 
+								Take the derivative of both sides, using <m>\dfrac{dy}{dx}</m> for the derivative of <m>y(x)</m>
+							</li>
+								
+							<li> 
+								Find <m>\dfrac{dy}{dx}</m>.
+							</li>
+						</ol>
+					</statement></example>
+					
+					<example><statement>
+						Use implicit differentiation to find <m>\dfrac{dy}{dx}</m> for the implicit equation <m>x^3 + y^3 = x</m>
+					</statement></example>	
+				</subsubsection>
+				
+			</subsection>
+			<subsection xml:id="section-26-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					How can you tell if you are looking at an <em>implicit</em> equation or an <em>explicit</em> equation?
+				</statement></example>
+					
+				<example><statement>
+					<ol label="a">
+						<li>
+							Find <m>\dfrac{dy}{dx}</m> for the expression <m>\sqrt{x} + \sqrt{y} = 1</m>, and find the slope of the tangent line at the point <m>(0,1)</m>
+						</li>
+							
+						<li>
+							Use your answer in (a) to write an equation for the tangent line to the curve at the point <m>(0,1)</m>.
+						</li>
+					</ol>
+				</statement></example>
+				
+			</subsection>
+			<subsection xml:id="section-26-inclass">
+				<title>In Class</title>
+				
+				<example><statement>
+					<ol label="a">
+						<li>
+							Find the derivative of <m>x^2 + 2y^2 = 9</m> at the point <m>(1,2)</m>.
+						</li>
+							
+						<li>
+							Find the equation of the tangent line to the curve at this point.
+						</li>
+					</ol>
+				</statement></example>
+				
+				<example><statement>
+					Find a point where the tangent line to the curve <m>x^4 + y^4 = 16</m> is horizontal.
+				</statement></example>
+					
+				<example><statement>
+					Find <m>y'</m>, if <m>\sin (x-y) = y^2\cos x</m>
+				</statement></example>
+					
+				<example><statement>
+					Find <m>y'</m>, if <m>\dfrac{x^2}{x+y} = y^2 + 1</m>
+				</statement></example>
+					
+				<example><statement>
+					Find <m>\dfrac{dy}{dx}</m> if <m>\sqrt{xy} = 1 + x^2y</m>
+				</statement></example>
+					
+				<example><statement>
+					<ol label="a">
+						<li>
+							Find the equation of the tangent line to the curve <m>y\sin 2x = x\cos 2y</m> at the point <m>\lrpar{\dfrac{\pi}{2},\dfrac{\pi}{4}}</m>.
+						</li>
+						<li>
+							Find the equation of the normal line at the same point.
+						</li>
+					</ol>
+				</statement></example>
+					
+				<example><statement>
+					Find <m>y''</m>, if <m>x^2 + 4y^2 = 4</m>
+				</statement></example>
+					
+				<example><statement>
+					Find <m>y''</m> if <m>\sin y + \cos x = 1</m>
+				</statement></example>
+				
+			</subsection>
+			<subsection xml:id="section-26-afterclass">
+				<title>After Class Activities</title>
+				
+				
+				<example><statement>
+					Find <m>\dfrac{dy}{dx}</m> for the equation <m>x^4 + x^2y^2 + y^3 = 5</m>
+				</statement></example>	
+					
+				<example><statement>
+					Find <m>\dfrac{dy}{dx}</m> for the equation <m>\sqrt{x+y} = x^3 + y^3</m>
+				</statement></example>	
+					
+				<example><statement>
+					If <m>f(x) + x^2[f(x)]^3 = 10</m> and <m>f(1) = 2</m>, find <m>f'(1)</m>.
+				</statement></example>
+				
+				<example><statement>
+					If <m>x^2 + xy + y^3 = 1</m>, find the value of <m>y''</m> at input <m>x = 1</m>.
+				</statement></example>
+					
+				<example><statement>
+					Show that the tangent to the ellipse 
+						<me>
+							\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1
+						</me>
+					at the point <m>(x_0,y_0)</m> is given by
+						<me>
+							\dfrac{xx_0}{a^2} + \dfrac{yy_0}{b^2} = 1
+						</me>
+				</statement></example>
+			</subsection>
+		</section>
+		
