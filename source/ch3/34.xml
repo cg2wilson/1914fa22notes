@@ -68,7 +68,7 @@
 									]
 									
 									\addplot[<->,smooth, samples = 100, thick, domain = -9.5:9.5] {(x^2-1)/(x^2+1)};
-									}
+									
 								\end{axis}
 								
 							\end{tikzpicture}

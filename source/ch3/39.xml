@@ -365,7 +365,7 @@
 					
 				<example><statement>
 					The graph of a function is show below.  Make a rough sketch of an antiderivative <m>F</m>, if <m>F(0) = 1</m>.
-					<image source="images/39fig1.svg"/>
+					<image source="../../assets/39fig1.svg"/>
 				</statement></example>
 			</subsection>
 		</section>

@@ -142,11 +142,11 @@
 												every axis y label/.style={at={(ticklabel cs:1.15)}},
 												%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
 											y label style={at={(axis description cs:.47,1.15)},anchor=north},
-												ylabel = {<m>f(x)<m>},
+												ylabel = {$f(x)$},
 												every axis x label/.style= {at ={(ticklabel cs:1)}},
 												%xtick = {-4,-3,-2,-1,1,2,3,4},
 												x label style={at={(axis description cs:1.1,0)},anchor=east},
-												xlabel = {<m>x<m>},
+												xlabel = {$x$},
 												xmin = -1.5, xmax = 2
 										]
 											\addplot[<->,thick, samples = 100, smooth, domain = -1.4:1.9] {6*x^4-6*x^3-5*x^2+5*x-1};
@@ -163,14 +163,14 @@
 					
 					<example><statement>
 						Identify any local maxes, local mins, absolute maxes, or absolute mins on the graph below.
-						<image source="images/31fig1.svg" />
+						<image source="../../assets/31fig1.svg" />
 					</statement></example>
 				</subsubsection>
 				<subsubsection xml:id="section-31-results">
 					<title>Important Results</title>
 					
 					<p>
-						In order to use maxima/minima, some resutls will be helpful.
+						In order to use maxima/minima, some results will be helpful.
 					</p>
 					
 					<theorem>
@@ -201,7 +201,7 @@
 				
 				<example><statement>
 					Give the absolute and local extrema for the function given below.
-					<image source="images/31fig2.svg"/>
+					<image source="../../assets/31fig2.svg"/>
 				</statement></example>
 					
 				<example><statement>

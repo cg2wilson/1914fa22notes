@@ -258,7 +258,7 @@
 				
 				<example><statement>
 					If <m>f</m> and <m>g</m> are the functions on the graph shown, let <m>u(x) = f(x)g(x)</m> and <m>v(x) = f(x)/g(x)</m>.  Find <m>u'(1)</m> and <m>v'(5)</m>.
-					<image source="images/23fig1.svg"/>
+					<image source="../../assets/23fig1.svg"/>
 				</statement></example>
 			</subsection>
 			<subsection xml:id="section-23-afterclass">

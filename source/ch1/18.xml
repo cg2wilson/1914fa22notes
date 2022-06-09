@@ -167,7 +167,7 @@
 				
 				<example><statement>
 					Use the graph below to answer the following questions:
-					<image source="images/18fig1.svg"/>
+					<image source="../../assets/18fig1.svg"/>
 					<ol label="a">
 						<li>
 							State the numbers at which <m>f</m> is discontinuous, and classify each as a <em>vertical asymptote</em>, <em>jump discontinuity</em>, or <em>removable discontinuity</em>.
@@ -315,7 +315,7 @@
 				
 				<example><statement>
 					Use the graph below to answer the following questions:
-					<image source="images/18fig2.svg" />
+					<image source="../../assets/18fig2.svg" />
 					<ol label="a">
 						<li>
 							State the numbers at which <m>f</m> is discontinuous, and classify each as a <em>vertical asymptote</em>, <em>jump discontinuity</em>, or <em>removable discontinuity</em>.
