@@ -199,7 +199,7 @@
 					
 				<example><statement>
 					If <m>g(x) = \sqrt{f(x)}</m>, where <m>f</m> is the function shown, evaluate <m>g'(3)</m>.
-					<image source="images/25fig1.svg"/>
+					<image source="../../output/html/external/25fig1.svg"/>
 				</statement></example>
 			</subsection>
 			<subsection xml:id="section-25-afterclass">

@@ -163,7 +163,7 @@
 					
 					<example><statement>
 						Identify any local maxes, local mins, absolute maxes, or absolute mins on the graph below.
-						<image source="images/31fig1.svg" />
+						<image source="../../output/html/external/31fig1.svg" />
 					</statement></example>
 				</subsubsection>
 				<subsubsection xml:id="section-31-results">
@@ -201,7 +201,7 @@
 				
 				<example><statement>
 					Give the absolute and local extrema for the function given below.
-					<image source="images/31fig2.svg"/>
+					<image source="../../output/html/external/31fig2.svg"/>
 				</statement></example>
 					
 				<example><statement>
