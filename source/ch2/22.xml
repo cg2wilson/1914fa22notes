@@ -189,7 +189,7 @@
 				
 				<example><statement>
 					The graph of a function <m>f</m> is given.  State the input values at which <m>f</m> is <em>not</em> differentiable.
-					<image source="../../assets/22fig1.svg"/>
+					<image source="images/22fig1.svg"/>
 				</statement></example>
 			</subsection>
 			<subsection xml:id="section-22-inclass">
@@ -343,8 +343,8 @@
 					<example><statement>
 						Match the function in (a) - (d) with its derivative graph in (I) - (IV).  Give reasons for each choice.
 						<sidebyside widths="40% 40%">
-							<image source="../../assets/22fig2.svg"/>
-							<image source="../../assets/22fig3.svg"/>
+							<image source="images/22fig2.svg"/>
+							<image source="images/22fig3.svg"/>
 						</sidebyside>
 					</statement></example>
 					

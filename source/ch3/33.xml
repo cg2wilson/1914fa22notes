@@ -132,12 +132,12 @@
 
 				<example><statement>
 					Given the picture below, find the open intervals where <m>f</m> is increasing, decreasing, concave up, concave down.  Identify the coordinates of any inflection points.
-					<image source="../../assets/33fig1.svg"/>
+					<image source="images/33fig1.svg"/>
 				</statement></example>
 					
 				<example><statement>
 					The graph of the <em>derivative</em>, <m>f'</m>, is given below.  On what interval(s) is <m>f</m> increasing or decreasing? At what inputs does <m>f</m> have a local maximum or minimum?
-					<image source="../../assets/33fig2.svg"/>
+					<image source="images/33fig2.svg"/>
 				</statement></example>
 			</subsection>
 			<subsection xml:id="section-33-inclass">
@@ -249,7 +249,7 @@
 
 				<example><statement>
 					A graph is given below. 
-					<image source="../../assets/33fig3.svg" />
+					<image source="images/33fig3.svg" />
 					State and justify the <m>x-</m>coordinates of the inflection points of <m>f</m>, if
 					<ol label="a">
 						<li>
