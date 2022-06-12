@@ -339,7 +339,7 @@
 						<statement>
 							The graph of <m>f</m> is given below.
 							
-							<image source="../../output/html/external/42fig1.png"/>
+							<image source="42fig1.png"/>
 							
 							Evaluate each integral by interpreting it in terms of areas.
 							<ol label="a">

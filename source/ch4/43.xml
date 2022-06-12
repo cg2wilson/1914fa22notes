@@ -111,7 +111,7 @@
 				<example>
 					<statement>
 						Let <m>g(x) = \ds \int_0^x f(t)\, dt</m>, where <m>f</m> is the function in the graph below.
-						<image source="../../output/html/external/43fig1.png"/>
+						<image source="43fig1.png"/>
 						
 						<ol label="a">
 							<li>
