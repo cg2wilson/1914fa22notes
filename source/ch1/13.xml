@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="section-13">
+<section xml:id="section-13" xmlns:xi="http://www.w3.org/2001/XInclude">
 			<title>New Functions from Old Functions</title>
 				
 				<objectives>
@@ -746,5 +746,7 @@
 					If <m>g(x) = 2x + 1</m> and <m>h(x) =4x^2 + 4x + 7</m>, find a function <m>f</m> such that <m>f\circ g = h</m>.
 				</statement></example>
 			</subsection>
+			
+			<xi:include href="./resources/13.xml"/>
 		</section>
 		

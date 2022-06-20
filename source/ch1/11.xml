@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="section-11">
+<section xml:id="section-11" xmlns:xi="http://www.w3.org/2001/XInclude">
 			<title>Four Ways to Represent a Function</title>
 				<objectives>
 					<ul>
@@ -510,4 +510,6 @@
 						Is the function <m>f(t) = t|t|</m> even, odd, or neither?  Explain.
 					</statement></example>
 			</subsection>
+			
+			<xi:include href="./resources/11.xml"/>
 		</section>
