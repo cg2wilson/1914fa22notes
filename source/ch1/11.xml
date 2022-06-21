@@ -61,7 +61,11 @@
 					
 					<example><statement>
 						Let <m>C(t)</m> represent the number of courses offered campus-wide during the week at time <m>t</m>, and <m>O(t)</m> represent the number of students walking on the South Oval at time <m>t</m> last Monday.   Is <m>C</m> a function?  What about <m>O</m>?
-					</statement></example>	
+					</statement>
+					<solution>
+						<m>C</m> is not a function because at least one input has multiple outputs (for example, Monday at 12:00pm has multiple classes).  <m>O</m> is a function because at time <m>t</m> last Monday specifically, there is a only one number of students on the South Oval.
+					</solution>
+					</example>	
 					
 					<example><statement>
 						Fill out the table with the domain and range of the given function.  Write your answer in interval notation.
@@ -90,7 +94,7 @@
 						</row>
 						<row bottom="medium">
 							<cell halign="center" left="medium" right="medium">
-							 <m>\dfrac{x^2-2}{x-1}</m>
+							 <m>\dfrac{x^2-1}{x-1}</m>
 							</cell>
 							<cell halign="center" left="medium" right="medium">
 							 
@@ -111,11 +115,63 @@
 							</cell>
 						</row>
 						</tabular>
-					</statement></example>
-					
+					</statement>
+					<solution>
+						<tabular top="medium" left="medium">
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Function
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Domain
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Range
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>\sqrt{2+x}</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>(-2,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>[0,\infty]</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>\dfrac{x^2-1}{x-1}</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>(-\infty,1)\cup (1,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>(-\infty,2)\cup (2,\infty)</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>x^3-6.2x^2+x-1</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>(-\infty,\infty)</m>
+							</cell>
+						</row>
+						</tabular>
+					</solution>
+					</example>
 					<example><statement>
-						Assuming <m>h\neq 0</m>, simplify the <em>difference quotient</em> <m>\dfrac{f(a+h)-f(a)}{h}</m> where <m>f(x) = 3x^2 -2x + 1</m>			
-					</statement></example>
+						Assuming <m>h\neq 0</m>, simplify the <em>difference quotient</em> <m>\dfrac{f(1+h)-f(1)}{h}</m> where <m>f(x) = 3x^2 -2x + 1</m>			
+					</statement>
+					<solution>
+						The difference quotient simplifies to <m>6+3h-2</m>
+					</solution>
+					</example>
 				</subsubsection>
 				
 				<subsubsection xml:id="section-11-representations">
@@ -125,7 +181,7 @@
 					</introduction>
 					
 					<example><statement>
-						The price of gas at a certain 7-11 in Norman was $2.39 per gallon on June 26th.  
+						The price of gas at a certain 7-11 in Norman was $4.37 per gallon on June 26th.  
 						<ol label="a">
 							<li>
 								Is this information presented numerically, algebraically, verbally, or graphically?
@@ -135,11 +191,100 @@
 								Represent this situation in the other three ways.
 							</li>
 						</ol>
-					</statement></example>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>		
+								Verbally
+							</li>
+							<li>
+								<p>
+								Numerically: 
+								<tabular top="medium" left="medium">
+									<row bottom="medium">
+										<cell halign="center" left="medium" right="medium">
+										Gallons
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										1
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										2
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										3
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										4
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										5
+										</cell>
+									</row>
+									<row bottom="medium">
+										<cell halign="center" left="medium" right="medium">
+										Price
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										4.37
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										8.74
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										13.11
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										17.48
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										21.85
+										</cell>
+									</row>
+								</tabular>
+								</p>
+								<p>
+								Algebraically: <m>p(g) = 4.37g</m>
+								</p>
+								<p>
+								Graphically:
+								<image>
+								<description>
+									This is the graph of <m>p(g) = 4.37g</m> on the interval <m>[0,1]</m>
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = bottom,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.15)},anchor=north},
+											ylabel = {$p(g)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,0)},anchor=east},
+											xlabel = {$g$},
+											xmin = 0, xmax = 1,
+											ymin = 0, ymax = 3,
+										]
+										\addplot[thick, smooth, domain = 0:3] {4.37*x};
+										\end{axis}
+									\end{tikzpicture}]]>
+								</latex-image>
+								</image>
+								</p>
+							</li>
+						</ol>
+					</solution>
+					</example>
 					
 					<example><statement>
 						A rectangular storage container has an open top, and a volume of 20 m<m>^3</m>.  The length of its base is twice its width.  Material for the base costs $5 per square meter; material for the sides costs $3 per square meter.  Express the cost of materials as a function of the width of the base.
-					</statement></example>
+					</statement>
+					<solution>
+						<m>C(w) = 18wh+10w^2</m> dollars
+					</solution>
+					</example>
 					
 					<assemblage>
 						<title>Vertical Line Test</title>
@@ -203,7 +348,11 @@
 								</latex-image>
 							</image>
 						</sidebyside>
-					</statement></example>
+					</statement>
+					<solution>
+						The first graph is a function because it passes the vertical line test, but the second is not a function because it fails the vertical line test between <m>[-2,2]</m>.
+					</solution>
+					</example>
 					
 					<example><statement>
 						Below are numerical expressions for the relations <m>h</m> and <m>k</m>.  Is <m>h</m> a function?  What about <m>k</m>?
@@ -305,7 +454,11 @@
 							</cell>
 						</row>
 						</tabular>
-					</statement></example>
+					</statement>
+					<solution>
+						<m>h(x)</m> is a function, but <m>k</m> is not.
+					</solution>
+					</example>
 				</subsubsection>
 			</subsection>
 			<subsection xml:id="section-11-preclass">
@@ -379,7 +532,7 @@
 					<example><statement>
 						A quick example of a piecewise function is the <em>absolute value function</em>: 
 							<me>
-								f(x) = |x| = \begin{cases}-x \amp x \leq 0 \\x \amp x \gt 0  \end{cases}
+								f(x) = |x| = \begin{cases}-x \amp x \lt 0 \\x \amp x \geq 0  \end{cases}
 							</me>
 							
 						<ol label="a">
@@ -495,7 +648,7 @@
 			<subsection xml:id="section-11-afterclass">
 				<title>After Class Activities</title>
 					<example><statement>
-						Evaluate <m>f(3), f(0),</m> and <m>f(2)</m> for the function <m>h(x) = \begin{cases}3 - \frac{1}{2}x \amp x \lt 2\\ 2x - 5 \amp x\geq 2 \end{cases}</m>.  Then, sketch the graph of <m>h(x)</m>.
+						Evaluate <m>f(3), f(0),</m> and <m>f(2)</m> for the function <m>h(x) = \begin{cases}3 - \dfrac{1}{2}x \amp x \lt 2\\ 2x - 5 \amp x\geq 2 \end{cases}</m>.  Then, sketch the graph of <m>h(x)</m>.
 					</statement></example>
 						
 					<example><statement>
