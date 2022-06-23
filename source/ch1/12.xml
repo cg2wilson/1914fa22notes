@@ -67,7 +67,120 @@
 									Verbally: A function with a constant rate of change 
 								</li>
 								<li>
-									Graphically: They are straight lines
+									<p>
+										Graphically: Lines can look like one of four cases:
+									</p>
+									<p>
+										<sidebyside widths = "40% 40%">
+											<image>
+												<description>
+													A line with positive slope, passing through the origin
+												</description>
+												<latex-image>
+													<![CDATA[
+													\begin{tikzpicture}
+														\begin{axis}[
+														axis x line = middle,
+															axis y line = middle,
+															every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+															ylabel = {$y$},
+															every axis x label/.style={at ={(ticklabel cs:1)}},
+															x label style={at={(axis description cs:1.1,.5)},anchor=east},
+															xlabel = {$x$},
+														xmin=-1,xmax=1,
+														xtick = \empty,
+														ytick = \empty
+														]
+															\addplot[thick,smooth,domain = -1:1] {x};
+														\end{axis}
+													\end{tikzpicture}]]>
+												</latex-image>
+											</image>
+											<image>
+												<description>
+													A line with negative slope, passing through the origin
+												</description>
+												<latex-image>
+													<![CDATA[
+													\begin{tikzpicture}
+														\begin{axis}[
+														axis x line = middle,
+															axis y line = middle,
+															every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+															ylabel = {$y$},
+															every axis x label/.style={at ={(ticklabel cs:1)}},
+															x label style={at={(axis description cs:1.1,.5)},anchor=east},
+															xlabel = {$x$},
+														xmin=-1,xmax=1,
+														xtick = \empty,
+														ytick = \empty
+														]
+															\addplot[thick,smooth,domain = -1:1] {-1*x};
+														\end{axis}
+													\end{tikzpicture}]]>
+												</latex-image>
+											</image>
+										</sidebyside>
+									</p>
+									<p>
+										<sidebyside widths = "40% 40%">
+											<image>
+												<description>
+													A line with slope 0 (horizontal line)
+												</description>
+												<latex-image>
+													<![CDATA[
+													\begin{tikzpicture}
+														\begin{axis}[
+														axis x line = middle,
+															axis y line = middle,
+															every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+															ylabel = {$y$},
+															every axis x label/.style={at ={(ticklabel cs:1)}},
+															x label style={at={(axis description cs:1.1,0)},anchor=east},
+															xlabel = {$x$},
+														xmin=-1,xmax=1,
+														xtick = \empty,
+														ytick = \empty
+														]
+															\addplot[thick,smooth,domain = -1:1] {.5};
+														\end{axis}
+													\end{tikzpicture}]]>
+												</latex-image>
+											</image>
+											<image>
+												<description>
+													A line with undefined slope (vertical line)
+												</description>
+												<latex-image>
+													<![CDATA[
+													\begin{tikzpicture}
+														\begin{axis}[
+														axis x line = middle,
+															axis y line = middle,
+															every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+															ylabel = {$y$},
+															every axis x label/.style={at ={(ticklabel cs:1)}},
+															x label style={at={(axis description cs:1.1,.5)},anchor=east},
+															xlabel = {$x$},
+														xmin=-1,xmax=1,
+														xtick = \empty,
+														ytick = \empty
+														]
+															\coordinate (a) at (.5,-1);
+															\coordinate (b) at (.5,1);
+															\addplot[domain = -1:1] {0};
+														\end{axis}
+														\draw[thick] (a)--(b);
+													\end{tikzpicture}]]>
+												</latex-image>
+											</image>
+										</sidebyside>
+									</p>
 								</li>
 								<li>
 									Algebraically: <m>f(x) = mx+b</m>
@@ -172,11 +285,65 @@
 								</li>
 									
 								<li>
-									Use the equation in (b) to write a linear model for the percentage of new companies remaining open, <m>t</m> years after beginning business.
+									Give an interpretation for the slope of <m>C(t)</m>
 								</li>
 									
 							</ol>
-						</statement></example>
+						</statement>
+						<solution>
+							<ol label = "a">
+								<li>
+									<image>
+										<description>
+											The graph from part (a) with the points plotted
+										</description>
+										<latex-image>
+										<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												width = .8\textwidth,
+												height = 4in,
+												grid = both,
+												axis x line = bottom,
+													axis y line = left,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+													y label style={at={(axis description cs:.0,1.1)},anchor=north},
+													ylabel = {$C(t)$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$t$},
+												xmin=3, xmax = 13,
+													xtick = {3,4,...,12},
+													ymin=30, ymax = 55,
+														minor y tick num = 4,
+											]
+												\coordinate (a) at (5,50);
+												\coordinate (b) at (6,47);
+												\coordinate (c) at (7,44);
+												\coordinate (d) at (8,41);
+												\coordinate (e) at (9,38);
+												\coordinate (f) at (10,35);
+												\addplot[domain=3:4] {0};
+											\end{axis}
+											\fill (a) circle (0.1);
+											\fill (b) circle (0.1);
+											\fill (c) circle (0.1);
+											\fill (d) circle (0.1);
+											\fill (e) circle (0.1);
+											\fill (f) circle (0.1);
+										\end{tikzpicture}]]>
+										</latex-image>
+									</image>
+								</li>
+								<li>
+									<m>C(t) = -3t + 65</m>
+								</li>
+								<li>
+									Each year, the percentage of companies still open decreases by 3 percent per year.
+								</li>
+							</ol>
+						</solution>
+						</example>
 				</subsubsection>
 				<subsubsection xml:id="section-12-polynomial">
 					<title>Polynomials</title>
@@ -385,7 +552,7 @@
 							An <term>exponential function</term> is a function of the form <m>f(x)=b^x</m>, where the base <m>b</m> is a positive constant.
 						</p>
 						<p>
-							A <term>logarithmic function</term> is a function of the form <m>f(x)=log_b x</m>, where the base <m>b</m> is a positive constant.
+							A <term>logarithmic function</term> is a function of the form <m>f(x)=\log_b x</m>, where the base <m>b</m> is a positive constant.
 						</p>	
 					</definition>
 					
@@ -456,14 +623,34 @@
 							Which function belongs to both families?
 						</li>
 					</ol>
-				</statement></example>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							The family is given by <m>y = -x+b</m>.  Answers will vary on the sketch.
+						</li>
+							
+						<li>
+							The family is given by <m>1=2m + b</m>.  Answers will vary on the sketch.
+						</li>
+							
+						<li>
+							<m>y = -x+3</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
 				
 				<example><statement>
-					Find an expression for a cubic function <m>f</m> if <m>f(1) = 6</m>, and <m>f(-1) = f(0) = f(2) = 0</m>.
-				</statement></example>
+					Find an expression for a quadratic function <m>f</m> if <m>f(-2) = 2</m>, <m>f(0) = 1</m>, and <m>f(1) = -2.5</m>
+				</statement>
+				<solution>
+					<m>f(x) = -x^2 -2.5x + 1</m>
+				</solution>
+				</example>
 			
 				<example><statement>
-					The monthly cost of driving a car depends on the number of miles driven.  Casey found that in April, it cost her $350 to drive 450 miles, and in June, it cost her $460 to drive 800 miles.
+					The monthly cost of driving a car depends on the number of miles driven.  Casey found that in April, it cost her $350 to drive 450 miles, and in June, it cost her $460 to drive 800 miles. Express your answer exactly (no decimals).
 					<ol label="a">
 						<li>
 							Express the monthly cost <m>C</m> as a function of the distance driven (<m>d</m>), assuming that a linear relationship gives a suitable model.
@@ -481,7 +668,55 @@
 							Why does a linear function give a suitable model in this situation?
 						</li>
 					</ol>
-				</statement></example>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>C(d) = \dfrac{11}{35}x + \dfrac{1460}{7}</m>
+						</li>
+						<li>
+							680 dollars
+						</li>
+						<li>
+							<p>
+								<image>
+									<description>
+										The graph of <m>C(d) = \dfrac{11}{35}x + \dfrac{1460}{7}</m>
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+												axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+													ylabel = {$C(d)$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$d$},
+												]
+													\addplot[smooth, domain=-10:10] {0.314*x+208.57};
+												\end{axis}
+												
+											\end{tikzpicture}]]>
+									</latex-image>
+								</image>
+							</p>
+
+							<p>
+								The slope represents the rate of change of cost (dollars per month)
+							</p>
+						</li>
+						<li>
+							The base cost of owning/maintaining the car without driving it.
+						</li>
+						<li>
+							Answers vary.
+						</li>
+					</ol>
+				</solution>
+				</example>
 			</subsection>
 			<subsection xml:id="section-12-inclass">
 				<title>In Class</title>
@@ -500,19 +735,109 @@
 					</statement></example>
 					
 					<example><statement>
-						Give an example function for each class of power function below, and give a real-world situation which might use that function.
+						We will look at three special power functions.
 						<ol label="a">
 							<li>
-								A power function with <m>a \gt 0</m>.
+								If <m>a</m> is a positive integer, what kind of functions do we see? Sketch a few examples.
 							</li>
 							<li>
-								A power function where <m>a</m> is not an integer.
+								If <m>a=\dfrac{1}{n}</m> (where <m>n</m> is a positive integer), rewrite the power function using rules of exponents.
 							</li>
 							<li>
-								A power function where <m>a \lt 0</m>.
+								The functions in part (b) are called <term>root functions</term><idx>root function</idx>.  Sketch the graph of the power function if <m>a=\dfrac{1}{2}</m> and <m> = \dfrac{1}{3}</m>.
+							</li>
+							<li>
+								When <m>a=-1</m>, we call the power function the <term>reciprocal function</term><idx>reciprocal function</idx>. Sketch the graph.
 							</li>
 						</ol>
-					</statement></example>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								We see the standard polynomial functions.  Graphs will vary.
+							</li>
+							<li>
+								<m>x^{a} = x^{1/n} = \sqrt[n]{x}</m>
+							</li>
+							<li>
+								<sidebyside widths="40% 40%">
+									<image>
+										<description>
+											The graph of <m>\sqrt{x}</m> on the interval <m>[-1,1]</m>
+										</description>
+										<latex-image>
+											<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+												axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+													ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,.5)},anchor=east},
+													xlabel = {$x$},
+												xmin=-2,xmax=2,
+												]
+													\addplot[smooth,samples=50,domain=0:2] {sqrt(x)};
+												\end{axis}
+											\end{tikzpicture}]]>
+										</latex-image>
+									</image>
+									<image>
+										<description>
+											The graph of <m>\sqrt[3]{x}</m> on the interval <m>[-1,1]</m>
+										</description>
+										<latex-image>
+											<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+												axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+													ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,.5)},anchor=east},
+													xlabel = {$x$},
+												xmin=-2,xmax=2,
+												]
+													\addplot[smooth,samples=50,domain=-2:2] {x/abs(x)*abs(x)^(1/3)};
+												\end{axis}
+											\end{tikzpicture}]]>
+										</latex-image>
+									</image>
+								</sidebyside>
+							</li>
+							<li>
+								<image>
+									<description>
+										The graph of <m>1/x</m> on the interval <m>[-2,2]</m>
+									</description>
+									<latex-image>
+										<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+											axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.5,1.1)},anchor=north},
+												ylabel = {$g(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.5)},anchor=east},
+												xlabel = {$x$},
+											xmin=-2,xmax=2,
+											]
+												\addplot[thick,smooth,samples=50,domain=.4:2] {1/x};
+												\addplot[thick,smooth,samples=50,domain=-2:-0.4] {1/x};
+											\end{axis}
+										\end{tikzpicture}]]>
+									</latex-image>
+								</image>
+							</li>
+						</ol>
+					</solution>
+					</example>
 				</subsubsection>
 				<subsubsection xml:id="section-12-rational">
 					<title>Rational Functions</title>
@@ -544,7 +869,22 @@
 								<m>h(x) = \dfrac{6x^4 + x^3 - 7x^2 + 6.5029}{x^2 - 9}</m>
 							</li>
 						</ol>
-					</statement></example>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>(-\infty,0)\cup (0,\infty)</m>
+							</li>
+							
+							<li>
+								<m>(-\infty,-1)\cup (-1,\infty)</m>
+							</li>
+								
+							<li>
+								<m>(-\infty,-3)\cup (-3,3)\cup (3,\infty)</m>
+							</li>
+						</ol>
+					</solution></example>
 				</subsubsection>
 				<subsubsection xml:id="section-12-algebraic">
 					<title>Algebraic Functions</title>
@@ -556,15 +896,13 @@
 						A function <m>f</m> is called an <term>algebraic function</term> if it can be constructed using algebraic operations, such as addition, subtraction, multiplication, division, and taking roots.
 					</definition>
 					
-					<question>
-						<statement>
-							Of the types of functions we have seen so far, which are algebraic?  Which are not?
-						</statement>
-					</question>
-					
 					<example><statement>
 						Write an example of an algebraic function using at least one of each type of function we have covered so far.
-					</statement></example>
+					</statement>
+					<solution>
+						Answers vary
+					</solution>
+					</example>
 				</subsubsection>
 				<subsubsection xml:id="section-12-trig">
 					<title>Trigonometric Functions</title>
@@ -724,17 +1062,308 @@
 						</row>
 					 </tabular>
 					 
-					 <example><statement>
-						Give an example of a real-world situation which might be modeled with a sine or cosine function.  Justify your response.
-					</statement></example>
+					 <p>
+						Knowing the values of the unit circle will make your life much easier; fill it out below.
+					 </p>
+
+					 <image>
+						<description>
+							The unit circle with special angles marked, as well as trig values for the angles
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}[scale=5.3,cap=round,>=latex]
+									% draw the coordinates
+									\draw[->] (-1.5cm,0cm) -- (1.5cm,0cm) node[right,fill=white] {$x$};
+									\draw[->] (0cm,-1.5cm) -- (0cm,1.5cm) node[above,fill=white] {$y$};
+
+									% draw the unit circle
+									\draw[thick] (0cm,0cm) circle(1cm);
+
+									\foreach \x in {0,30,...,360} {
+											% lines from center to point
+											\draw[gray] (0cm,0cm) -- (\x:1cm);
+											% dots at each point
+											\filldraw[black] (\x:1cm) circle(0.4pt);
+											% draw each angle in degrees
+											\draw (\x:0.6cm) node[fill=white] {$\x^\circ$};
+									}
+
+									% draw each angle in radians
+									\foreach \x/\xtext in {
+										30/\frac{\pi}{6},
+										45/\frac{\pi}{4},
+										60/\frac{\pi}{3},
+										90/\frac{\pi}{2},
+										120/\frac{2\pi}{3},
+										135/\frac{3\pi}{4},
+										150/\frac{5\pi}{6},
+										180/\pi,
+										210/\frac{7\pi}{6},
+										225/\frac{5\pi}{4},
+										240/\frac{4\pi}{3},
+										270/\frac{3\pi}{2},
+										300/\frac{5\pi}{3},
+										315/\frac{7\pi}{4},
+										330/\frac{11\pi}{6},
+										360/2\pi}
+											\draw (\x:0.85cm) node[fill=white] {$\xtext$};
+
+									\foreach \x/\xtext/\y in {
+										% the coordinates for the first quadrant
+										30/\frac{\sqrt{3}}{2}/\frac{1}{2},
+										45/\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
+										60/\frac{1}{2}/\frac{\sqrt{3}}{2},
+										% the coordinates for the second quadrant
+										150/-\frac{\sqrt{3}}{2}/\frac{1}{2},
+										135/-\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
+										120/-\frac{1}{2}/\frac{\sqrt{3}}{2},
+										% the coordinates for the third quadrant
+										210/-\frac{\sqrt{3}}{2}/-\frac{1}{2},
+										225/-\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
+										240/-\frac{1}{2}/-\frac{\sqrt{3}}{2},
+										% the coordinates for the fourth quadrant
+										330/\frac{\sqrt{3}}{2}/-\frac{1}{2},
+										315/\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
+										300/\frac{1}{2}/-\frac{\sqrt{3}}{2}}
+											\draw (\x:1.25cm) node[fill=white] {$\left(\xtext,\y\right)$};
+
+									% draw the horizontal and vertical coordinates
+									% the placement is better this way
+									\draw (-1.25cm,0cm) node[above=1pt] {$(-1,0)$}
+										(1.25cm,0cm)  node[above=1pt] {$(1,0)$}
+										(0cm,-1.25cm) node[fill=white] {$(0,-1)$}
+										(0cm,1.25cm)  node[fill=white] {$(0,1)$};
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					 </image>
 					
+					<assemblage>
+						<title>Common Trig Identities</title>
+
+						<tabular>
+							<row>
+								<cell>
+									<m>\sin^2\theta +\cos^2\theta=1</m>
+								</cell>
+								<cell>
+									<m>\sin(2\theta) = 2\sin\theta\cos\theta</m>
+								</cell>
+							</row>
+							<row>
+								<cell>
+									<m>\cos(2\theta) = \cos^2\theta - \sin^2\theta</m>
+								</cell>
+								<cell>
+									<m>\cos(2\theta) = 2\cos^2\theta - 1</m>
+								</cell>
+							</row>
+							<row>
+								<cell>
+									<m>\cos(2\theta) = 1-2\sin^2\theta</m>
+								</cell>
+							</row>
+						</tabular>
+					</assemblage>
 					<example><statement>
 						Sketch the graph of each trig function over one period.  If necessary, sketch any asymptotes the graph has.
-					</statement></example>
+					</statement>
+					<solution>
+						<sidebyside widths= "30% 30% 30%">
+							<image>
+								<description>
+									The graph of <m>\sin x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = 0, xmax = 6.5,
+											ymin = -1.5, ymax = 1.5,
+										]
+										\addplot[thick, smooth, domain = 0:2*pi] {sin(x)};
+										\end{axis}
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>\cos x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = 0, xmax = 6.5,
+											ymin = -1.5, ymax = 1.5,
+										]
+										\addplot[thick, smooth, domain = 0:2*pi] {cos(x)};
+										\end{axis}
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>\tan x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = -2, xmax = 2,
+											ymin = -5, ymax = 5,
+										]
+										\addplot[thick, smooth, samples=100,domain = -1.5:1.5] {tan(x)};
+										\coordinate (a) at (-1.57,5);
+										\coordinate (b) at (-1.57,-5);
+										\coordinate (c) at (1.57,5);
+										\coordinate (d) at (1.57,-5);
+										\end{axis}
+										\draw[dashed] (a)--(b);
+										\draw[dashed] (c)--(d);
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+						</sidebyside>
+						<sidebyside widths= "30% 30% 30%">
+							<image>
+								<description>
+									The graph of <m>\csc x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.5,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = -4, xmax = 4,
+											ymin = -5, ymax = 5,
+										]
+										\addplot[thick, smooth, samples=100,domain = -3:-.1] {1/sin(x)};
+										\addplot[thick, smooth, samples=100,domain = .1:3] {1/sin(x)};
+										\coordinate (a) at (-3,5);
+										\coordinate (b) at (-3,-5);
+										\coordinate (c) at (0,5);
+										\coordinate (d) at (0,-5);
+										\coordinate (e) at (3.14,5);
+										\coordinate (f) at (3.14,-5);
+										\end{axis}
+										\draw[dashed] (a)--(b);
+										\draw[dashed] (c)--(d);
+										\draw[dashed] (e)--(f);
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>\sec x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.3,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = -2, xmax = 5,
+											ymin = -5, ymax = 5,
+										]
+										\addplot[thick, smooth, samples=100,domain = -1.5:1.5] {sec(x)};
+										\addplot[thick, smooth, samples=100,domain = 1.6:4.6] {sec(x)};
+										\coordinate (a) at (-1.57,5);
+										\coordinate (b) at (-1.57,-5);
+										\coordinate (c) at (1.57,5);
+										\coordinate (d) at (1.57,-5);
+										\coordinate (e) at (4.71,5);
+										\coordinate (f) at (4.71,-5);
+										\end{axis}
+										\draw[dashed] (a)--(b);
+										\draw[dashed] (c)--(d);
+										\draw[dashed] (e)--(f);
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>\cot x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.8,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = -4, xmax = 1,
+											ymin = -5, ymax = 5,
+										]
+										\addplot[thick, smooth, samples=100,domain = -3:-.1] {cot(x)};
+										\coordinate (a) at (-3,5);
+										\coordinate (b) at (-3,-5);
+										\coordinate (c) at (0,5);
+										\coordinate (d) at (0,-5);
+										\end{axis}
+										\draw[dashed] (a)--(b);
+										\draw[dashed] (c)--(d);
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+						</sidebyside>
+					</solution></example>
 					
 					<example><statement>
 						Find the domain of the function <m>f(x) = \dfrac{3}{2\sin x + 1}</m>, first on the interval <m>[0,2\pi)</m>, then in general.
-					</statement></example>
+					</statement>
+					<solution>
+						On <m>[0,2pi)</m>, the domain is <m>\left[0,\dfrac{7\pi}{6}\right)\cup \left(\dfrac{7\pi}{6},\dfrac{11\pi}{6}\right)</m>.  The general domain is <m>x\neq \dfrac{7\pi}{6} + 2\pi k</m> and <m>x\neq \dfrac{11\pi}{6}+2\pi k</m>, where <m>k</m> is an integer.
+					</solution></example>
 				</subsubsection>
 			</subsection>
 			<subsection xml:id="section-12-afterclass">
@@ -763,7 +1392,31 @@
 							</li>
 								
 						</ol>
-					</statement></example>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								Polynomial, algebraic
+							</li>
+								
+							<li>
+								Exponential
+							</li>
+								
+							<li>
+								Algebraic
+							</li>
+								
+							<li>
+								Power, algebraic
+							</li>
+								
+							<li>
+								Rational, algebraic
+							</li>
+								
+						</ol>
+					</solution></example>
 					
 					<example><statement>
 						Ecologists have modeled the relationship between the area of a region and the number of species inhabiting the region.  In particular, the number of species <m>S</m> of bats living in and around Austin has been related to the surface area <m>A</m> of the structure by the equation <m>S = 0.3A^{0.5}</m>.
@@ -776,7 +1429,19 @@
 								If an overpass has nine species of bats, estimate the area of overpass.
 							</li>
 						</ol>
-					</statement></example>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								30 species
+							</li>
+								
+							<li>
+								900m<m>^2</m>
+							</li>
+						</ol>
+					</solution>
+					</example>
 					
 					<example><statement>
 						Find the domain of the following functions.
@@ -793,7 +1458,22 @@
 								<m>h(x) = \dfrac{x+3}{2\sqrt{5-x}}</m>
 							</li>
 						</ol>
-					</statement></example>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>(-\infty,-\sqrt{6}]\cup [\sqrt{6},\infty)</m>
+							</li>
+								
+							<li>
+								<m>b\neq 2k+1</m> for <m>k\in \Z</m>
+							</li>
+								
+							<li>
+								<m>(-\infty,5)</m>
+							</li>
+						</ol>
+					</solution></example>
 			</subsection>
 			
 			<xi:include href="./resources/12.xml"/>
