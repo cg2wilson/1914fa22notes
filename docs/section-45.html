@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-21T16:07:40-05:00       *-->
+<!--*       on 2022-06-23T18:40:36-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -143,8 +143,8 @@
 </h2>
 <article class="objectives goal-like" id="objectives-25"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ul class="disc">
-<li id="li-615"><p id="p-derived-li-615">Evaluate definite and indefinite integrals using the substitution rule</p></li>
-<li id="li-616"><p id="p-derived-li-616">Use even/odd properties of a function on a symmetric interval to simplify integral computations</p></li>
+<li id="li-652"><p id="p-derived-li-652">Evaluate definite and indefinite integrals using the substitution rule</p></li>
+<li id="li-653"><p id="p-derived-li-653">Use even/odd properties of a function on a symmetric interval to simplify integral computations</p></li>
 </ul></article><section class="subsection" id="section-45-beforeclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.5.1</span> <span class="title">Before Class</span>
 </h3>
@@ -154,57 +154,57 @@
 <section class="introduction" id="introduction-10">The <em class="emphasis">substitution</em> rule for integrals allows us to take antiderivatives of composite functions.</section><article class="theorem theorem-like" id="theorem-28"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Substitution Rule.</span>
 </h5>
-<p id="p-132">If <span class="process-math">\(u=g(x)\)</span> is a differentiable function whose range is an interval <span class="process-math">\(I\)</span> and <span class="process-math">\(f\)</span> is continuous on <span class="process-math">\(I\text{,}\)</span> then <span class="process-math">\(\ds \int f(g(x))\cdot g'(x)\, dx = \int f(u)\, du\)</span></p></article><article class="example example-like" id="example-474"><h5 class="heading">
+<p id="p-146">If <span class="process-math">\(u=g(x)\)</span> is a differentiable function whose range is an interval <span class="process-math">\(I\)</span> and <span class="process-math">\(f\)</span> is continuous on <span class="process-math">\(I\text{,}\)</span> then <span class="process-math">\(\ds \int f(g(x))\cdot g'(x)\, dx = \int f(u)\, du\)</span></p></article><article class="example example-like" id="example-473"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.2</span><span class="period">.</span>
 </h5>Let <span class="process-math">\(f(x) = \sin (x^3+1)\)</span><ol class="lower-alpha">
-<li id="li-617"><p id="p-derived-li-617">Let <span class="process-math">\(u=x^3+1\text{.}\)</span>  Find <span class="process-math">\(\dfrac{du}{dx}\text{.}\)</span></p></li>
-<li id="li-618"><p id="p-derived-li-618">Find <span class="process-math">\(f'(x)\text{.}\)</span></p></li>
-</ol></article><article class="example example-like" id="example-475"><h5 class="heading">
+<li id="li-654"><p id="p-derived-li-654">Let <span class="process-math">\(u=x^3+1\text{.}\)</span>  Find <span class="process-math">\(\dfrac{du}{dx}\text{.}\)</span></p></li>
+<li id="li-655"><p id="p-derived-li-655">Find <span class="process-math">\(f'(x)\text{.}\)</span></p></li>
+</ol></article><article class="example example-like" id="example-474"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.3</span><span class="period">.</span>
-</h5>Using the previous example, compute <span class="process-math">\(\ds \int 3x^2\cos(x^3+1)\, dx\)</span></article><article class="example example-like" id="example-476"><h5 class="heading">
+</h5>Using the previous example, compute <span class="process-math">\(\ds \int 3x^2\cos(x^3+1)\, dx\)</span></article><article class="example example-like" id="example-475"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.4</span><span class="period">.</span>
-</h5>Find the general antiderivative of <span class="process-math">\(\sin (2x)\text{.}\)</span></article><article class="example example-like" id="example-477"><h5 class="heading">
+</h5>Find the general antiderivative of <span class="process-math">\(\sin (2x)\text{.}\)</span></article><article class="example example-like" id="example-476"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.5</span><span class="period">.</span>
-</h5>Find <span class="process-math">\(\ds \int 54x\sqrt{9x^2 + 5}\, dx\text{.}\)</span></article><article class="example example-like" id="example-478"><h5 class="heading">
+</h5>Find <span class="process-math">\(\ds \int 54x\sqrt{9x^2 + 5}\, dx\text{.}\)</span></article><article class="example example-like" id="example-477"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.6</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int_0^4 \sqrt{2x+1}\,dx\)</span></article><article class="assemblage assemblage-like" id="assemblage-33"><h5 class="heading"><span class="title">Steps for <span class="process-math">\(u-\)</span>substitution.</span></h5>
-<ol id="p-133" class="decimal">
-<li id="li-619"><p id="p-derived-li-619">Identify the “chain rule” term; call it <span class="process-math">\(u=f(x)\)</span></p></li>
-<li id="li-620"><p id="p-derived-li-620">Differentiate <span class="process-math">\(u\)</span> so that you end up with something that looks like <span class="process-math">\(du = f'(x)\, dx\)</span></p></li>
-<li id="li-621"><p id="p-derived-li-621">Solve for <span class="process-math">\(dx\text{,}\)</span> and substitute into the integral.</p></li>
+</h5>Evaluate <span class="process-math">\(\ds \int_0^4 \sqrt{2x+1}\,dx\)</span></article><article class="assemblage assemblage-like" id="assemblage-34"><h5 class="heading"><span class="title">Steps for <span class="process-math">\(u-\)</span>substitution.</span></h5>
+<ol id="p-147" class="decimal">
+<li id="li-656"><p id="p-derived-li-656">Identify the “chain rule” term; call it <span class="process-math">\(u=f(x)\)</span></p></li>
+<li id="li-657"><p id="p-derived-li-657">Differentiate <span class="process-math">\(u\)</span> so that you end up with something that looks like <span class="process-math">\(du = f'(x)\, dx\)</span></p></li>
+<li id="li-658"><p id="p-derived-li-658">Solve for <span class="process-math">\(dx\text{,}\)</span> and substitute into the integral.</p></li>
 </ol>
 <p class="continuation">If we have a definite integral rather than an indefinite integral, we add a fourth step prior to integrating:</p>
-<ul class="disc"><li id="li-622"><p id="p-derived-li-622">Change the bounds of integration by setting <span class="process-math">\(u = f(a)\)</span> and <span class="process-math">\(u = f(b)\)</span> and solving.  These are your new bounds of integration.</p></li></ul></article><article class="assemblage assemblage-like" id="assemblage-34"><h5 class="heading"><span class="title">Integrals of Symmetric Functions.</span></h5>
-<p id="p-134">For symmetric functions, we have the following properties:</p>
+<ul class="disc"><li id="li-659"><p id="p-derived-li-659">Change the bounds of integration by setting <span class="process-math">\(u = f(a)\)</span> and <span class="process-math">\(u = f(b)\)</span> and solving.  These are your new bounds of integration.</p></li></ul></article><article class="assemblage assemblage-like" id="assemblage-35"><h5 class="heading"><span class="title">Integrals of Symmetric Functions.</span></h5>
+<p id="p-148">For symmetric functions, we have the following properties:</p>
 <ol class="decimal">
-<li id="li-623"><p id="p-derived-li-623">If <span class="process-math">\(f\)</span> is continuous on <span class="process-math">\([-a,a]\)</span> and <span class="process-math">\(f\)</span> is even, then <span class="process-math">\(\ds \int_{-a}^a f(x)\, dx = 2\int_0^a f(x)\, dx\)</span></p></li>
-<li id="li-624"><p id="p-derived-li-624">If <span class="process-math">\(f\)</span> is continuous on <span class="process-math">\([-a,a]\)</span> and <span class="process-math">\(f\)</span> is odd, then <span class="process-math">\(\ds \int_{-a}^a f(x)\, dx = 0\)</span></p></li>
+<li id="li-660"><p id="p-derived-li-660">If <span class="process-math">\(f\)</span> is continuous on <span class="process-math">\([-a,a]\)</span> and <span class="process-math">\(f\)</span> is even, then <span class="process-math">\(\ds \int_{-a}^a f(x)\, dx = 2\int_0^a f(x)\, dx\)</span></p></li>
+<li id="li-661"><p id="p-derived-li-661">If <span class="process-math">\(f\)</span> is continuous on <span class="process-math">\([-a,a]\)</span> and <span class="process-math">\(f\)</span> is odd, then <span class="process-math">\(\ds \int_{-a}^a f(x)\, dx = 0\)</span></p></li>
 </ol></article></section></section><section class="subsection" id="section-45-preclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.5.2</span> <span class="title">Pre-Class Activities</span>
 </h3>
-<article class="example example-like" id="example-479"><h4 class="heading">
+<article class="example example-like" id="example-478"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.7</span><span class="period">.</span>
-</h4>Since the chain rule is something that gives many students trouble, using the substitution rule sometimes also gives people trouble.  What, if any, part of the process would you like to see more examples of in class?</article><article class="example example-like" id="example-480"><h4 class="heading">
+</h4>Since the chain rule is something that gives many students trouble, using the substitution rule sometimes also gives people trouble.  What, if any, part of the process would you like to see more examples of in class?</article><article class="example example-like" id="example-479"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.8</span><span class="period">.</span>
 </h4>Compute <span class="process-math">\(\ds \int \cos(3x)\, dx\)</span><div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like"><span class="process-math">\(\dfrac{1}{3}\sin (3x) + C\)</span></div></div>
-</div></article><article class="example example-like" id="example-481"><h4 class="heading">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-39" id="solution-39"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-39"><div class="solution solution-like"><span class="process-math">\(\dfrac{1}{3}\sin (3x) + C\)</span></div></div>
+</div></article><article class="example example-like" id="example-480"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.9</span><span class="period">.</span>
 </h4>Let <span class="process-math">\(f(x) = (x-3)^3\)</span><ol class="lower-alpha">
-<li id="li-625"><p id="p-derived-li-625">Compute <span class="process-math">\(\ds \int f(x)\, dx\)</span> <em class="emphasis">without</em> using <span class="process-math">\(u-\)</span>substitution.</p></li>
-<li id="li-626"><p id="p-derived-li-626">Now compute <span class="process-math">\(\ds \int f(x)\, dx\)</span> with <span class="process-math">\(u-\)</span>substitution.</p></li>
-<li id="li-627"><p id="p-derived-li-627">Which method do you prefer?</p></li>
+<li id="li-662"><p id="p-derived-li-662">Compute <span class="process-math">\(\ds \int f(x)\, dx\)</span> <em class="emphasis">without</em> using <span class="process-math">\(u-\)</span>substitution.</p></li>
+<li id="li-663"><p id="p-derived-li-663">Now compute <span class="process-math">\(\ds \int f(x)\, dx\)</span> with <span class="process-math">\(u-\)</span>substitution.</p></li>
+<li id="li-664"><p id="p-derived-li-664">Which method do you prefer?</p></li>
 </ol>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><ol class="lower-alpha">
-<li id="li-628"><p id="p-derived-li-628"><span class="process-math">\(\displaystyle \dfrac{1}{4}x^4-3x^3+\dfrac{27}{2}x^2 -27x + C \)</span></p></li>
-<li id="li-629"><p id="p-derived-li-629"><span class="process-math">\(\displaystyle \dfrac{1}{4}(x-3)^4 + C\)</span></p></li>
-<li id="li-630"><p id="p-derived-li-630">Left to student.</p></li>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-40" id="solution-40"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-40"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-665"><p id="p-derived-li-665"><span class="process-math">\(\displaystyle \dfrac{1}{4}x^4-3x^3+\dfrac{27}{2}x^2 -27x + C \)</span></p></li>
+<li id="li-666"><p id="p-derived-li-666"><span class="process-math">\(\displaystyle \dfrac{1}{4}(x-3)^4 + C\)</span></p></li>
+<li id="li-667"><p id="p-derived-li-667">Left to student.</p></li>
 </ol></div></div>
-</div></article><article class="example example-like" id="example-482"><h4 class="heading">
+</div></article><article class="example example-like" id="example-481"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.10</span><span class="period">.</span>
 </h4>Compute <span class="process-math">\(\ds \int_1^2 (x-1)^{2021}\, dx\text{.}\)</span>  Why is <span class="process-math">\(u-\)</span>substitution the only viable way of approaching this problem&gt;?<div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-41" id="solution-41"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-41"><div class="solution solution-like">
 <span class="process-math">\(\dfrac{1}{2022}\text{.}\)</span>  It's unreasonable to expand <span class="process-math">\((x-1)^{2021}\)</span> and then integrate.</div></div>
 </div></article></section><section class="subsection" id="section-45-inclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.5.3</span> <span class="title">In Class</span>
@@ -212,56 +212,56 @@
 <section class="subsubsection" id="section-45-examples"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">4.5.3.1</span> <span class="title">Examples</span>
 </h4>
-<article class="example example-like" id="example-483"><h5 class="heading">
+<article class="example example-like" id="example-482"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.11</span><span class="period">.</span>
-</h5>Find <span class="process-math">\(\ds \int_0^1 \dfrac{x}{\sqrt{6-4x^2}}\,dx\)</span></article><article class="example example-like" id="example-484"><h5 class="heading">
+</h5>Find <span class="process-math">\(\ds \int_0^1 \dfrac{x}{\sqrt{6-4x^2}}\,dx\)</span></article><article class="example example-like" id="example-483"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.12</span><span class="period">.</span>
-</h5>Find the indefinite integral of <span class="process-math">\(f(x) = x^5\sqrt{1+x^2}\)</span></article><article class="example example-like" id="example-485"><h5 class="heading">
+</h5>Find the indefinite integral of <span class="process-math">\(f(x) = x^5\sqrt{1+x^2}\)</span></article><article class="example example-like" id="example-484"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.13</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int_1^2 \dfrac{dx}{(3-5x)^2}\)</span></article><article class="example example-like" id="example-486"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int_1^2 \dfrac{dx}{(3-5x)^2}\)</span></article><article class="example example-like" id="example-485"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.14</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int_{\pi/2}^\pi \sin\lrpar{\dfrac{2\theta}{3}}\,d\theta\)</span></article><article class="example example-like" id="example-487"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int_{\pi/2}^\pi \sin\lrpar{\dfrac{2\theta}{3}}\,d\theta\)</span></article><article class="example example-like" id="example-486"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.15</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int (x^2+1)(x^3+3x)^4\,dx\)</span></article><article class="example example-like" id="example-488"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int (x^2+1)(x^3+3x)^4\,dx\)</span></article><article class="example example-like" id="example-487"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.16</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int \dfrac{dt}{\cos^2t\sqrt{1+\tan t}}\)</span></article><article class="example example-like" id="example-489"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int \dfrac{dt}{\cos^2t\sqrt{1+\tan t}}\)</span></article><article class="example example-like" id="example-488"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.17</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int_0^1\cos\lrpar{\dfrac{\pi t}{2}}\, dt\)</span></article><article class="example example-like" id="example-490"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int_0^1\cos\lrpar{\dfrac{\pi t}{2}}\, dt\)</span></article><article class="example example-like" id="example-489"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.18</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int_0^a x\sqrt{a^2-x^2}\,dx\)</span></article><article class="example example-like" id="example-491"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int_0^a x\sqrt{a^2-x^2}\,dx\)</span></article><article class="example example-like" id="example-490"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.19</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int x(2x+5)^8\,dx\)</span></article><article class="example example-like" id="example-492"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int x(2x+5)^8\,dx\)</span></article><article class="example example-like" id="example-491"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.20</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int \sin x\sin (\cos x)\,dx\)</span></article><article class="example example-like" id="example-493"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int \sin x\sin (\cos x)\,dx\)</span></article><article class="example example-like" id="example-492"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.21</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int y^2(4-y^3)^{2/3}\,dy\)</span></article><article class="example example-like" id="example-494"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int y^2(4-y^3)^{2/3}\,dy\)</span></article><article class="example example-like" id="example-493"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.22</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int_{-\pi/3}^{\pi/3} x^4\sin x\,dx\)</span></article><article class="example example-like" id="example-495"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int_{-\pi/3}^{\pi/3} x^4\sin x\,dx\)</span></article><article class="example example-like" id="example-494"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.23</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int_0^{\sqrt{\pi}} x\cos (x^2)\, dx\)</span></article><article class="example example-like" id="example-496"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int_0^{\sqrt{\pi}} x\cos (x^2)\, dx\)</span></article><article class="example example-like" id="example-495"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.24</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int_0^{\pi/2}\cos x \sin (\sin x)\, dx\)</span></article><article class="example example-like" id="example-497"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int_0^{\pi/2}\cos x \sin (\sin x)\, dx\)</span></article><article class="example example-like" id="example-496"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.25</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int_0^1 \dfrac{dx}{(1+\sqrt{x})^4}\)</span></article><article class="example example-like" id="example-498"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int_0^1 \dfrac{dx}{(1+\sqrt{x})^4}\)</span></article><article class="example example-like" id="example-497"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.26</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int_0^{13} \dfrac{dx}{\sqrt[3]{(1+2x)^2}}\)</span></article><article class="example example-like" id="example-499"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int_0^{13} \dfrac{dx}{\sqrt[3]{(1+2x)^2}}\)</span></article><article class="example example-like" id="example-498"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.27</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int \dfrac{\cos (\pi/x)}{x^2}\,dx\)</span></article><article class="example example-like" id="example-500"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int \dfrac{\cos (\pi/x)}{x^2}\,dx\)</span></article><article class="example example-like" id="example-499"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.28</span><span class="period">.</span>
-</h5>Evaluate <span class="process-math">\(\ds \int_0^1 \sqrt[3]{1+7x}\, dx\)</span></article><article class="example example-like" id="example-501"><h5 class="heading">
+</h5>Evaluate <span class="process-math">\(\ds \int_0^1 \sqrt[3]{1+7x}\, dx\)</span></article><article class="example example-like" id="example-500"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.29</span><span class="period">.</span>
 </h5>If <span class="process-math">\(f\)</span> is continuous at <span class="process-math">\(\ds \int_0^4 f(x)\, dx = 10\text{,}\)</span> find <span class="process-math">\(\ds \int_0^2 f(2x)\, dx\)</span></article></section></section><section class="subsection" id="section-45-afterclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.5.4</span> <span class="title">After Class Activities</span>
 </h3>
-<article class="example example-like" id="example-502"><h4 class="heading">
+<article class="example example-like" id="example-501"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.30</span><span class="period">.</span>
-</h4>Find <span class="process-math">\(\ds \int \dfrac{\cos \sqrt{x}}{\sqrt{x}}\, dx\)</span></article><article class="example example-like" id="example-503"><h4 class="heading">
+</h4>Find <span class="process-math">\(\ds \int \dfrac{\cos \sqrt{x}}{\sqrt{x}}\, dx\)</span></article><article class="example example-like" id="example-502"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.31</span><span class="period">.</span>
-</h4>Find <span class="process-math">\(\ds \int \sin x \cos^4 x\, dx\)</span></article><article class="example example-like" id="example-504"><h4 class="heading">
+</h4>Find <span class="process-math">\(\ds \int \sin x \cos^4 x\, dx\)</span></article><article class="example example-like" id="example-503"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.32</span><span class="period">.</span>
-</h4>Compute <span class="process-math">\(\ds \int_{-\pi/4}^{\pi/4} \lrpar{x^3 + x^4 \tan x}\, dx\)</span></article><article class="example example-like" id="example-505"><h4 class="heading">
+</h4>Compute <span class="process-math">\(\ds \int_{-\pi/4}^{\pi/4} \lrpar{x^3 + x^4 \tan x}\, dx\)</span></article><article class="example example-like" id="example-504"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.33</span><span class="period">.</span>
-</h4>Evaluate <span class="process-math">\(\ds \int_{1/2}^1 \dfrac{\sin (x^{-2})}{x^3}\, dx\)</span></article><article class="example example-like" id="example-506"><h4 class="heading">
+</h4>Evaluate <span class="process-math">\(\ds \int_{1/2}^1 \dfrac{\sin (x^{-2})}{x^3}\, dx\)</span></article><article class="example example-like" id="example-505"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.34</span><span class="period">.</span>
 </h4>Evaluate <span class="process-math">\(\ds \int_{\pi/3}^{2\pi/3} \csc^2\lrpar{\dfrac{t}{2}}\,dt\)</span></article></section></section></div></main>
 </div>

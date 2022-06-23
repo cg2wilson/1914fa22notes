@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-21T16:07:40-05:00       *-->
+<!--*       on 2022-06-23T18:40:36-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -142,90 +142,90 @@
 <span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Volumes by Cylindrical Shells</span>
 </h2>
 <article class="objectives goal-like" id="objectives-28"><h3 class="heading"><span class="type">Objectives</span></h3>
-<ul class="disc"><li id="li-649"><p id="p-derived-li-649">Determine whether the Shell Method, Disk Method, or Washer Method is most appropriate to compute the volume of a solid of revolution, and compute the volume by integrating with respect to <span class="process-math">\(x\)</span> or <span class="process-math">\(y\)</span></p></li></ul></article><section class="subsection" id="section-53-beforeclass"><h3 class="heading hide-type">
+<ul class="disc"><li id="li-686"><p id="p-derived-li-686">Determine whether the Shell Method, Disk Method, or Washer Method is most appropriate to compute the volume of a solid of revolution, and compute the volume by integrating with respect to <span class="process-math">\(x\)</span> or <span class="process-math">\(y\)</span></p></li></ul></article><section class="subsection" id="section-53-beforeclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.1</span> <span class="title">Before Class</span>
 </h3>
 <figure class="figure figure-like" id="figure-70"><a class="external" href="https://mymedia.ou.edu/media/5.3-1/0_weag3qcy" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/5.3-1/0_weag3qcy</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">70<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><figure class="figure figure-like" id="figure-71"><a class="external" href="https://mymedia.ou.edu/media/5.3-2/0_mx0xmcp9" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/5.3-2/0_mx0xmcp9</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">71<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 2</figcaption></figure><figure class="figure figure-like" id="figure-72"><a class="external" href="https://mymedia.ou.edu/media/5.3-3/0_og9j6r23" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/5.3-3/0_og9j6r23</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">72<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 3</figcaption></figure><section class="subsubsection" id="section-53-slicing-cylinders"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">5.3.1.1</span> <span class="title">Slicing with Cylinders</span>
 </h4>
-<article class="example example-like" id="example-545"><h5 class="heading">
+<article class="example example-like" id="example-544"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="period">.</span>
 </h5>Let <span class="process-math">\(f(x) = x-x^2\text{.}\)</span> <ol class="lower-alpha">
-<li id="li-650"><p id="p-derived-li-650">Sketch the region bounded by <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x-\)</span>axis.</p></li>
-<li id="li-651"><p id="p-derived-li-651">Set up (but do not solve) an integral to find the volume of the solid created by rotating the region about the line <span class="process-math">\(y = 0\text{.}\)</span>  Why can we use the disk method?</p></li>
-<li id="li-652"><p id="p-derived-li-652">Are there problems if we instead rotate about the line <span class="process-math">\(x = 0\text{?}\)</span>  Explain with pictures, words, etc.</p></li>
-</ol></article><article class="example example-like" id="example-546"><h5 class="heading">
+<li id="li-687"><p id="p-derived-li-687">Sketch the region bounded by <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x-\)</span>axis.</p></li>
+<li id="li-688"><p id="p-derived-li-688">Set up (but do not solve) an integral to find the volume of the solid created by rotating the region about the line <span class="process-math">\(y = 0\text{.}\)</span>  Why can we use the disk method?</p></li>
+<li id="li-689"><p id="p-derived-li-689">Are there problems if we instead rotate about the line <span class="process-math">\(x = 0\text{?}\)</span>  Explain with pictures, words, etc.</p></li>
+</ol></article><article class="example example-like" id="example-545"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span>
 </h5>Again consider <span class="process-math">\(f(x) = x-x^2\text{.}\)</span> <ol class="lower-alpha">
-<li id="li-653"><p id="p-derived-li-653">Draw four midpoint rectangles for the area of the region bounded by <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x-\)</span>axis.  Be sure to label things appropriately!</p></li>
-<li id="li-654"><p id="p-derived-li-654">Sketch what happens to the rectangles when rotated about the line <span class="process-math">\(x = 0\text{.}\)</span></p></li>
-<li id="li-655"><p id="p-derived-li-655">How can we find the surface area of the shape from part (b)?</p></li>
-<li id="li-656"><p id="p-derived-li-656">Use your answers from parts (b) and (c) to approximate the volume of the solid.</p></li>
-<li id="li-657"><p id="p-derived-li-657">Write an expression that uses “infinitely many” rectangles to approximate the the volume of the solid.</p></li>
-<li id="li-658"><p id="p-derived-li-658">Convert your answer from part (d) into an integral expression, and evaluate it.</p></li>
+<li id="li-690"><p id="p-derived-li-690">Draw four midpoint rectangles for the area of the region bounded by <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x-\)</span>axis.  Be sure to label things appropriately!</p></li>
+<li id="li-691"><p id="p-derived-li-691">Sketch what happens to the rectangles when rotated about the line <span class="process-math">\(x = 0\text{.}\)</span></p></li>
+<li id="li-692"><p id="p-derived-li-692">How can we find the surface area of the shape from part (b)?</p></li>
+<li id="li-693"><p id="p-derived-li-693">Use your answers from parts (b) and (c) to approximate the volume of the solid.</p></li>
+<li id="li-694"><p id="p-derived-li-694">Write an expression that uses “infinitely many” rectangles to approximate the the volume of the solid.</p></li>
+<li id="li-695"><p id="p-derived-li-695">Convert your answer from part (d) into an integral expression, and evaluate it.</p></li>
 </ol></article></section><section class="subsubsection" id="section-53-shell-method"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">5.3.1.2</span> <span class="title">The Shell Method</span>
 </h4>
-<article class="assemblage assemblage-like" id="assemblage-37"><h5 class="heading"><span class="title">Method of Cylindrical Shells.</span></h5>
-<p id="p-140">Let <span class="process-math">\(f(x)\)</span> be a continuous function on the interval <span class="process-math">\([a,b]\text{.}\)</span>  Then, the volume of the solid created by rotating the region bounded by <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x-\)</span>axis about the line <span class="process-math">\(x = 0\)</span> is given by</p>
+<article class="assemblage assemblage-like" id="assemblage-38"><h5 class="heading"><span class="title">Method of Cylindrical Shells.</span></h5>
+<p id="p-154">Let <span class="process-math">\(f(x)\)</span> be a continuous function on the interval <span class="process-math">\([a,b]\text{.}\)</span>  Then, the volume of the solid created by rotating the region bounded by <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x-\)</span>axis about the line <span class="process-math">\(x = 0\)</span> is given by</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \int_a^b 2\pi r(x)f(x)\, dx
 \end{equation*}
 </div>
-<p class="continuation">where <span class="process-math">\(r(x)\)</span> is the radius function.</p></article><article class="example example-like" id="example-547"><h5 class="heading">
+<p class="continuation">where <span class="process-math">\(r(x)\)</span> is the radius function.</p></article><article class="example example-like" id="example-546"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span>
 </h5>Consider the region bounded by the curve <span class="process-math">\(y = 2\sqrt{x}\text{,}\)</span> the <span class="process-math">\(x-\)</span>axis, and the line <span class="process-math">\(x = 4\text{.}\)</span> <ol class="lower-alpha">
-<li id="li-659"><p id="p-derived-li-659">Sketch and label the region.</p></li>
-<li id="li-660"><p id="p-derived-li-660">Sketch and label a typical approximating cylinder, when rotated about <span class="process-math">\(x = 0\text{.}\)</span></p></li>
-<li id="li-661"><p id="p-derived-li-661">Use the formula for the cylinder to set up an integral for the volume of the resulting solid, then evaluate it.</p></li>
+<li id="li-696"><p id="p-derived-li-696">Sketch and label the region.</p></li>
+<li id="li-697"><p id="p-derived-li-697">Sketch and label a typical approximating cylinder, when rotated about <span class="process-math">\(x = 0\text{.}\)</span></p></li>
+<li id="li-698"><p id="p-derived-li-698">Use the formula for the cylinder to set up an integral for the volume of the resulting solid, then evaluate it.</p></li>
 </ol></article></section></section><section class="subsection" id="section-53-preclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.2</span> <span class="title">Pre-Class Activities</span>
 </h3>
-<article class="example example-like" id="example-548"><h4 class="heading">
+<article class="example example-like" id="example-547"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span>
-</h4>If you were presented with a problem, how would you know whether to use the disk method, washer method, or shell method?  Examples 1 and 2 might be good places to get ideas.</article><article class="example example-like" id="example-549"><h4 class="heading">
+</h4>If you were presented with a problem, how would you know whether to use the disk method, washer method, or shell method?  Examples 1 and 2 might be good places to get ideas.</article><article class="example example-like" id="example-548"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span>
 </h4>Find the volume of the solid obtained by rotating the region bouded by <span class="process-math">\(y = 2x^2 - x^3\)</span> and <span class="process-math">\(y = 0\)</span> about the <span class="process-math">\(y-\)</span>axis.</article></section><section class="subsection" id="section-53-inclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.3</span> <span class="title">In Class</span>
 </h3>
-<article class="example example-like" id="example-550"><h4 class="heading">
+<article class="example example-like" id="example-549"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.6</span><span class="period">.</span>
-</h4>Use the shell method to find the volume of the solid generated by revolving the region bounded by the curves <span class="process-math">\(xy = 1\text{,}\)</span> <span class="process-math">\(x = 0\text{,}\)</span> <span class="process-math">\(y = 1\text{,}\)</span> and <span class="process-math">\(y = 3\)</span> about the <span class="process-math">\(x-\)</span>axis.  Hint: Sketch the solid and its approximating cylinders.</article><article class="example example-like" id="example-551"><h4 class="heading">
+</h4>Use the shell method to find the volume of the solid generated by revolving the region bounded by the curves <span class="process-math">\(xy = 1\text{,}\)</span> <span class="process-math">\(x = 0\text{,}\)</span> <span class="process-math">\(y = 1\text{,}\)</span> and <span class="process-math">\(y = 3\)</span> about the <span class="process-math">\(x-\)</span>axis.  Hint: Sketch the solid and its approximating cylinders.</article><article class="example example-like" id="example-550"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.7</span><span class="period">.</span>
-</h4>Find the volume of the solid created by rotating the region bounded by the curves <span class="process-math">\(y = x^3\text{,}\)</span> <span class="process-math">\(y = 0\text{,}\)</span> <span class="process-math">\(x = 1\text{,}\)</span> and <span class="process-math">\(x = 2\)</span> about the <span class="process-math">\(y-\)</span>axis.  Be sure to label your diagram, if you choose to draw one.</article><article class="example example-like" id="example-552"><h4 class="heading">
+</h4>Find the volume of the solid created by rotating the region bounded by the curves <span class="process-math">\(y = x^3\text{,}\)</span> <span class="process-math">\(y = 0\text{,}\)</span> <span class="process-math">\(x = 1\text{,}\)</span> and <span class="process-math">\(x = 2\)</span> about the <span class="process-math">\(y-\)</span>axis.  Be sure to label your diagram, if you choose to draw one.</article><article class="example example-like" id="example-551"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.8</span><span class="period">.</span>
-</h4>Find the volume of the solid created by rotating the first-quadrant region bounded by the curves <span class="process-math">\(y = 4x-x^2\text{,}\)</span> and <span class="process-math">\(y = x\)</span> about the <span class="process-math">\(y-\)</span>axis.  Be sure to label your diagram, if you choose to draw one.</article><article class="example example-like" id="example-553"><h4 class="heading">
+</h4>Find the volume of the solid created by rotating the first-quadrant region bounded by the curves <span class="process-math">\(y = 4x-x^2\text{,}\)</span> and <span class="process-math">\(y = x\)</span> about the <span class="process-math">\(y-\)</span>axis.  Be sure to label your diagram, if you choose to draw one.</article><article class="example example-like" id="example-552"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.9</span><span class="period">.</span>
-</h4>Find the volume of the solid created by rotating the region bounded by the curves <span class="process-math">\(x = 2y^2\text{,}\)</span> <span class="process-math">\(y\geq 0\text{,}\)</span> and <span class="process-math">\(x=8\)</span> about <span class="process-math">\(y = 2\text{.}\)</span>  Hint: Draw and label a diagram.  Remember that this is a function of <span class="process-math">\(y\text{,}\)</span> not a function of <span class="process-math">\(x\text{!}\)</span></article><article class="example example-like" id="example-554"><h4 class="heading">
+</h4>Find the volume of the solid created by rotating the region bounded by the curves <span class="process-math">\(x = 2y^2\text{,}\)</span> <span class="process-math">\(y\geq 0\text{,}\)</span> and <span class="process-math">\(x=8\)</span> about <span class="process-math">\(y = 2\text{.}\)</span>  Hint: Draw and label a diagram.  Remember that this is a function of <span class="process-math">\(y\text{,}\)</span> not a function of <span class="process-math">\(x\text{!}\)</span></article><article class="example example-like" id="example-553"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.10</span><span class="period">.</span>
 </h4>Find the volume of the solid created by rotating the region bounded by the curves <span class="process-math">\(y = x^3\text{,}\)</span> <span class="process-math">\(y = 8\text{,}\)</span> <span class="process-math">\(x = 0\)</span> about <span class="process-math">\(x = 2\text{.}\)</span>  Be sure to label your diagram, if you choose to draw one.</article></section><section class="subsection" id="section-53-afterclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.4</span> <span class="title">After Class Activities</span>
 </h3>
-<article class="example example-like" id="example-555"><h4 class="heading">
+<article class="example example-like" id="example-554"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.11</span><span class="period">.</span>
 </h4>Consider the region between the curve <span class="process-math">\(y = \sqrt{x}\text{,}\)</span> <span class="process-math">\(y = 0\text{,}\)</span> and <span class="process-math">\(x = 1\text{.}\)</span> <ol class="lower-alpha">
-<li id="li-662"><p id="p-derived-li-662">Sketch the region.  Label all important information.</p></li>
-<li id="li-663"><p id="p-derived-li-663">Sketch a typical approximating cylinder for the volume formed when the region is rotated about the <span class="process-math">\(x-\)</span>axis.</p></li>
-</ol></article><article class="example example-like" id="example-556"><h4 class="heading">
+<li id="li-699"><p id="p-derived-li-699">Sketch the region.  Label all important information.</p></li>
+<li id="li-700"><p id="p-derived-li-700">Sketch a typical approximating cylinder for the volume formed when the region is rotated about the <span class="process-math">\(x-\)</span>axis.</p></li>
+</ol></article><article class="example example-like" id="example-555"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.12</span><span class="period">.</span>
-</h4>Find the volume of the solid created by rotating the region bounded by the curves <span class="process-math">\(x = 2y^2\text{,}\)</span> <span class="process-math">\(x = y^2 + 1\)</span> about <span class="process-math">\(y = -2\text{.}\)</span></article><article class="example example-like" id="example-557"><h4 class="heading">
+</h4>Find the volume of the solid created by rotating the region bounded by the curves <span class="process-math">\(x = 2y^2\text{,}\)</span> <span class="process-math">\(x = y^2 + 1\)</span> about <span class="process-math">\(y = -2\text{.}\)</span></article><article class="example example-like" id="example-556"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.13</span><span class="period">.</span>
 </h4>Sketch the region described in the volume integral below:<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 V = \int_1^4 \dfrac{2\pi (y+2)}{y^2}\, dy
 \end{equation*}
-</div></article><article class="example example-like" id="example-558"><h4 class="heading">
+</div></article><article class="example example-like" id="example-557"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.14</span><span class="period">.</span>
 </h4>The region bounded by the curves <span class="process-math">\(y = -x^2 + 6x-8\)</span> and <span class="process-math">\(y = 0\)</span> is rotated about the <span class="process-math">\(y-\)</span>axis. <ol class="lower-alpha">
-<li id="li-664"><p id="p-derived-li-664">Sketch the region described above.</p></li>
-<li id="li-665"><p id="p-derived-li-665">Of our three methods, which one do you want to use?  Give a quick explanation why you chose that particular method.</p></li>
-<li id="li-666"><p id="p-derived-li-666">Compute the volume of the solid.</p></li>
-</ol></article><article class="example example-like" id="example-559"><h4 class="heading">
+<li id="li-701"><p id="p-derived-li-701">Sketch the region described above.</p></li>
+<li id="li-702"><p id="p-derived-li-702">Of our three methods, which one do you want to use?  Give a quick explanation why you chose that particular method.</p></li>
+<li id="li-703"><p id="p-derived-li-703">Compute the volume of the solid.</p></li>
+</ol></article><article class="example example-like" id="example-558"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.15</span><span class="period">.</span>
 </h4>Consider the region bounded by the curves <span class="process-math">\(y = 4x\text{,}\)</span> <span class="process-math">\(y = 0\text{,}\)</span> and <span class="process-math">\(x = 2\text{.}\)</span>  Find the volume of the solid formed when the region is rotated about the given lines: <ol class="lower-alpha">
-<li id="li-667"><p id="p-derived-li-667">The <span class="process-math">\(y-\)</span>axis</p></li>
-<li id="li-668"><p id="p-derived-li-668"><span class="process-math">\(\displaystyle x = 4\)</span></p></li>
+<li id="li-704"><p id="p-derived-li-704">The <span class="process-math">\(y-\)</span>axis</p></li>
+<li id="li-705"><p id="p-derived-li-705"><span class="process-math">\(\displaystyle x = 4\)</span></p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>
