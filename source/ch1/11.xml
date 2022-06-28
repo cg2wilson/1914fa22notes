@@ -269,7 +269,8 @@
 										]
 										\addplot[thick, smooth, domain = 0:3] {4.37*x};
 										\end{axis}
-									\end{tikzpicture}]]>
+									\end{tikzpicture}
+								]]>
 								</latex-image>
 								</image>
 								</p>

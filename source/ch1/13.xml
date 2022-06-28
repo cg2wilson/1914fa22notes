@@ -62,20 +62,73 @@
 					</assemblage>
 					
 					<example><statement>
-						If <m>f(x) = \sqrt{10-x}</m> and <m>g(x) =\sqrt{x}</m>, write (i) <m>f+g</m>, (ii) <m>f-g</m>, (iii) <m>fg</m>, and (iv) <m>f/g</m> and find their domains.
-					</statement></example>
+						If <m>f(x) = \sqrt{3-x}</m> and <m>g(x) =\sqrt{x^2-1}</m>, write (i) <m>f+g</m>, (ii) <m>f-g</m>, (iii) <m>fg</m>, and (iv) <m>f/g</m> and find their domains.
+					</statement>
+					<solution>
+						<ol label="i">
+							<li>
+								<m>(f+g)(x) = \sqrt{3-x}+\sqrt{x^2-1}</m> with domain <m>(-\infty,-1]</m>
+							</li>
+							<li>
+								<m>(f-g)(x) = \sqrt{3-x}-\sqrt{x^2-1}</m> with domain <m>(-\infty,-1]</m>
+							</li>
+							<li>
+								<m>(fg)(x) = \sqrt{-x^3+3x^2+x-3}</m> with domain <m>(-\infty,-1]</m>
+							</li>
+							<li>
+								<m>(f/g)(x) = \sqrt{\dfrac{3-x}{x^2-1}}</m> with domain <m>(-\infty,-1)</m>
+							</li>
+						</ol>
+					</solution></example>
 						
 					<example><statement>
-						Find the domain of the function <m>f(x) = 6x^4 + 14x + \dfrac{\sin x}{x^2-1}</m>
-					</statement></example>
+						Find the domain of the function <m>f(x) = 6x^4 + 14x + \dfrac{\cos x}{x^2-1}</m>
+					</statement>
+					<solution>
+						<m>(-\infty,1)\cup (1,\infty)</m>
+					</solution></example>
 						
 					<example><statement>
-						Find the domain of the function <m>\dfrac{\ln x}{\cos x}</m>.
-					</statement></example>
+						Find the domain of the function <m>\dfrac{\sqrt{x}}{x^2-x-6}</m>.
+					</statement>
+					<solution>
+						<m>[0,2)\cup (2,\infty) </m>
+					</solution></example>
 						
 					<example><statement>
 						Find the domain of the function <m>x|x|</m>, and sketch the graph.
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							The domain is <m>(-\infty,\infty)</m>. 
+						</p>
+						<p>
+							<image>
+								<description>
+									The graph of the function <m>x|x|</m> on the interval <m>[-3,3]</m>
+								</description>
+								<latex-image>
+									<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.5)},anchor=east},
+												xlabel = {$x$},
+												xmin=-3, xmax = 3
+											]
+											\addplot[thick,smooth, samples=50,domain=-3:0] {-1*x^2};
+											\addplot[thick,smooth, samples=50,domain=0:3] {x^2};
+										\end{axis}
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+						</p>
+					</solution></example>
 				</subsubsection>
 				<subsubsection xml:id="section-13-transformations">
 					<title>Transformations of Functions</title>
@@ -133,22 +186,44 @@
 				<title>Pre-Class Activities</title>
 				
 				<example><statement>
-					If <m>f(x) = \sqrt{3-x}</m> and <m>g(x) = \sqrt{x^2-1}</m>, write (i) <m>f+g</m>, (ii) <m>f-g</m>, (iii) <m>fg</m>, and (iv) <m>f/g</m> and find their domains.
-				</statement></example>
+					If <m>f(x) = \sqrt{3-x}</m> and <m>g(x) = \sqrt{x^2-1}</m>, write <m>(g/f)(x)</m> and find its domain.
+				</statement>
+				<solution>
+					<m>(f/g)(x) = \sqrt{\dfrac{x^2-1}{3-x}}</m> and its domain is <m>(-\infty,-1]\cup [1,3)\cup (3,\infty)</m>
+				</solution></example>
 				
 				<example><statement>
 					Why do we even need to think about domain when working with a function?
-				</statement></example>
+				</statement>
+				<solution>
+					Answers vary
+				</solution></example>
 				
 				<example><statement>
-					Describe the transformations needed to transform the graph <m>f(x) = x^3</m> into the graph of <m>g(x) = -4(x+3)^3 + 1</m>.,
-				</statement></example>
+					Describe the transformations needed to transform the graph <m>f(x) = x^3</m> into the graph of <m>g(x) = -4(x+3)^3 + 1</m>.
+				</statement>
+				<solution>
+					<ul>
+						<li>
+							Move left 3
+						</li>
+						<li>
+							Then reflect vertically
+						</li>
+						<li>
+							Then stretch vertically by a factor of 4
+						</li>
+						<li>
+							Then shift up 1
+						</li>
+					</ul>
+				</solution></example>
 			</subsection>
 			<subsection xml:id="section-13-inclass">
 				<title>In Class</title>
 				
 				<example><statement>
-					The graph of <m>y = \sqrt{x}</m> is given to you below.  Match the transformation with the appropriate transformed graph below.
+					The graph of <m>y = \sqrt{x}</m> is given to you below.  Match the transformation with the appropriate transformed graph below.  All graphs are of the form <m>2f(x), f(2x), f\left(\dfrac{1}{2}x\right)</m>, etc.
 					<sidebyside>
 						<image>
 							<description>
@@ -202,7 +277,7 @@
 									Horizontal shift
 								</li>
 								<li>
-									Reflection
+									Vertical reflection
 								</li>
 							</ol>
 						</p>
@@ -442,7 +517,32 @@
 							</li>
 						</ol>
 					</p>
-				</statement></example>
+				</statement>
+				<solution>
+					<ol>
+						<li>
+							Vertical stretch
+						</li>
+						<li>
+							Vertical shift
+						</li>
+						<li>
+							Horizontal shrink
+						</li>
+						<li>
+							Vertical reflection
+						</li>
+						<li>
+							Horizontal shift
+						</li>
+						<li>
+							Vertical shrink
+						</li>
+						<li>
+							Horizontal stretch
+						</li>
+					</ol>
+				</solution></example>
 				
 				<example><statement>
 					Sketch the graph of the function <m>f(x)=x^2-2x+3</m> by applying transformations to the base graph of <m>f(x)=x^2</m>.
@@ -462,14 +562,14 @@
 											axis y line = middle,
 												every axis y label/.style={at={(ticklabel cs:1.15)}, yshift = -3pt},
 												y label style={at={(axis description cs: 0.5, 1)},above},
-											ytick = {-4,-3,-2,-1,1,2,3,4},
+											ytick = {-4,-3,-2,-1,1,2,3,4,5,6},
 												ylabel = {$y$},
-												ymin = -4.5, ymax = 4.5,
+												ymin = -4.5, ymax = 6,
 												every axis x label/.style= {at ={(ticklabel cs:1)}},
 												xtick = {-4,-3,-2,-1,1,2,3,4},
 													x label style={at={(axis description cs: 1, 0.5)},right},
 												xlabel = {$x$},
-												xmin = -4.5, xmax = 4.5			
+												xmin = -4.5, xmax = 4.5	
 										]
 											\addplot[thick, domain = -2:2] {x^2};
 											\coordinate (label) at (0,-5);
@@ -494,14 +594,14 @@
 											axis y line = middle,
 												every axis y label/.style={at={(ticklabel cs:1.15)}, yshift = -3pt},
 												y label style={at={(axis description cs: 0.5, 1)},above},
-											ytick = {-4,-3,-2,-1,1,2,3,4},
+											ytick = {-4,-3,-2,-1,1,2,3,4,5,6},
 												ylabel = {$y$},
-												ymin = -4.5, ymax = 4.5,
+												ymin = -4.5, ymax = 6,
 												every axis x label/.style= {at ={(ticklabel cs:1)}},
 												xtick = {-4,-3,-2,-1,1,2,3,4},
 													x label style={at={(axis description cs: 1, 0.5)},right},
 												xlabel = {$x$},
-												xmin = -4.5, xmax = 4.5			
+												xmin = -4.5, xmax = 4.5	
 										]
 											\coordinate (label) at (0,-5);
 										\end{axis}
@@ -511,10 +611,44 @@
 							</latex-image>
 						</image>
 					</sidebyside>
-				</statement></example>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>f(x) = x^2-2x+3</m> on <m>[-1,3]</m>
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										grid style = {line width = .1pt, draw = gray!60},
+										grid = both,
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}, yshift = -3pt},
+											y label style={at={(axis description cs: 0.5, 1)},above},
+										ytick = {-4,-3,-2,-1,1,2,3,4,5,6},
+											ylabel = {$y$},
+											ymin = -4.5, ymax = 6,
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											xtick = {-4,-3,-2,-1,1,2,3,4},
+												x label style={at={(axis description cs: 1, 0.5)},right},
+											xlabel = {$x$},
+											xmin = -4.5, xmax = 4.5
+									]
+										\addplot[thick, domain = -2:2] {x^2-2*x+3};
+										\coordinate (label) at (0,-5);
+									\end{axis}						
+									\draw (label) node[yshift = -5pt] {$f(x) = x^2$};
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>	
+				</solution></example>
 				
 				<example><statement>
-					Sketch the graphs of the given functions:
+					Sketch the graphs of the given functions by using transformations to a base graph:
 					<ol label="a">
 						<li>
 							<m>f(x) = \dfrac{2}{x+3}</m>
@@ -528,7 +662,99 @@
 							<m>h(x) = |x^2-1|</m>
 						</li>
 					</ol>				
-				</statement></example>
+				</statement>
+				<solution>	
+					<ol label = "a">
+						<li>
+							<image>
+								<description>
+									The graph of <m>f(x) = \dfrac{-2}{x+3}</m> on <m>[-8,8]</m>
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.15)},anchor=north},
+												ylabel = {$f(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.5)},anchor=east},
+												xlabel = {$x$},
+												xmin = -8, xmax = 8,
+												ymin = -4, ymax = 4,
+											]
+												\addplot[thick, smooth, domain = -8:-3.1] {-2/(x+3)};
+												\addplot[thick, smooth, samples=100,domain= -2.9:8] {-2/(x+3)};
+												\coordinate (a) at (-3,4);
+												\coordinate (b) at (-3,-4);
+											\end{axis}
+											\draw[dashed] (a)--(b);
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+						</li>
+						<li>
+							<image>
+								<description>
+									The graph of <m>g(x) = 1-\cos 2x</m> on <m>[-2\pi,2\pi]</m>
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.15)},anchor=north},
+												ylabel = {$g(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin = -6.5, xmax = 6.5,
+												ymin = 0, ymax = 2,
+												trig format plots = rad
+											]
+												\addplot[thick, smooth, samples=100, domain = -2*pi:2*pi] {1-cos(2*x)};
+											\end{axis}
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+						</li>
+						<li>
+							<image>
+								<description>
+									The graph of <m>g(x) = |x^2-1|</m> on <m>[2,2]</m>
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.15)},anchor=north},
+												ylabel = {$h(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin = -2, xmax = 2,
+											]
+												\addplot[thick, smooth, samples=100, domain = -2:-1] {x^2-1};
+												\addplot[thick, smooth, samples=100, domain = 1:2] {x^2-1};
+												\addplot[thick, smooth, samples=100, domain = -1:1] {1-x^2};
+											\end{axis}
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+						</li>
+					</ol>
+				</solution>
+				</example>
 				
 				<assemblage>
 					<title>Function Composition</title>
@@ -548,10 +774,6 @@
 						</li>
 							
 						<li>
-							<m>g(x) = \tan (x^2)</m>		
-						</li>
-							
-						<li>
 							<m>q(x) = (2x+1)^5</m>		
 						</li>
 								
@@ -562,8 +784,32 @@
 						<li>
 							<m>y(r) = \dfrac{5.317}{(2r^5 + 1.7)^2}</m>		
 						</li>	
+								
+						<li>
+							<m>g(x) = \tan (x^2)</m>		
+						</li>
 					</ol>
-				</statement></example>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							The domain is <m>(-\infty,-2)\cup (-2,\infty)</m>. The function can decompose as <m>f(x) = a(b(x))</m>, where <m>a(x) = \dfrac{1}{x}, b(x) = x+2</m>
+						</li>
+						<li>
+							The domain is <m>(-\infty,\infty)</m>. The function can decompose as <m>q(x) = a(b(x))</m>, where <m>a(x) = x^5, b(x) = 2x+1</m>
+						</li>
+						<li>
+							The domain is <m>(-\infty,0)\cup (0,\infty)</m>. The function can decompose as <m>s(h)) = a(b(h))</m>, where <m>a(h) = \sin h, b(h) = 5h^2 + \dfrac{1}{h}</m>
+						</li>
+						<li>
+							The domain is <m>\lrpar{-\infty, \sqrt[5]{\dfrac{-1.7}{2}}}\cup \lrpar{\sqrt[5]{\dfrac{-1.7}{2}},\infty}</m>. The function can decompose as <m>y(r) = a(b(r))</m>, where <m>a(r) = \dfrac{5.317}{r^2}, b(x) = 2r^5+1.7</m>
+						</li>
+						<li>
+							The domain is <m>x\neq \sqrt{\dfrac{\pi}{2}+\pi k}</m>, where <m>k\in\Z</m>. The function can decompose as <m>g(x) = a(b(x))</m>, where <m>a(x) = \tan x, b(x) = x^2</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
 				
 				<example><statement>
 					If <m>f(x) = \sqrt{x}</m> and <m>g(x) = \sqrt{2-x}</m>, find 
@@ -584,23 +830,52 @@
 								<m>g\circ g</m>
 							</li>
 						</ol>
-				</statement></example>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>\sqrt{\sqrt{2-x}} =\sqrt[4]{2-x}</m>
+						</li>
+						<li>
+							<m>\sqrt{2-\sqrt{x}}</m>
+						</li>
+						<li>
+							<m>\sqrt{\sqrt{x}} = \sqrt[4]{x}</m>
+						</li>
+						<li>
+							<m>\sqrt{2-\sqrt{2-x}}</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
 					
 				<example><statement>
 					Let <m>k(x) = \sec(x^2)\tan(x^2)</m>.  Find <m>f,g</m> such that <m>k(x) = f(g(x))</m>.
-				</statement></example>
+				</statement>
+				<solution>
+					<m>f(x) = \sec(x)\tan(x),g(x) = x^2</m>
+				</solution></example>
 					
 				<example><statement>
 					Let <m>f(x) = \cos^2 (x^2 + 9)</m>.  Find functions <m>a,b,c</m> such that <m>f(x) = (a\circ b\circ c)(x)</m>
-				</statement></example>
+				</statement>
+				<solution>
+					<m>a(x) = x^2, b(x) = \cos(x), c(x) = x^2+9</m>
+				</solution></example>
 				
 				<example><statement>
 					Given <m>f(x) = x^2 + x -1</m> and <m>g(x) = 2-x</m>, what is the equation of <m>y =(f\circ g)(x)</m>?
-				</statement></example>
+				</statement>
+				<solution>
+					<m>y = 5-5x+x^2</m>
+				</solution></example>
 					
 				<example><statement>
 					If <m>g(1) = 3</m>, then what point must be on the graph of <m>h(t) = -2g(t-1) + 6</m>?
-				</statement></example>
+				</statement>
+				<solution>
+					<m>(2,0)</m>
+				</solution></example>
 			</subsection>
 			
 			<subsection xml:id="section-13-afterclass">
@@ -621,7 +896,107 @@
 							<m>y = |\sqrt{x} - 1|</m>
 						</li>
 					</ol>
-				</statement></example>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<p>
+								The base graph is <m>\cos x</m>.  We transform by compressing horizontally by 3, then stretching vertically by 2.
+							</p>
+							<p>
+								<image>
+									<description>
+										This is the graph of <m>y=2\cos(3x)</m> on the interval <m>[0,2\pi]</m>
+									</description>
+									<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.15)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.5)},anchor=east},
+												xlabel = {$x$},
+												xmin = 0, xmax = 6.5,
+												ymin = -2, ymax = 2,
+												trig format plots = rad
+											]
+											\addplot[thick, smooth, samples = 100,domain = 0:2*pi] {2*cos(3*x)};
+											\end{axis}
+										\end{tikzpicture}
+									]]>
+									</latex-image>
+								</image>
+							</p>
+						</li>
+						<li>
+							<p>
+								The base graph is <m>\sqrt{x}</m>.  First we shift left by 1, then stretch vertically by 3.
+							</p>
+							<p>
+								<image>
+									<description>
+										This is the graph of <m>3\sqrt{x+1}</m> on the interval <m>[0,4]</m>
+									</description>
+									<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = bottom,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.15)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin = 0, xmax = 4,
+											]
+											\addplot[thick, smooth, samples = 100,domain = 0:4] {3*sqrt(x+1)};
+											\end{axis}
+										\end{tikzpicture}
+									]]>
+									</latex-image>
+								</image>
+							</p>
+						</li>
+						<li>
+							<p>
+
+							</p>
+							<p>
+								<image>
+									<description>
+										This is the graph of <m>|\sqrt{x}-1|</m> on the interval <m>[0,4]</m>
+									</description>
+									<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.15)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin = 0, xmax = 4,
+											]
+											\addplot[thick, smooth, samples = 100,domain = 0:1] {-sqrt(x) + 1};
+											\addplot[thick, smooth, samples = 100,domain = 1:4] {sqrt(x) - 1};
+											\end{axis}
+										\end{tikzpicture}
+									]]>
+									</latex-image>
+								</image>
+							</p>
+						</li>
+					</ol>
+				</solution></example>
 				
 				
 				<example><statement>
@@ -723,7 +1098,29 @@
 							<m>(f\circ g)(6)</m>	
 						</li>
 					</ol>
-				</statement></example>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							5
+						</li>
+						<li>
+							2
+						</li>
+						<li>
+							4
+						</li>
+						<li>
+							3
+						</li>
+						<li>
+							1
+						</li>
+						<li>
+							4
+						</li>
+					</ol>
+				</solution></example>
 				
 				<example><statement>
 					If you invest <m>x</m> dollars at at 6% interest compounded annually, then the amount <m>A(x)</m> of the investment after one year is <m>A(x) = 1.06x</m>.  
@@ -740,11 +1137,27 @@
 							Generalize your work in part (a); find a formula for the composition of <m>n</m> copies of <m>A</m>.
 						</li>
 					</ol>
-				</statement></example>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>A\circ A\circ A\circ A = (1.06)^4x</m> and <m>A\circ A\circ A\circ A\circ A = (1.06)^5x</m>
+						</li>
+						<li>
+							The compositions represent compounds of the investment.
+						</li>
+						<li>
+							<m>(1.06)^nx</m>
+						</li>
+					</ol>
+				</solution></example>
 				
 				<example><statement>
 					If <m>g(x) = 2x + 1</m> and <m>h(x) =4x^2 + 4x + 7</m>, find a function <m>f</m> such that <m>f\circ g = h</m>.
-				</statement></example>
+				</statement>
+				<solution>
+					<m>f(x) = x^2+6</m>
+				</solution></example>
 			</subsection>
 			
 			<xi:include href="./resources/13.xml"/>
