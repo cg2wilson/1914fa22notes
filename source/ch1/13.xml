@@ -637,10 +637,9 @@
 											xlabel = {$x$},
 											xmin = -4.5, xmax = 4.5
 									]
-										\addplot[thick, domain = -2:2] {x^2-2*x+3};
+										\addplot[thick, domain = -2:3] {x^2-2*x+3};
 										\coordinate (label) at (0,-5);
 									\end{axis}						
-									\draw (label) node[yshift = -5pt] {$f(x) = x^2$};
 								\end{tikzpicture}
 							]]>
 						</latex-image>
