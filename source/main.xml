@@ -3,8 +3,8 @@
 
   <xi:include href="meta/docinfo.xml" />
 
-  <book xml:id="1473-Corequisite">
-    <title>Math 1473 - Math for Critical Thinking</title>
+  <book xml:id="math1914">
+    <title>Math 1914 - Differential &amp; Integral Calculus</title>
 
     <xi:include href="meta/frontmatter.xml" />
 
