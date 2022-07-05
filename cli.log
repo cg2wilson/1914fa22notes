@@ -1,2 +1,20 @@
 INFO    :  PreTeXt project found in `C:\Users\User\Dropbox\school\ou\20222023\1914fa22\notes\pretext`.
 INFO    :  
+INFO    :  Generating only latex-image assets.
+INFO    :  Now generating latex-images
+
+
+INFO    :  converting latex-image pictures from C:\Users\User\Dropbox\school\ou\20222023\1914fa22\notes\pretext\source\main.xml to svg graphics for placement in C:/Users/User/Dropbox/school/ou/20222023/1914fa22/notes/pretext/generated-assets/latex-image
+INFO    :  extracting latex-image pictures from C:\Users\User\Dropbox\school\ou\20222023\1914fa22\notes\pretext\source\main.xml
+INFO    :  string parameters passed to extraction stylesheet: {'publisher': 'C:/Users/User/Dropbox/school/ou/20222023/1914fa22/notes/pretext/publication/publication.ptx'}
+INFO    :  discovering source file's directory name: C:\Users\User\Dropbox\school\ou\20222023\1914fa22\notes\pretext\source
+INFO    :  verifying and expanding input directory: C:\Users\User\Dropbox\school\ou\20222023\1914fa22\notes\pretext\source\../generated-assets
+INFO    :  input directory expanded to absolute path: C:\Users\User\Dropbox\school\ou\20222023\1914fa22\notes\pretext\generated-assets
+INFO    :  verifying and expanding input directory: C:\Users\User\Dropbox\school\ou\20222023\1914fa22\notes\pretext\source\../assets
+INFO    :  input directory expanded to absolute path: C:\Users\User\Dropbox\school\ou\20222023\1914fa22\notes\pretext\assets
+INFO    :  XSL conversion of C:\Users\User\Dropbox\school\ou\20222023\1914fa22\notes\pretext\source\main.xml by C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\pretext\static\xsl\extract-latex-image.xsl
+INFO    :  comprehensive messages, warnings, and errors:
+INFO    :  successful application of C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\pretext\static\xsl\extract-latex-image.xsl
+INFO    :  converting image-1.tex to image-1.pdf
+INFO    :  cropping image-1.pdf to cropped-image-1.pdf
+CRITICAL:  Not encrypted file
