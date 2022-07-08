@@ -63,11 +63,56 @@
 								Now, use the Increasing/Decreasing Test to determine the intervals where <m>f</m> is increasing and decreasing.
 							</li>
 						</ol>
-					</statement></example>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<image>
+									<description>
+										The graph of <m>f(x)=(x-5)^2+1</m> on the interval <m>[3,7]</m>.  
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+													every tick label/.append style={font=\small},
+													axis x line = middle,
+													axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.15)}},
+														%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+													y label style={at={(axis description cs:0,1.15)},anchor=north},
+														ylabel = {$f(x)$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														%xtick = {-4,-3,-2,-1,1,2,3,4},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+														xlabel = {$x$},
+														xmin = 3, xmax = 7
+												]
+													\addplot[<->,thick, samples = 100, smooth, domain = 3:7] {x^2-10*x+26};
+
+												\end{axis}
+											\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+								<p>
+									The function is increasing on <m>(5,\infty)</m> and decreasing on <m>(-\infty,5)</m>.
+								</p>
+							</li>
+							<li>
+								Using the Increasing/Decreasing Test, we again find that the function is increasing on <m>(5,\infty)</m> and decreasing on <m>(-\infty,5)</m>.
+							</li>
+						</ol>
+					</solution>
+					</example>
 					
 					<example><statement>
 						Let <m>f(x) = 3x^4-4x^3-12x^2+5</m>.  Find the intervals where <m>f</m> is increasing and decreasing.
-					</statement></example>
+					</statement>
+					<solution>
+						<m>f(x)</m> is increasing on <m>(-1,0)\cup (2,\infty)</m> and decreasing on <m>(-\infty,-1)\cup (0,2)</m>
+					</solution>
+					</example>
 				</subsubsection>
 				<subsubsection xml:id="section-33-local-extrema">
 					<title>Local Extrema</title>
@@ -83,11 +128,19 @@
 					
 					<example><statement>
 						Find the local maximum and minimum values of the function <m>g(x) = x + 2\sin x</m> on <m>0\leq x\leq 2\pi</m>.
-					</statement></example>
+					</statement>
+					<solution>
+						There are no local extrema of this function.
+					</solution>
+					</example>
 					
 					<example><statement>
 						Let <m>f(x) = 200 + 8x^3 + x^4</m>.  Find the intervals where <m>f</m> is increasing, decreasing, and identify local extrema of <m>f</m>.  
-					</statement></example>
+					</statement>
+					<solution>
+						The function is increasing on <m>(-6,0)\cup (0,\infty)</m> and decreasing on <m>(-\infty,-6)</m>.  There is a local minmum at <m>(-6,-232)</m>.
+					</solution>
+					</example>
 				</subsubsection>
 				
 				<subsubsection xml:id="section-33-concavity">
@@ -109,36 +162,75 @@
 						<title>Inflection Point</title>
 						<idx>Inflection Point</idx>
 						<p>
-							A point <m>P</m> on a curve <m>y = f(x)</m> is called an <term>inflection point</term> if <m>f</m> is continuous there and the curve changes concavity.
+							A point <m>(c,f(c))</m> on a curve <m>y = f(x)</m> is called an <term>inflection point</term> if <m>f</m> is continuous there and the curve changes concavity.
 						</p>
 					</definition>
-					
+
 					<example><statement>
-						Sketch an example of a function that is <em>concave up</em> on the interval <m>[0,1]</m> and <em>concave down</em> on <m>[2,4]</m>.
-					</statement></example>
+						Determine the sign of the second derivative for the function graphed below, and note any inflection points.
+						<image>
+							<description>
+								The graph of <m>f(x)=x^3</m> on the interval <m>[-2,2]</m>.  
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											every tick label/.append style={font=\small},
+											axis x line = middle,
+											axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.15)}},
+												%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+											y label style={at={(axis description cs:.5,1.15)},anchor=north},
+												ylabel = {$f(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												%xtick = {-4,-3,-2,-1,1,2,3,4},
+												x label style={at={(axis description cs:1.1,.5)},anchor=east},
+												xlabel = {$x$},
+												xmin = -2, xmax = 2
+										]
+											\addplot[thick, samples = 100, smooth, domain = -2:2] {x^3};
+
+										\end{axis}
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+					</statement>
+					<solution>
+						<m>f''(x) \lt 0 </m> on <m>(-\infty,0)</m> and <m>f''(x) \gt 0</m> on <m>(0,\infty)</m>.  There is an inflection point at <m>x=0</m>.
+					</solution></example>
 				</subsubsection>
 				
 			</subsection>
 			<subsection xml:id="section-33-preclass">
 				<title>Pre-Class Activities</title>
-				
-				<example><statement>
-					Use the mean value theorem to prove the second part of the increasing/decreasing test.
-				</statement></example>
 					
 				<example><statement>
 					Let <m>f(x) = x^3-3x^2-9x+4</m>.  Find the intervals where <m>f</m> is increasing and decreasing.
-				</statement></example>
+				</statement>
+				<solution>
+					<m>f(x)</m> is increasing on <m>(-\infty,-1)\cup (3,\infty)</m> and decreasing on <m>(-1,3)</m>.
+				</solution>
+				</example>
 
 				<example><statement>
 					Given the picture below, find the open intervals where <m>f</m> is increasing, decreasing, concave up, concave down.  Identify the coordinates of any inflection points.
 					<image source="33fig1.svg"/>
-				</statement></example>
+				</statement>
+				<solution>		
+					The function is increasing on <m>(1,3)\cup (4,6)</m>, decreasing on <m>(0,1)\cup (3,4)</m>, concave up on <m>(0,2)</m>, and concave down on <m>(2,4)\cup (4,6)</m>.  There is an inflection point at <m>(2,3)</m>.
+				</solution>
+				</example>
 					
 				<example><statement>
 					The graph of the <em>derivative</em>, <m>f'</m>, is given below.  On what interval(s) is <m>f</m> increasing or decreasing? At what inputs does <m>f</m> have a local maximum or minimum?
 					<image source="33fig2.svg"/>
-				</statement></example>
+				</statement>
+				<solution>
+					<m>f(x)</m> is increasing on <m>(1,5)</m> and decreasing on <m>(0,1)\cup (5,6)</m>.  There is a local max at <m>x=5</m> and a local min at <m>x=1</m>.
+				</solution>
+				</example>
 			</subsection>
 			<subsection xml:id="section-33-inclass">
 				<title>In Class</title>
@@ -169,7 +261,27 @@
 							Identify any inflection points of <m>f</m>.
 						</li>
 					</ol>
-				</statement></example>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>f(x)</m> is increasing on <m>(-\infty,-1)\cup (1,\infty)</m> and decreasing on <m>(-1,1)</m>
+						</li>
+							
+						<li>	
+							The max occurs at <m>(-1,2)</m> and the min occurs at <m>(1,-2)</m>
+						</li>
+							
+						<li>
+							<m>f(x)</m> is concave up on <m>(0,\infty)</m> and concave down on <m>(-\infty,0)</m>
+						</li>
+							<m>f(x)</m> is concave up on <m>(0,\infty)</m> and concave down on <m>(-\infty,0)</m>
+						<li>
+							The inflection point is at <m>(0,0)</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
 					
 				<example><statement>
 					Sketch a possible graph for a function <m>f</m> that satisfies the conditions:
@@ -184,7 +296,10 @@
 								<m>f''(x) \gt 0</m> for <m>x \lt 2</m>, <m>f''(x) \lt 0</m> for <m>x \gt 2</m>
 							</li>
 						</ol>
-				</statement></example>
+				</statement>
+				<solution>
+					Answers vary
+				</solution></example>
 				
 				<theorem>
 					<title>Second Derivative Test</title>
@@ -195,19 +310,143 @@
 				
 				<example><statement>
 					Sketch the curve <m>y = x^4-4x^3</m> by finding the intervals of increasing/decreasing, local maxima/minima, intervals of concavity, and inflection point(s).
-				</statement></example>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>y = x^4-4x^3</m> on the interval <m>[-2.5,5]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$f(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.17)},anchor=east},
+											xlabel = {$x$},
+											xmin = -5, xmax = 5
+									]
+										\addplot[thick, samples = 100, smooth, domain = -2.5:5] {x^4-4*x^3};
+
+									\end{axis}
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
 					
 				<example><statement>
 					Sketch the curve <m>y=\dfrac{1}{2}x^4 -4x^2 + 3</m>
-				</statement></example>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>y=\dfrac{1}{2}x^4 -4x^2 + 3</m> on the interval <m>[-3,3]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$f(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.39)},anchor=east},
+											xlabel = {$x$},
+											xmin = -4, xmax = 4
+									]
+										\addplot[thick, samples = 100, smooth, domain = -3:3] {.5*x^4-4*x^2+3};
+
+									\end{axis}
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
 					
 				<example><statement>
 					Sketch the curve <m>f(x)=x^3 - 12x + 2</m>
-				</statement></example>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>f(x)=x^3 - 12x + 2</m> on the interval <m>[-4,4]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$f(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.44)},anchor=east},
+											xlabel = {$x$},
+											xmin = -4, xmax = 4
+									]
+										\addplot[thick, samples = 100, smooth, domain = -4:4] {x^3-12*x+2};
+
+									\end{axis}
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
 	
 				<example><statement>
 					Sketch the curve <m>h(x) = 5x^3-3x^5</m>
-				</statement></example>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>h(x) = 5x^3-3x^5</m> on the interval <m>[-1.5,1.5]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$f(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.47)},anchor=east},
+											xlabel = {$x$},
+											xmin = -1.5, xmax = 1.5
+									]
+										\addplot[thick, samples = 100, smooth, domain = -1.5:1.5] {5*x^3-3*x^5};
+
+									\end{axis}
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
 					
 				<example><statement>
 					Sketch the graph of a function that satisfies the criteria outlined below:
@@ -222,7 +461,11 @@
 								<m>f''(x) \lt 0</m> if <m>x \lt 0</m>, <m>f''(x) \gt 0</m> if <m>x \gt 0</m>.
 							</li>
 						</ol>
-				</statement></example>
+				</statement>
+				<solution>
+					Answers vary
+				</solution>
+				</example>
 
 				<example><statement>
 					Sketch the graph of a function that satisfies the criteria outlined below:
@@ -234,18 +477,30 @@
 								<m>f''(2) = 0</m>, <m>f''(8) = 0</m>, <m>f''(x) \lt 0 </m> when <m>x \lt 2</m> or <m>x \gt 8</m>, <m>f''(x) \gt 0</m> for <m>2\lt x\lt 8</m>.
 							</li>
 						</ol>
-				</statement></example>
+				</statement>
+				<solution>	
+					Answers vary
+				</solution>
+				</example>	
 			</subsection>
 			<subsection xml:id="section-33-afterclass">
 				<title>After Class Activities</title>
 				
 				<example><statement>
 					Find the intervals on which <m>\sin x + \cos x</m> is increasing/decreasing on <m>[0,2\pi]</m>, the local maximum and minimum values of the function on the interval, and the intervals of concavity/inflection points.
-				</statement></example>
+				</statement>
+				<solution>
+					The function is increasing on <m>\lrpar{0,\dfrac{\pi}{4}}\cup \lrpar{\dfrac{5\pi}{4},2\pi}</m>, decreasing on <m>\lrpar{\dfrac{\pi}{4},\dfrac{5\pi}{4}}</m>, concave up on <m>\lrpar{\dfrac{3\pi}{4},\dfrac{7\pi}{4}}</m>, and concave down on <m>\lrpar{0,\dfrac{3\pi}{4}}\cup \lrpar{\dfrac{7\pi}{4},2\pi}</m>.  The local max occurs at <m>\lrpar{\dfrac{\pi}{4},\sqrt{2}}</m> and the local min occurs at <m>\lrpar{\dfrac{5\pi}{4},-\sqrt{2}}</m>.
+				</solution>
+				</example>	
 					
 				<example><statement>
 					Find the local maximum and minimum values of <m>f(x) = \dfrac{x^2}{x-1}</m> using the First and Second Derivative Tests.
-				</statement></example>
+				</statement>
+				<solution>
+					The local max is at <m>x=0</m> and the local min is at <m>x=2</m>
+				</solution>
+				</example>
 
 				<example><statement>
 					A graph is given below. 
@@ -264,11 +519,31 @@
 							The curve is the graph of <m>f''</m>.
 						</li>
 					</ol>					
-				</statement></example>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>x=3,5</m>
+						</li>
+							
+						<li>
+							<m>x=2,4,6</m>
+						</li>
+							
+						<li>
+							<m>x=1,7</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
 				
 				<example><statement>
 					Consider the phrase <q>SAT scores are declining at a slower rate</q>  Interpret this statement in terms of a function and its first and second derivatives.
-				</statement></example>
+				</statement>
+				<solution>
+					<m>f'(x) \gt 0, f''(x)\lt 0</m>
+				</solution>
+				</example>
 			</subsection>
 		</section>
 		
