@@ -40,13 +40,23 @@
 						<statement>
 							Write the indefinite integral for <m>\ds \int x^2\, dx</m>
 						</statement>
+						<solution>
+							<p>
+								<m>\ds \int x^2\, dx = \dfrac{1}{3}x^3 + C</m>
+							</p>
+						</solution>
 					</example>
 					
-					<example>
+					<question>
 						<statement>
 							Give an explicit distinction between the definite integral and the indefinite integral.
 						</statement>
-					</example>
+						<solution>
+							<p>
+								The definite integral always returns a number while the indefinite integral always returns a function.
+							</p>
+						</solution>
+					</question>
 					
 					<assemblage>
 						<title>Useful Indefinite Integrals</title>
@@ -141,18 +151,33 @@
 					</assemblage>
 					
 					<example><statement>
-						Find the general indefinite integral for <m>f(x) = 3x^5-2\csc^2 x\, dx</m>
-					</statement></example>
+						Find the general indefinite integral for <m>f(x) = 3x^5-2\csc^2 x</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int f(x)\, dx = \dfrac{1}{2}x^6 + 2\cot x + C</m>
+						</p>
+					</solution></example>
 						 
 						
 					<example><statement>
 						Evaluate <m>\ds \int \dfrac{\sin\theta}{\cos^2\theta}\,d\theta</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int \dfrac{\sin\theta}{\cos^2\theta}\,d\theta = \sec\theta + C</m>
+						</p>
+					</solution></example>
 						 
 						
 					<example><statement>
 						Evaluate <m>\ds \int (6-2\cos x)\, dx</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int (6-2\cos x)\, dx = 6x-2\sin x + C</m>
+						</p>
+					</solution></example>
 				</subsubsection>			
 			</subsection>
 			<subsection xml:id="section-44-preclass">
@@ -161,6 +186,11 @@
 					<statement>
 						Imagine that you are able to give your future self some advice, while you're studying.  Looking back over the notes, how would you describe the difference between a <em>definite</em> integral and an <em>indefinite</em> integral to your future self?
 					</statement>
+					<solution>
+						<p>
+							Answers vary
+						</p>
+					</solution>
 				</example>
 				<example>
 					<statement>
@@ -208,6 +238,18 @@
 								</li>
 							</ol>						
 						</statement>
+						<solution>
+							<p>
+								<ol label="a">
+								<li>
+									Answers vary
+								</li>
+								<li>
+									If <m>f(x)</m> is continuous on <m>[a,b]</m> and <m>F(x)</m> is an antiderivative of <m>f(x)</m> on that interval, then <m>\ds \int_a^b f(x)\, dx = F(b) - F(a)</m>
+								</li>
+							</ol>	
+							</p>
+						</solution>
 					</question>
 					
 					<theorem>
@@ -221,6 +263,11 @@
 						<statement>
 							What relationship(s) do you see between the Net Change Theorem and FTC 2?
 						</statement>
+						<solution>
+							<p>
+								We get the same result, but we are using different functions.
+							</p>
+						</solution>
 					</question>
 					
 					<assemblage>
@@ -242,12 +289,29 @@
 								</li>
 							</ol>
 						</statement>
+						<solution>
+							<p>
+								<ol label="a">
+								<li>
+									<m>-\dfrac{9}{2}</m> m
+								</li>
+								<li>
+									<m>\dfrac{61}{6}</m> m
+								</li>
+							</ol>
+							</p>
+						</solution>
 					</example>
 					
 					<example>
 						<statement>
-							A particle moving along a line has velocity <m>v(t) = t^2 -2t-3</m> m/s.  Find the displacement and the total distance traveled by the particle.
+							A particle moving along a line has velocity <m>v(t) = t^2 -2t-3</m> m/s.  Find the displacement and the total distance traveled by the particle between 1 and 4 seconds.
 						</statement>
+						<solution>
+							<p>
+								The displacement is <m>-3</m> m and the distance traveled is <m>\dfrac{23}{3}</m> m
+							</p>
+						</solution>
 					</example>
 				</subsubsection>
 				
@@ -255,88 +319,190 @@
 					<title>Practice</title>
 					<example><statement>
 						Find the general indefinite integral of <m>f(x) = x^{1.3}-7x^{2.5}</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int f(x)\, dx = \dfrac{x^{2.3}}{2.3} - 2x^{3.5} + C</m>
+						</p>
+					</solution>
+					</example>
 						 
 						
 					<example><statement>
 						Find the general indefinite integral of <m>f(x) = \sqrt[5]{x^4}</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int f(x)\, dx = \dfrac{5}{9} x^{9/5} + C</m>
+						</p>
+					</solution>
+					</example>
 						 
 						
 					<example><statement>
 						Find the general indefinite integral of <m>f(x) = \dfrac{1-\sqrt{x}+x}{\sqrt{x}}</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int f(x)\, dx = 2x^{1/2} + \dfrac{2}{3}x^{3/2} + C</m>
+						</p>
+					</solution>
+					</example>
 						 
 						
 					<example><statement>
 						Find the general indefinite integral of <m>f(x) = 2+\tan^2x</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int f(x)\, dx = x + \tan x + C</m>
+						</p>
+					</solution>
+					</example>
 						 
 
 						
 					<example><statement>
 						Find the general indefinite integral of <m>f(t) = \dfrac{1-\sin^3t}{\sin^2t}</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int f(t)\, dt = -\cot t + \cos t + C</m>
+						</p>
+					</solution>
+					</example>
 						 
 						
 					<example><statement>
 						Evaluate the integral <m>\ds \int_{-2}^3 (x^2-3)\, dx</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_{-2}^3 (x^2-3)\, dx = -\dfrac{10}{3}</m>
+						</p>
+					</solution>
+					</example>
 						 
 						
 					<example><statement>
 						Evaluate the integral <m>\ds \int_0^3 (1 + 6w^2-10w^4)\,dw</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^3 (1 + 6w^2-10w^4)\,dw = -429</m>
+						</p>
+					</solution>
+					</example>
 						 
 						
 					<example><statement>
 						Evaluate the integral <m>\ds \int_0^\pi (4\sin \theta -3\cos\theta)\, d\theta</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^\pi (4\sin \theta -3\cos\theta)\, d\theta =8</m>
+						</p>
+					</solution>
+					</example>
 						 
 						
 					<example><statement>
 						Evaluate the integral <m>\ds \int_0^{\pi/3} \dfrac{\sin\theta + \sin\theta\tan^2\theta}{\sec^2\theta}\,d\theta</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^{\pi/3} \dfrac{\sin\theta + \sin\theta\tan^2\theta}{\sec^2\theta}\,d\theta = \dfrac{1}{2}</m>
+						</p>
+					</solution>
+					</example>
 						 
 						
 						
 					<example><statement>
 						Evaluate the integral <m>\ds \int_1^8 \dfrac{2+t}{\sqrt[3]{t^2}}</m>
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_1^8 \dfrac{2+t}{\sqrt[3]{t^2}} = \dfrac{69}{4}</m>
+						</p>
+					</solution>
+					</example>
 						 
 						
 					<example><statement>
 						A honeybee population starts with 100 bees and increases at a rate of <m>n'(t)</m> bees per week.  What does 100 + <m>\ds \int_0^{15}n'(t)\,dt/</m> represent?
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							It gives the total number of bees after 15 weeks.
+						</p>
+					</solution>
+					</example>
 						 
 						
 					<example><statement>
 						If <m>x</m> is measured in meters and <m>f(x)</m> is measured in newtons, what are the units of <m>\ds \int_0^{100}f(x)\,dx</m>?
-					</statement></example>
+					</statement>
+					<solution>
+						<p>
+							Newton<m>\cdot</m>meters
+						</p>
+					</solution>
+					</example>
 						 
 						
 					<example><statement>
-						The acceleration function of a particle is <m>a(t) = t+4</m> m/s<m>^2</m>, and its the initial velocity is 5 m/s.  Find the velocity at time <m>t</m>, and the distance traveled between time <m>t = 0</m> and <m>t = 10</m>.
-					</statement></example>
+						The acceleration function of a particle is <m>a(t) = t+4</m> m/s<m>^2</m>, and its the initial velocity is 5 m/s.  Find the velocity at time <m>t</m>, and the distance traveled between time <m>t = 0</m> and <m>t = 5</m>.
+					</statement>
+					<solution>
+						<p>
+							The velocity is <m>v(t) = \dfrac{1}{2}t^2 + 4t + 8</m> and the particle travels <m>\dfrac{665}{6}</m> m.
+						</p>
+					</solution>
+					</example>
 				</subsubsection>
 			</subsection>
 			<subsection xml:id="section-44-afterclass">
 				<title>After Class Activities</title>
 				<example><statement>
 					Let <m>r(\theta) = \dfrac{1+\cos^2\theta}{\cos^2\theta}</m>.  Find the indefinite integral <m>\ds \int r(\theta)\, d\theta</m> and the definite integral on the interval <m>[0,\pi/4]</m>.
-				</statement></example>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int r(\theta)\, d\theta = \tan \theta + \theta + C</m> and <m>\ds \int_0^{\pi/4} r(\theta)\, d\theta = 1 + \dfrac{\pi}{4}</m>
+					</p>
+				</solution>
+				</example>
 					
 				<example><statement>
-					If <m>f(x)</m> is the slope of atrail at a distance of <m>x</m> miles from the start of the trail, what does <m>\ds \int_3^5 f(x)\, dx</m> represent?
-				</statement></example>
+					If <m>f(x)</m> is the slope of a trail at a distance of <m>x</m> miles from the start of the trail, what does <m>\ds \int_3^5 f(x)\, dx</m> represent?
+				</statement>
+				<solution>
+					<p>
+						The net change in height between 3 and 5 miles from the start of the trail.
+					</p>
+				</solution>
+				</example>
 					
 				<example><statement>
 					The current in a wire is defined to be the derivative of charge, i.e. <m>I(t) = Q'(t)</m>.  What does <m>\ds \int_a^b I(t)\, dt</m> represent?
-				</statement></example>
+				</statement>
+				<solution>
+					<p>
+						The net change in charge between <m>t=a</m> and <m>t=b</m>
+					</p>
+				</solution>
+				</example>
 			
 				<example><statement>
 					A particle moving along a line has acceleration given by <m>a(t) = 2t+3</m>.  If <m>v(0) = -4</m>, find the particle's velocity and distance traveled in the first three seconds of motion.
-				</statement></example>
+				</statement>
+				<solution>
+					<p>
+						<m>v(t) = t^2 + 3t-4</m> and the distance traveled is <m>\dfrac{89}{6}</m>.
+					</p>
+				</solution>
+				</example>
 			</subsection>
 		</section>
 		
