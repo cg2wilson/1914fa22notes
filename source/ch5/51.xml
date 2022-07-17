@@ -20,13 +20,9 @@
 				
 				<figure>
 					<caption>Pre-Class Video 1</caption>
-					<url href = "https://mymedia.ou.edu/media/5.1-1/0_hcm13a0v"/>
+					<url href = "https://mymedia.ou.edu/media/5.1-1/1_1i1v6tu0"/>
 				</figure>
-				<figure>
-					<caption>Pre-Class Video 2</caption>
-					<url href = "https://mymedia.ou.edu/media/5.1-2/0_sae8lvxz"/>
-				</figure>
-				
+
 				<subsubsection xml:id="section-51-area">
 					<title>Area</title>
 					<example>
@@ -195,7 +191,7 @@
 					<theorem>
 						<title>Area Between Curves</title>
 						<p>
-							Let <m>f,g</m> be continuous functions, and let <m>f(x)\leq g(x)</m> for all <m>x</m> in <m>[a,b]</m>.  The area <m>A</m> of the region bounded by the curves <m>y=f(x),y=g(x)</m> and the lines <m>x=a,x=b</m> is given by <m>A = \ds \int_a^b (f(x)-g(x))\, dx</m>
+							Let <m>f,g</m> be continuous functions, and let <m>f(x)\geq g(x)</m> for all <m>x</m> in <m>[a,b]</m>.  The area <m>A</m> of the region bounded by the curves <m>y=f(x),y=g(x)</m> and the lines <m>x=a,x=b</m> is given by <m>A = \ds \int_a^b (f(x)-g(x))\, dx</m>
 						</p>
 					</theorem>
 					
@@ -228,7 +224,7 @@
 					</statement>
 					<solution>
 						<p>
-							<m>\sqrt{2} - 1</m>
+							<m>2\sqrt{2} - 2</m>
 						</p>
 					</solution>
 					</example>

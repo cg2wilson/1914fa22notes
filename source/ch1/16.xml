@@ -24,16 +24,9 @@
 				
 				<figure>
 					<caption>Pre-Class Video 1</caption>
-					<url href = "https://mymedia.ou.edu/media/1.6-1/0_7sxziv1y"/>
+					<url href = "https://mymedia.ou.edu/media/1.6-1/1_1uboropy"/>
 				</figure>
-				<figure>
-					<caption>Pre-Class Video 2</caption>
-					<url href = "https://mymedia.ou.edu/media/1.6-2.mp4/0_jvj3k9xd"/>
-				</figure>
-				<figure>
-					<caption>Pre-Class Video 3</caption>
-					<url href = "https://mymedia.ou.edu/media/1.6-3/0_effa88sh"/>
-				</figure>
+
 				
 				<subsubsection xml:id="section-16-laws">
 					<title>Limit Laws</title>
@@ -224,7 +217,7 @@
 							</li>
 								
 							<li>
-								<m>\ds \lim_{x\to 1} \dfrac{x-1}{x^2+1}=0</m>.  Since this is a rational function with 0 in the domain, we can use direct substitution.
+								<m>\ds \lim_{x\to 1} \dfrac{x-1}{x^2+1}=0</m>.  Since this is a rational function with 1 in the domain, we can use direct substitution.
 							</li>
 								
 						</ol>

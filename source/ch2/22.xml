@@ -31,20 +31,13 @@
 				
 				<figure>
 					<caption>Pre-Class Video 1</caption>
-					<url href = "https://mymedia.ou.edu/media/2.2-1/0_cgfpm8bw"/>
+					<url href = "https://mymedia.ou.edu/media/2.2-1/1_fb43p7ws"/>
 				</figure>
 				<figure>
 					<caption>Pre-Class Video 2</caption>
-					<url href = "https://mymedia.ou.edu/media/2.2-2/0_a3ml9lx2"/>
+					<url href = "https://mymedia.ou.edu/media/2.2-2/1_g1ws2wmb"/>
 				</figure>
-				<figure>
-					<caption>Pre-Class Video 3</caption>
-					<url href = "https://mymedia.ou.edu/media/2.2-3/0_3tcjza0u"/>
-				</figure>
-				<figure>
-					<caption>Pre-Class Video 4</caption>
-					<url href = "https://mymedia.ou.edu/media/2.2-4/0_6yr10q8r"/>
-				</figure>
+
 				
 				<subsubsection xml:id="section-22-function">
 					<title>The Derivative as a Function</title>
@@ -52,11 +45,11 @@
 					<example><statement>
 						<ol label="a">
 							<li>
-								Use either method of the previous section to find the derivative of <m>f(x) = x^2 + 5</m> at <m>(1,6)</m>.
+								Use either method of the previous section to find the derivative of <m>f(x) = x^2 + 1</m> at <m>(1,2)</m>.
 							</li>
 								
 							<li>
-								Find the derivative of <m>f(x)</m> at <m>(2,9)</m>.
+								Find the derivative of <m>f(x)</m> at <m>(2,5)</m>.
 							</li>
 						</ol>
 					</statement>

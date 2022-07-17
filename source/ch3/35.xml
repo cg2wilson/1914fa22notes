@@ -17,12 +17,9 @@
 				
 				<figure>
 					<caption>Pre-Class Video 1</caption>
-					<url href = "https://mymedia.ou.edu/media/3.5-1/0_ozs2lzfr"/>
+					<url href = "https://mymedia.ou.edu/media/3.5-1/1_lwewtbkr"/>
 				</figure>
-				<figure>
-					<caption>Pre-Class Video 2</caption>
-					<url href = "https://mymedia.ou.edu/media/3.5-2/0_55sdgjr6"/>
-				</figure>
+
 				
 				<subsubsection xml:id="section-35-summary">
 					<title>Summary of Graphing</title>
@@ -41,7 +38,7 @@
 									Locate symmetry in the graph, i.e. determine if the function is even, odd, periodic, etc.
 								</li>
 								<li>
-									Locate any asymptotes: vertical, horizontal, or slant.
+									Locate any asymptotes: vertical or horizontal.
 								</li>
 								<li>
 									Determine the intervals where the function is increasing or decreasing.

@@ -20,17 +20,9 @@
 				
 				<figure>
 					<caption>Pre-Class Video 1</caption>
-					<url href = "https://mymedia.ou.edu/media/3.9-1/0_8zxfge6t"/>
+					<url href = "https://mymedia.ou.edu/media/3.9-1/1_47ve5csu"/>
 				</figure>
-				<figure>
-					<caption>Pre-Class Video 2</caption>
-					<url href = "https://mymedia.ou.edu/media/3.9-2/0_udaqgtjk"/>
-				</figure>
-				<figure>
-					<caption>Pre-Class Video 3</caption>
-					<url href = "https://mymedia.ou.edu/media/3.9-3/0_neqag91n"/>
-				</figure>
-				
+
 				<subsubsection xml:id="section-39-derivatives">
 					<title>Derivatives</title>
 					
@@ -281,7 +273,7 @@
 						<m>g'(x) = 3\sin x - \dfrac{9x^4-\sqrt[3]{x}}{x^2}</m>.  Find <m>g(x)</m>, the most general antiderivative of <m>g</m>.
 					</statement>
 					<solution>
-						<m>g(x) = -3\cos x - 3x^3 - \dfrac{3}{2}x^{-3/2} + C</m>
+						<m>g(x) = -3\cos x - 3x^3 - \dfrac{3}{2}x^{-2/3} + C</m>
 					</solution>
 					</example>
 						

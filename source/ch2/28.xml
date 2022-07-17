@@ -17,11 +17,7 @@
 				
 				<figure>
 					<caption>Pre-Class Video 1</caption>
-					<url href = "https://mymedia.ou.edu/media/2.8-1/0_f3th0qyp"/>
-				</figure>
-				<figure>
-					<caption>Pre-Class Video 2</caption>
-					<url href = "https://mymedia.ou.edu/media/2.8-2/0_kb0fczh3"/>
+					<url href = "https://mymedia.ou.edu/media/2.8-1/1_wy6maavz"/>
 				</figure>
 				
 				<subsubsection xml:id="section-28-time">
@@ -118,7 +114,7 @@
 							</li>
 								
 							<li> 
-								<m>\dfrac{dV}{dt} = \dfrac{1}{3}\pi \lrpar{2r\cdot \dfrac{dr}{dt} + \dfrac{dh}{dt}}</m>
+								<m>\dfrac{dV}{dt} = \dfrac{1}{3}\pi \lrpar{2r\cdot \dfrac{dr}{dt} + r^2\dfrac{dh}{dt}}</m>
 							</li>
 						</ol>
 					</solution>

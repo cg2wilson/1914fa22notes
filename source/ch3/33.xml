@@ -31,16 +31,13 @@
 				
 				<figure>
 					<caption>Pre-Class Video 1</caption>
-					<url href = "https://mymedia.ou.edu/media/3.3-1/0_rxpvikkq"/>
+					<url href = "https://mymedia.ou.edu/media/3.3-1.mp4/1_6ntbtqd6"/>
 				</figure>
 				<figure>
 					<caption>Pre-Class Video 2</caption>
-					<url href = "https://mymedia.ou.edu/media/3.3-2/0_3f14hdhu"/>
+					<url href = "https://mymedia.ou.edu/media/3.3-2/1_q3uahwvk"/>
 				</figure>
-				<figure>
-					<caption>Pre-Class Video 3</caption>
-					<url href = "https://mymedia.ou.edu/media/3.3-3/0_rxixywd2"/>
-				</figure>
+
 				
 				<subsubsection xml:id="section-33-id-test">
 					<title>Increasing/Decereasing Test</title>
@@ -130,7 +127,7 @@
 						Find the local maximum and minimum values of the function <m>g(x) = x + 2\sin x</m> on <m>0\leq x\leq 2\pi</m>.
 					</statement>
 					<solution>
-						There are no local extrema of this function.
+						The local max occurs at <m>x=\dfrac{2\pi}{3}</m> and the local min occurs at <m>x=\dfrac{4\pi}{3}</m>
 					</solution>
 					</example>
 					

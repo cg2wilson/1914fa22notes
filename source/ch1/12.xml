@@ -51,12 +51,9 @@
 				
 				<figure>
 					<caption>Pre-Class Video 1</caption>
-					<url href = "https://mymedia.ou.edu/media/1.2-1/0_21ahyo73"/>
+					<url href = "https://mymedia.ou.edu/media/1.2-1/1_s05beatp"/>
 				</figure>
-				<figure>
-					<caption>Pre-Class Video 2</caption>
-					<url href = "https://mymedia.ou.edu/media/1.2-2/0_6v1pxd6w"/>
-				</figure>
+
 				
 				<subsubsection xml:id="section-12-linear">
 					<title>Linear Functions</title>
@@ -192,6 +189,11 @@
 							<statement>
 								Given two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m>, how can we find the slope of the line between them?
 							</statement>
+							<solution>
+								<p>
+									<m> m =\dfrac{y_2-y_1}{x_2-x_1}</m>
+								</p>
+							</solution>
 						</question>
 						
 						<example><statement>

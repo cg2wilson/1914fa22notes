@@ -25,15 +25,7 @@
 				
 				<figure>
 					<caption>Pre-Class Video 1</caption>
-					<url href = "https://mymedia.ou.edu/media/1.3-1/0_z2mn2i7q"/>
-				</figure>
-				<figure>
-					<caption>Pre-Class Video 2</caption>
-					<url href = "https://mymedia.ou.edu/media/1.3-2/0_8hse9j48"/>
-				</figure>
-				<figure>
-					<caption>Pre-Class Video 3</caption>
-					<url href = "https://mymedia.ou.edu/media/1.3-3/0_jhz1cx9h"/>
+					<url href = "https://mymedia.ou.edu/media/1.3-1/1_xf5w60k6"/>
 				</figure>
 				
 				<subsubsection xml:id="section-13-combinations">
@@ -85,14 +77,14 @@
 						Find the domain of the function <m>f(x) = 6x^4 + 14x + \dfrac{\cos x}{x^2-1}</m>
 					</statement>
 					<solution>
-						<m>(-\infty,1)\cup (1,\infty)</m>
+						<m>(-\infty,-1)\cup(-1,1)\cup (1,\infty)</m>
 					</solution></example>
 						
 					<example><statement>
 						Find the domain of the function <m>\dfrac{\sqrt{x}}{x^2-x-6}</m>.
 					</statement>
 					<solution>
-						<m>[0,2)\cup (2,\infty) </m>
+						<m>[0,3)\cup (3,\infty) </m>
 					</solution></example>
 						
 					<example><statement>
